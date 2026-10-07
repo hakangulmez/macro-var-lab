@@ -10,7 +10,9 @@ Owner authorized PUBLIC GitHub publication under hakangulmez on 7 October 2026. 
 - [x] .gitignore probes protect private inputs, nested credentials, model containers, caches and libraries.
 - [x] Repository-local dependency installation; full acquisition/build/test/lint/quick validation in a fresh local clone. Estimator modules unchanged.
 - [x] README headline and policy-note links resolve to reviewed files; PDFs visually checked at two pages.
-- [ ] Create approved public GitHub repository with the one-sentence question and topics; push main only.
-- [ ] Check the live GitHub README, headline image and policy-note PDF link; record verification.
+- [x] Create approved public GitHub repository with the one-sentence question and topics; push main only.
+- [x] Check the live GitHub README, headline image and policy-note PDF link; record verification.
 
 No raw data or private Git history is licensed for redistribution. The public history begins with this allowlisted snapshot. Runtime source data must remain ignored; readers use their own permitted access. GitHub uses a noreply commit-author address.
+
+Live verification completed 7 October 2026: public repository, only main, no tags; rendered README, loaded headline image and rendered policy-note PDF opened by its README link. GitHub file/blob checks match the reviewed local files; recursive remote tree matches PUBLIC_FILES.txt. Source observations, credentials, caches and thesis material are absent from the outgoing tree/history.
