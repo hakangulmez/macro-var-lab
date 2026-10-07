@@ -1,0 +1,31 @@
+seed: 20261007
+horizon: 36
+bootstrap_draws: 499
+bootstrap_block: 6
+sign_draws: 1000
+sign_max_attempts: 200000
+sign_rate_floor_sd: 0.1
+min_lp_residual_df: 10
+lag_max: 12
+lag_criterion: BIC
+seasonal_dummies: true
+tr_external_block: 3
+unit_root_alpha: 0.05
+tr_i2_rule: first-difference ADF and PP fail to reject, KPSS rejects stationarity
+regimes:
+- [2011-01, 2018-05]
+- [2018-06, 2023-05]
+- [2023-06, 2026-07]
+models:
+- {name: EA_baseline, area: EA, start: 2004-09, end: 2026-07, policy: ea_2y, price: ea_hicp, kind: baseline}
+- {name: TR_baseline, area: TR, start: 2011-01, end: 2026-07, policy: tr_aofm, price: tr_cpi, kind: baseline}
+- {name: TR_announced, area: TR, start: 2006-01, end: 2026-07, policy: tr_announced, price: tr_cpi, kind: robustness}
+- {name: EA_overnight_long, area: EA, start: 1999-12, end: 2019-12, policy: ea_overnight, price: ea_hicp, kind: robustness}
+- {name: EA_bundesbank_long, area: EA, start: 1999-12, end: 2026-07, policy: de_2y, price: ea_hicp, kind: robustness}
+- {name: EA_overnight_common, area: EA, start: 2004-09, end: 2026-07, policy: ea_overnight, price: ea_hicp, kind: robustness}
+- {name: EA_core, area: EA, start: 2004-09, end: 2026-07, policy: ea_2y, price: ea_core, kind: robustness}
+- {name: TR_core_b, area: TR, start: 2011-01, end: 2026-07, policy: tr_aofm, price: tr_core_b, kind: robustness}
+- {name: TR_core_c, area: TR, start: 2011-01, end: 2026-07, policy: tr_aofm, price: tr_core_c, kind: robustness}
+- {name: EA_growth, area: EA, start: 2004-09, end: 2026-07, policy: ea_2y, price: ea_hicp, kind: growth_robustness}
+- {name: TR_growth, area: TR, start: 2011-01, end: 2026-07, policy: tr_aofm, price: tr_cpi, kind: growth_robustness}
+- {name: TR_levels_comparison, area: TR, start: 2011-01, end: 2026-07, policy: tr_aofm, price: tr_cpi, kind: levels_comparison}

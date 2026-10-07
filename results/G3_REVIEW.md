@@ -1,0 +1,7 @@
+# V2 identification review
+
+- The exchange-rate channel is clear: a year after tightening, the euro is 4.744% stronger in the preferred proxy estimate, and its uncertainty interval stays above zero.
+- The price response is not pinned down: estimates change sign across identification methods, while the proxy estimate of 0.113% has an uncertainty interval that includes zero.
+- Türkiye's price estimates are negative across the comparison methods but imprecise; the recursive estimate a year after tightening is -0.288%.
+
+Proxy preferred conditionally on relevance and exclusion; see report/report.md for the different sample/lag and conditional-band caveats.

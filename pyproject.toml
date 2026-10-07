@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "macro-var-lab"
+version = "0.0.0"
+description = "Monetary VAR identification comparisons and local projections; local research draft"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "pydantic>=2,<3",
+    "PyYAML>=6,<7",
+    "matplotlib>=3.8,<4",
+    "typer>=0.12,<1",
+    "pandas>=3.0.6",
+    "scipy>=1.17.1",
+    "statsmodels>=0.15.0",
+    "arch>=8.0.0",
+    "requests>=2.34.2",
+    "beautifulsoup4>=4.15.0",
+    "openpyxl>=3.1.5",
+    "reportlab>=5.0.1",
+    "pypdf>=6.19.0",
+]
+[dependency-groups]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "types-PyYAML",
+    "detect-secrets",
+    "pandas-stubs>=3.0.5.260914",
+    "types-requests>=2.33.0.20261006",
+    "types-beautifulsoup4>=4.12.0.20250516",
+]
+[tool.hatch.build.targets.wheel]
+packages = ["src/macro_var_lab"]
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+[tool.mypy]
+python_version = "3.11"
+files = ["src"]
+check_untyped_defs = true
+[[tool.mypy.overrides]]
+module = ["matplotlib.*", "statsmodels.*"]
+ignore_missing_imports = true
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=macro_var_lab --cov-report=term-missing --cov-fail-under=70"

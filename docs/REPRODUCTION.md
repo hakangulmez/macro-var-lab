@@ -1,0 +1,7 @@
+# Reproduction and public snapshot
+
+FRED and EVDS credentials belong only in the reader's ignored .env. M1 needs current access to the official endpoints documented in DATA.md. A missing/unreleased source remains missing; no interpolation or silent source replacement. `make all` estimates the declared specifications and creates private data/runs. `make report` redraws the current aggregate result tables without data access. `make audit` fetches only official catalogue metadata before verifying the locally acquired G1 panel. `make audit-release` checks the final runtime evidence and source-code hashes; inherited approved aggregate files can be rendered without a fresh source download.
+
+`make quick` is keyless, synthetic and offline. `make test lint` checks estimator properties, source parsing and formatting/types. Full builds require network access to free official/public sources; rate limits and third-party terms still apply. Private data, .env, environments, databases, caches, residuals, shocks, model objects and row-level predictions must never be committed. Public results are aggregate author estimates; original observations are obtained via scripts plus DATA.md, not bundled.
+
+Published Git history begins with a reviewed, allowlisted G3 snapshot. The dated research/declaration documents and source hashes retain provenance; the private development history and acceptance logs are not redistributed. All simulation settings and source selectors are unchanged. Theory PDFs are authored project notes; no thesis or course material is included.

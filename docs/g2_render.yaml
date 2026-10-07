@@ -1,0 +1,6 @@
+papersize: a4
+fontsize: 10pt
+margin:
+  x: 15mm
+  y: 13mm
+mainfont: Helvetica

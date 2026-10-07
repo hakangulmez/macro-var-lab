@@ -1,0 +1,33 @@
+data/*
+!data/README.md
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+runs/
+.cache/
+*.egg-info/
+dist/
+
+# Private database files, including journals/WALs, wherever created.
+*.sqlite*
+*.db
+
+# Private model/source containers are never part of the public snapshot.
+*.npz
+*.npy
+*.rds
+*.RData
+*.rda
+*.dta
+*.parquet
+*.feather
+*.db*
+.DS_Store

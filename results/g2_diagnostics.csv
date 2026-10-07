@@ -1,0 +1,16 @@
+model,months,lag,kind,radius,stable,AIC_lag,HQ_lag,BG_1_reject,BG_6_reject,BG_12_unavailable,JB_marginal_reject
+EA_baseline,263,1,baseline,1.0029061718287686,False,2.0,2.0,5.0,5.0,0.0,6.0
+TR_regime_3_LP,38,1,LP only,,,,,,,,
+TR_baseline,187,2,baseline,1.0123195445922242,False,3.0,2.0,3.0,4.0,7.0,7.0
+TR_announced,247,2,robustness,1.0060717784081357,False,3.0,2.0,5.0,0.0,7.0,7.0
+EA_overnight_long,241,1,robustness,0.9956691881122242,True,3.0,1.0,5.0,4.0,0.0,4.0
+EA_bundesbank_long,320,1,robustness,1.0020934475757493,False,2.0,2.0,5.0,5.0,0.0,5.0
+EA_overnight_common,263,2,robustness,0.9954114321874055,True,2.0,2.0,2.0,2.0,0.0,6.0
+EA_core,263,1,robustness,1.0051073841329696,False,2.0,2.0,4.0,5.0,0.0,5.0
+TR_core_b,187,2,robustness,1.011432548401039,False,3.0,2.0,3.0,4.0,7.0,7.0
+TR_core_c,187,2,robustness,1.0114581762823907,False,3.0,2.0,3.0,4.0,7.0,7.0
+EA_growth,263,1,growth_robustness,0.9929122800940481,True,3.0,1.0,3.0,2.0,6.0,6.0
+TR_growth,187,2,growth_robustness,0.9828922133498429,True,5.0,2.0,4.0,5.0,4.0,7.0
+TR_levels_comparison,187,2,levels_comparison,1.0129810913735735,False,3.0,2.0,3.0,4.0,7.0,7.0
+TR_regime_1,89,1,regime,1.0257350015596294,False,2.0,1.0,3.0,1.0,7.0,3.0
+TR_regime_2,60,2,regime,1.005704887682306,False,2.0,2.0,3.0,0.0,7.0,4.0

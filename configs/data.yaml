@@ -1,0 +1,179 @@
+seed: 20261007
+start: '1998-12-01'
+end: '2026-09-30'
+fred_route: api
+ea_baseline_start: 2004-09
+ea_baseline_end: 2026-07
+ea_robustness_start: 1999-12
+series:
+- name: ea_ip
+  provider: eurostat
+  identifier: sts_inpr_m
+  transform: log100
+  adjustment: seasonal/calendar adjusted
+  role: EA
+  selectors:
+    freq: M
+    indic_bt: PRD
+    nace_r2: B-D
+    s_adj: SCA
+    unit: I21
+    geo: EA21
+- name: ea_hicp
+  provider: eurostat
+  identifier: prc_hicp_minr
+  transform: log100
+  adjustment: NSA; month dummies at G2
+  role: EA
+  selectors:
+    freq: M
+    unit: I25
+    coicop18: TOTAL
+    geo: EA21
+- name: ea_core
+  provider: eurostat
+  identifier: prc_hicp_minr
+  transform: log100
+  adjustment: NSA; month dummies at G2
+  role: EA
+  selectors:
+    freq: M
+    unit: I25
+    coicop18: TOT_X_NRG_FOOD
+    geo: EA21
+- name: ea_2y
+  provider: ecb
+  identifier: YC.B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y
+  transform: rate
+  adjustment: not seasonally adjusted
+  role: EA
+  selectors: {}
+- name: ea_eonia
+  provider: ecb
+  identifier: FM.M.U2.EUR.4F.MM.EONIA.HSTA
+  transform: rate
+  adjustment: not seasonally adjusted
+  role: EA
+  selectors: {}
+- name: ea_estr
+  provider: ecb
+  identifier: EST.B.EU000A2X2A25.WT
+  transform: rate
+  adjustment: not seasonally adjusted
+  role: EA
+  selectors: {}
+- name: de_2y
+  provider: bundesbank
+  identifier: BBSIS.D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A
+  transform: rate
+  adjustment: daily; robustness only, never ECB substitute
+  role: EA
+  selectors: {}
+- name: eurusd
+  provider: fred
+  identifier: DEXUSEU
+  transform: log100
+  adjustment: NSA; daily observed-day monthly mean except monthly FEDFUNDS
+  role: EA
+  selectors: {}
+- name: brent
+  provider: fred
+  identifier: DCOILBRENTEU
+  transform: log100
+  adjustment: NSA; daily observed-day monthly mean except monthly FEDFUNDS
+  role: external
+  selectors: {}
+- name: vix
+  provider: fred
+  identifier: VIXCLS
+  transform: log
+  adjustment: NSA; daily observed-day monthly mean except monthly FEDFUNDS
+  role: external
+  selectors: {}
+- name: fedfunds
+  provider: fred
+  identifier: FEDFUNDS
+  transform: rate
+  adjustment: NSA; daily observed-day monthly mean except monthly FEDFUNDS
+  role: external
+  selectors: {}
+- name: tr_ip
+  provider: evds
+  identifier: TP.TSANAYMT2021.BCD
+  transform: log100
+  adjustment: seasonal/calendar adjusted
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_cpi
+  provider: evds
+  identifier: TP.TUKFIY2025.GENEL
+  transform: log100
+  adjustment: NSA; month dummies
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_core_b
+  provider: evds
+  identifier: TP.FE25.OKTG03
+  transform: log100
+  adjustment: NSA; month dummies
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_core_c
+  provider: evds
+  identifier: TP.FE25.OKTG04
+  transform: log100
+  adjustment: NSA; month dummies
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_cpi_old
+  provider: evds
+  identifier: TP.GENENDEKS.T1
+  transform: log100
+  adjustment: archived 2003=100, bridge check only
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_core_b_old
+  provider: evds
+  identifier: TP.FE.OKTG03
+  transform: log100
+  adjustment: archived, bridge check only
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_core_c_old
+  provider: evds
+  identifier: TP.FE.OKTG04
+  transform: log100
+  adjustment: archived, bridge check only
+  role: TR
+  selectors: {}
+  native_frequency: monthly
+- name: tr_aofm
+  provider: evds
+  identifier: TP.APIFON4
+  transform: rate
+  adjustment: effective funding cost; observed history only
+  role: TR
+  selectors: {}
+  native_frequency: business_daily
+- name: usdtry
+  provider: evds
+  identifier: TP.DK.USD.A.YTL
+  transform: log100
+  adjustment: FX buying; TRY per USD, increase depreciation
+  role: TR
+  selectors: {}
+  native_frequency: daily
+- name: tr_reer
+  provider: evds
+  identifier: TP.RK.T1.Y
+  transform: log100
+  adjustment: CPI-based 2025=100; increase appreciation
+  role: TR
+  selectors: {}
+  native_frequency: monthly
