@@ -171,9 +171,9 @@ def generate(csv, js, macro, table, fmt):
         ["p", "Method", "Outcome", "Response", "Lower", "Upper", "Type"],
         rows,
         "Methods comparison on a common sample and lag specification, month twelve",
-        "Source: author calculations. April 2005–October 2025; 247 usable VAR observations at each lag. Identical variables/transforms/deterministics and 100 bp normalization. Recursive-shock LP changes response estimator, not its shock identification; 235 supported origins at horizon 12. Sign ranges are not statistical intervals. Proxy inference is conditional, F3="
+        "Source: author calculations. April 2005–October 2025; 247 usable VAR observations at each lag. Identical variables/transforms/deterministics and 100 bp normalization. Recursive-shock LP changes response estimator, not its shock identification; 235 supported origins at horizon 12. Sign ranges are not statistical intervals. Proxy inference is conditional, F at p = 3: "
         + fmt(vm["panels"]["3"]["proxy"]["F"])
-        + ", F7="
+        + ", F at p = 7: "
         + fmt(vm["panels"]["7"]["proxy"]["F"])
         + "; neither lag selected for significance.",
         layout="rXlrrrl",
@@ -225,15 +225,15 @@ def generate(csv, js, macro, table, fmt):
             + fe[fe.model == "EA_baseline"].sample_start.iloc[0]
             + "–"
             + fe[fe.model == "EA_baseline"].sample_end.iloc[0]
-            + ", p="
+            + ", p = "
             + str(int(fe[fe.model == "EA_baseline"].lag.iloc[0]))
             + "; TR usable "
             + fe[fe.model == "TR_baseline"].sample_start.iloc[0]
             + "–"
             + fe[fe.model == "TR_baseline"].sample_end.iloc[0]
-            + ", p="
+            + ", p = "
             + str(int(fe[fe.model == "TR_baseline"].lag.iloc[0]))
-            + ". Horizon12; fractions, not "
+            + ". Horizon 12; fractions, not "
             "percentages; EA price level and TR inflation-native FEVD are different "
             "outcomes."
         ),
@@ -243,7 +243,7 @@ def generate(csv, js, macro, table, fmt):
     hd = hd[hd.year.isin([2020, 2022, 2025, 2026])]
     table(
         "history",
-        ["Area", "Year", "Months", "Monthly infl.", "Policy part", "Lower90%", "Upper90%"],
+        ["Area", "Year", "Months", "Monthly infl.", "Policy part", "Lower 90%", "Upper 90%"],
         [
             [
                 r.model[:2],
@@ -262,15 +262,15 @@ def generate(csv, js, macro, table, fmt):
             + hd[hd.model == "EA_baseline"].sample_start.iloc[0]
             + "–"
             + hd[hd.model == "EA_baseline"].sample_end.iloc[0]
-            + ", p="
+            + ", p = "
             + str(int(hd[hd.model == "EA_baseline"].lag.iloc[0]))
             + "; TR usable "
             + hd[hd.model == "TR_baseline"].sample_start.iloc[0]
             + "–"
             + hd[hd.model == "TR_baseline"].sample_end.iloc[0]
-            + ", p="
+            + ", p = "
             + str(int(hd[hd.model == "TR_baseline"].lag.iloc[0]))
-            + ". Units: percentage points of monthly100delta(log P), arithmetic annual mean, NOT annual inflation.2026: January–July,7 months, no annualisation. Partial first/final years are not "
+            + ". Units: percentage points of monthly 100 delta(log P), arithmetic annual mean, NOT annual inflation. 2026: January–July, 7 months, no annualisation. Partial first/final years are not "
             "full-year averages. Bands apply to policy contributions; "
             "deterministic/initial history and all other shocks complete the identity."
         ),

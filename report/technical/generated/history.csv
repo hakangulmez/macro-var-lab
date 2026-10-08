@@ -1,4 +1,4 @@
-Area,Year,Months,Monthly infl.,Policy part,Lower90%,Upper90%,identification,sample_start,sample_end,lag,units,contributing_months,coverage_start,coverage_end,partial_year,aggregation
+Area,Year,Months,Monthly infl.,Policy part,Lower 90%,Upper 90%,identification,sample_start,sample_end,lag,units,contributing_months,coverage_start,coverage_end,partial_year,aggregation
 EA,2020,12,-0.023,0.004,-0.08,0.101,recursive Cholesky,2005-04,2026-07,7,percentage points of monthly log inflation,12,2020-01,2020-12,False,arithmetic year-average of monthly 100*delta(log P); not annual inflation; not annualised
 EA,2022,12,0.738,0.001,-0.095,0.088,recursive Cholesky,2005-04,2026-07,7,percentage points of monthly log inflation,12,2022-01,2022-12,False,arithmetic year-average of monthly 100*delta(log P); not annual inflation; not annualised
 EA,2025,12,0.163,-0.017,-0.12,0.114,recursive Cholesky,2005-04,2026-07,7,percentage points of monthly log inflation,12,2025-01,2025-12,False,arithmetic year-average of monthly 100*delta(log P); not annual inflation; not annualised
