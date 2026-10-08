@@ -121,6 +121,7 @@ results/g3_history_annual.md
 results/g3_irfs.csv
 results/g3_irfs.md
 results/g3_summary.json
+results/price_bridge_detail.json
 results/reproduction_check.json
 results/tr_identification_irfs.csv
 results/tr_identification_irfs.md

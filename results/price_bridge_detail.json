@@ -1,0 +1,26 @@
+{
+  "headline": {
+    "overlap_start": "2005-01",
+    "overlap_end": "2026-09",
+    "max_abs_monthly_log_growth_gap_pp": 0.006543892886168301,
+    "mean_abs_monthly_log_growth_gap_pp": 0.00011023073293976619,
+    "no_splice_needed_for_target": true,
+    "bridge_status": "ratio_stable"
+  },
+  "core_b": {
+    "overlap_start": "2005-01",
+    "overlap_end": "2025-12",
+    "max_abs_monthly_log_growth_gap_pp": 0.19983138681805013,
+    "mean_abs_monthly_log_growth_gap_pp": 0.03843456433283467,
+    "no_splice_needed_for_target": true,
+    "bridge_status": "incompatible_rebase"
+  },
+  "core_c": {
+    "overlap_start": "2005-01",
+    "overlap_end": "2025-12",
+    "max_abs_monthly_log_growth_gap_pp": 0.14607526230858703,
+    "mean_abs_monthly_log_growth_gap_pp": 0.03555692929148827,
+    "no_splice_needed_for_target": true,
+    "bridge_status": "incompatible_rebase"
+  }
+}
