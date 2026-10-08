@@ -91,7 +91,7 @@ def write_note(
     for limitation in limitations:
         y = paragraph("- " + limitation, y, 9.5) - 1
     paragraph(
-        "Detailed assumptions, diagnostics and source lineage: README Technical notes and report/report.md.",
+        "Detailed assumptions, diagnostics and source lineage: the technical working paper and docs/PROVENANCE.md.",
         min(y - 15, box_bottom - 20),
         9,
     )

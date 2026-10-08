@@ -171,7 +171,7 @@ def generate(csv, js, macro, table, fmt):
         ["p", "Method", "Outcome", "Response", "Lower", "Upper", "Type"],
         rows,
         "Methods comparison on a common sample and lag specification, month twelve",
-        "Source: v3_methods_comparison.csv. April2005–October2025;247 usable VAR observations at each lag. Identical variables/transforms/deterministics and100bp normalization. Recursive-shock LP changes response estimator, not its shock identification;235 supported origins at horizon12. Sign ranges are not statistical intervals. Proxy inference is conditional, F3="
+        "Source: author calculations. April 2005–October 2025; 247 usable VAR observations at each lag. Identical variables/transforms/deterministics and 100 bp normalization. Recursive-shock LP changes response estimator, not its shock identification; 235 supported origins at horizon 12. Sign ranges are not statistical intervals. Proxy inference is conditional, F3="
         + fmt(vm["panels"]["3"]["proxy"]["F"])
         + ", F7="
         + fmt(vm["panels"]["7"]["proxy"]["F"])
@@ -262,13 +262,13 @@ def generate(csv, js, macro, table, fmt):
             + hd[hd.model == "EA_baseline"].sample_start.iloc[0]
             + "–"
             + hd[hd.model == "EA_baseline"].sample_end.iloc[0]
-            + ",p="
+            + ", p="
             + str(int(hd[hd.model == "EA_baseline"].lag.iloc[0]))
             + "; TR usable "
             + hd[hd.model == "TR_baseline"].sample_start.iloc[0]
             + "–"
             + hd[hd.model == "TR_baseline"].sample_end.iloc[0]
-            + ",p="
+            + ", p="
             + str(int(hd[hd.model == "TR_baseline"].lag.iloc[0]))
             + ". Units: percentage points of monthly100delta(log P), arithmetic annual mean, NOT annual inflation.2026: January–July,7 months, no annualisation. Partial first/final years are not "
             "full-year averages. Bands apply to policy contributions; "

@@ -26,17 +26,17 @@ g2:
 g2-figures:
 	$(UV) run python scripts/g2_outputs.py
 figures:
-	$(PYTHON) scripts/v3_outputs.py
+	$(PYTHON) scripts/public_presentation.py
 g2-summary:
 	pandoc docs/G2_SUMMARY.md --pdf-engine=typst --metadata-file=docs/g2_render.yaml -o docs/G2_SUMMARY.pdf
 audit-g2:
 	$(UV) run python scripts/audit_g2.py
 readme-numbers:
-	$(PYTHON) scripts/v3_outputs.py
+	$(PYTHON) scripts/public_presentation.py
 report:
 	$(PYTHON) scripts/technical_report.py
 policy-note:
-	$(PYTHON) scripts/v3_outputs.py
+	$(PYTHON) scripts/public_presentation.py
 design:
 	pandoc docs/DESIGN.md --pdf-engine=typst --metadata-file=docs/g0_render.yaml --include-in-header=docs/g0_header.typ -o docs/DESIGN.pdf
 clean:
@@ -50,7 +50,7 @@ all:
 v3-methods:
 	$(PYTHON) scripts/v3_methods.py 2005-04
 v3-outputs:
-	$(PYTHON) scripts/v3_outputs.py
+	$(PYTHON) scripts/public_presentation.py
 
 .PHONY: audit-release
 audit-release:

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "macro-var-lab"
 version = "0.0.0"
-description = "Monetary VAR identification comparisons and local projections; local research draft"
+description = "Monetary VAR identification comparisons and local projections"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "pydantic>=2,<3",

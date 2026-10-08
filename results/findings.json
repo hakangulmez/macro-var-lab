@@ -1,5 +1,5 @@
 [
-  "On the common sample, proxy euro appreciation at month twelve is 4.551 log percent at p=3 (1.889, 7.630) and 3.305 at p=7 (0.648, 5.505); both conditional 90% bands exclude zero.",
-  "The price response remains imprecise: proxy month-twelve estimates are 0.172 at p=3 and -0.078 at p=7, with both bands including zero. Sign restrictions impose early disinflation; their ranges are not confidence intervals.",
-  "T\u00fcrkiye results are inherited: recursive month-twelve price response is -0.288 log percent. Recursive, FX-first and recursive-shock LP price point estimates remain negative but imprecise."
+  "The euro appreciates after a tightening: the proxy estimate at month 12 is 4.551 log percent with p = 3 (1.889, 7.630) and 3.305 with p = 7 (0.648, 5.505); both conditional 90% bands exclude zero.",
+  "The price response is uncertain: proxy estimates at month 12 are 0.172 and -0.078 log percent, with both bands including zero. Estimates also change sign across methods.",
+  "For T\u00fcrkiye, the recursive price estimate at month 12 is -0.288 log percent. Recursive, FX-first and recursive-shock local-projection point estimates are negative, but their bands include zero."
 ]

@@ -1,0 +1,9 @@
+{
+  "inputs": {
+    "v3_methods_comparison.csv": "751002161e395e12acb5a172fc81cebea98b81db809271f3ffbd38e27267221b",
+    "v3_methods_irfs.csv": "54fc74bd26d5bcf169c08f61a7278d2d2e9ec18929690fc2e43713b68b1a8179",
+    "tr_identification_irfs.csv": "f24a934f3453db3f0fcc0b9f7b61372f4ddc15e98cee57bd8c8eacb0a58dcb09"
+  },
+  "render_only": true,
+  "estimation": false
+}

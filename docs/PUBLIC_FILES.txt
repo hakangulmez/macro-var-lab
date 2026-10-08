@@ -12,6 +12,8 @@ docs/DESIGN.md
 docs/DESIGN.pdf
 docs/G2_METHODS.md
 docs/METHODS.md
+docs/PRESENTATION_CHANGELOG.md
+docs/PROVENANCE.md
 docs/PUBLICATION_VALIDATION.json
 docs/PUBLIC_FILES.txt
 docs/PUBLIC_V3_PROVENANCE.json
@@ -122,6 +124,7 @@ results/g3_history_annual.md
 results/g3_irfs.csv
 results/g3_irfs.md
 results/g3_summary.json
+results/policy_note_lineage.json
 results/price_bridge_detail.json
 results/reproduction_check.json
 results/tr_identification_irfs.csv
@@ -145,6 +148,7 @@ scripts/data_checks.py
 scripts/g2.py
 scripts/g2_outputs.py
 scripts/policy.py
+scripts/public_presentation.py
 scripts/quick.py
 scripts/release.py
 scripts/release_outputs.py
