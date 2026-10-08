@@ -1,0 +1,12 @@
+Variable,Source / exact ID and selectors,Transformation,Observed coverage
+ea_core,"eurostat: prc_hicp_minr; I25, TOT_X_NRG_FOOD, EA21",100 log(level),1999-12 to 2026-09
+ea_eonia,ecb: FM.M.U2.EUR.4F.MM.EONIA.HSTA,pp levels,1999-01 to 2021-12
+ea_estr,ecb: EST.B.EU000A2X2A25.WT,pp levels,2019-10 to 2026-09
+de_2y,bundesbank: BBSIS.D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A,pp levels,1999-01 to 2026-09
+tr_core_b,evds: TP.FE25.OKTG03,100 log(level),2006-01 to 2026-09
+tr_core_c,evds: TP.FE25.OKTG04,100 log(level),2006-01 to 2026-09
+tr_reer,evds: TP.RK.T1.Y,100 log(level),2006-01 to 2026-09
+tr_cpi_old,evds: TP.GENENDEKS.T1,100 log(level),2006-01 to 2026-09
+tr_core_b_old,evds: TP.FE.OKTG03,100 log(level),2006-01 to 2025-12
+tr_core_c_old,evds: TP.FE.OKTG04,100 log(level),2006-01 to 2025-12
+tr_announced,CBRT public effective-date O/N borrowing and one-week repo lending tables,pp; daily step mean,2006-01 to 2026-09

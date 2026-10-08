@@ -1,0 +1,8 @@
+{
+  "protocol_sha256": "f2e217a2cef38f5bec803e07993bc21a6aa94b90a03c586850e3b669afd97aab",
+  "inherited_private_manifest_sha256": "bee9e4b03dcd1a502ccd70b6437d3e080131bff7cde0ed8706cdf9f6189d2a6f",
+  "HD_sample_convention": "usable residual months only; prehistory omitted; 2026 partial; no annualisation",
+  "HD_scaling": "inputs log variables already100log; level-price contributions differenced once; native TR inflation unchanged",
+  "FEVD_numeric_values": "inherited unchanged",
+  "paid_calls": 0
+}

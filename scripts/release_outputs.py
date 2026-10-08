@@ -350,9 +350,9 @@ write_note(
     + question
     + "\n\n"
     + method
-    + "\n\n![Headline](figures/headline.png)\n\n[Read the two-page policy note (PDF)](report/policy_note.pdf) · [Full technical report](report/report.md)\n\n## Findings\n\n"
+    + "\n\n![Headline](figures/headline.png)\n\n[Read the two-page policy note (PDF)](report/policy_note.pdf) · [Technical working paper (PDF)](report/technical_report.pdf) · [Full technical report](report/report.md)\n\n## Findings\n\n"
     + "\n".join("- " + x for x in findings)
-    + "\n\n## Reproduce\n\nInstall Python 3.11, uv and Git. Copy `.env.example` to `.env` and supply your own `FRED_API_KEY` and `EVDS_API_KEY`; values must stay private. `make setup all` acquires official data and builds results. `make quick` is isolated synthetic/offline; `make test lint`. See [reproduction notes](docs/REPRODUCTION.md). No raw redistribution.\n\n## Technical notes\n\n"
+    + "\n\n## Reproduce\n\n`make setup all` with local .env; `make quick` is isolated synthetic/offline; `make test lint`. No raw redistribution.\n\n## Technical notes\n\n"
     + technical
     + "\n\n## Licence\n\nCode is MIT-licensed; third-party source data retain their original terms and are not included. Publication files and safety checks are documented in [docs/PUBLISH_CHECKLIST.md](docs/PUBLISH_CHECKLIST.md).\n\nHakan Zeki Gulmez | [GitHub](https://github.com/hakangulmez) | [LinkedIn](https://www.linkedin.com/in/hakan-zeki-g%C3%BClmez-088700180/)\n"
 )

@@ -1,0 +1,176 @@
+{
+  "ssw": {
+    "doi": "10.2307/2938337",
+    "title": "Inference in Linear Time Series Models with some Unit Roots",
+    "authors": [
+      "Christopher A. Sims",
+      "James H. Stock",
+      "Mark W. Watson"
+    ],
+    "journal": "Econometrica",
+    "published": {
+      "date-parts": [
+        [
+          1990,
+          1
+        ]
+      ]
+    },
+    "volume": "58",
+    "issue": "1",
+    "page": "113-144",
+    "verified_url": "https://api.crossref.org/works/10.2307%2F2938337",
+    "verified_on": "2026-10-07",
+    "published_print": {
+      "date-parts": [
+        [
+          1990,
+          1
+        ]
+      ]
+    },
+    "published_online": null,
+    "reverified_on": "2026-10-07",
+    "verification": "fresh Crossref DOI registration response; DOI, title and author count checked",
+    "metadata_sha256": "90f1cd3f6820b41b3cb22dc374883004e4b92cb68763a74b3a6fca040f50f7a5",
+    "page_basis": "Author-hosted published paper, https://www.princeton.edu/~mwatson/papers/Sims_Stock_Watson_Ecta_1990.pdf"
+  },
+  "kilian": {
+    "doi": "10.1162/003465398557465",
+    "title": "Small-sample Confidence Intervals for Impulse Response Functions",
+    "authors": [
+      "Lutz Kilian"
+    ],
+    "journal": "Review of Economics and Statistics",
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          5
+        ]
+      ]
+    },
+    "volume": "80",
+    "issue": "2",
+    "page": "218-230",
+    "verified_url": "https://api.crossref.org/works/10.1162%2F003465398557465",
+    "verified_on": "2026-10-07",
+    "published_print": {
+      "date-parts": [
+        [
+          1998,
+          5
+        ]
+      ]
+    },
+    "published_online": null,
+    "reverified_on": "2026-10-07",
+    "verification": "fresh Crossref DOI registration response; DOI, title and author count checked",
+    "metadata_sha256": "afac5cbb4a013731b9deefa234d26b7c96cb2d8211c6b417fa60b48b583dda7a"
+  },
+  "jorda": {
+    "doi": "10.1257/0002828053828518",
+    "title": "Estimation and Inference of Impulse Responses by Local Projections",
+    "authors": [
+      "Òscar Jordà"
+    ],
+    "journal": "American Economic Review",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          2,
+          1
+        ]
+      ]
+    },
+    "volume": "95",
+    "issue": "1",
+    "page": "161-182",
+    "verified_url": "https://api.crossref.org/works/10.1257%2F0002828053828518",
+    "verified_on": "2026-10-07",
+    "published_print": {
+      "date-parts": [
+        [
+          2005,
+          2,
+          1
+        ]
+      ]
+    },
+    "published_online": null,
+    "reverified_on": "2026-10-07",
+    "verification": "fresh Crossref DOI registration response; DOI, title and author count checked",
+    "metadata_sha256": "cc7dde66d5edece976f7dade2f8e23c21897fa5c0f456656d8a314d97298d382"
+  },
+  "uhlig": {
+    "doi": "10.1016/j.jmoneco.2004.05.007",
+    "title": "What are the effects of monetary policy on output? Results from an agnostic identification procedure",
+    "authors": [
+      "Harald Uhlig"
+    ],
+    "journal": "Journal of Monetary Economics",
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          3
+        ]
+      ]
+    },
+    "volume": "52",
+    "issue": "2",
+    "page": "381-419",
+    "verified_url": "https://api.crossref.org/works/10.1016%2Fj.jmoneco.2004.05.007",
+    "verified_on": "2026-10-07",
+    "published_print": {
+      "date-parts": [
+        [
+          2005,
+          3
+        ]
+      ]
+    },
+    "published_online": null,
+    "reverified_on": "2026-10-07",
+    "verification": "fresh Crossref DOI registration response; DOI, title and author count checked",
+    "metadata_sha256": "6cf2946f77cbc4d473469f2677107ab9549b0531dab149569cf5efff8e6c9297"
+  },
+  "altavilla": {
+    "doi": "10.1016/j.jmoneco.2019.08.016",
+    "title": "Measuring euro area monetary policy",
+    "authors": [
+      "Carlo Altavilla",
+      "Luca Brugnolini",
+      "Refet S. Gürkaynak",
+      "Roberto Motto",
+      "Giuseppe Ragusa"
+    ],
+    "journal": "Journal of Monetary Economics",
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          12
+        ]
+      ]
+    },
+    "volume": "108",
+    "issue": null,
+    "page": "162-179",
+    "verified_url": "https://api.crossref.org/works/10.1016%2Fj.jmoneco.2019.08.016",
+    "verified_on": "2026-10-07",
+    "published_print": {
+      "date-parts": [
+        [
+          2019,
+          12
+        ]
+      ]
+    },
+    "published_online": null,
+    "reverified_on": "2026-10-07",
+    "verification": "fresh Crossref DOI registration response; DOI, title and author count checked",
+    "metadata_sha256": "506b8381cba8d774e5827dca3180be942a519087780718f645fe8e9f859c8990"
+  }
+}

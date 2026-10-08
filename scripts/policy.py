@@ -38,7 +38,7 @@ def write_note(
         c.rect(42, 786, 511, 3, fill=1, stroke=0)
         c.setFillColor(HexColor("#172B3A"))
         paragraph(label, 758, 18)
-        paragraph("Hakan Zeki Gulmez | G3 research brief | 7 October 2026", 716, 9)
+        paragraph("Hakan Zeki Gulmez | Research brief | 7 October 2026", 716, 9)
         if subtitle:
             paragraph(subtitle, 695, 10)
 

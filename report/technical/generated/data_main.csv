@@ -1,0 +1,12 @@
+Variable,Source / exact ID and selectors,Transformation,Observed coverage
+ea_ip,"eurostat: sts_inpr_m; PRD, B-D, SCA, I21, EA21",100 log(level),1999-01 to 2026-07
+ea_hicp,"eurostat: prc_hicp_minr; I25, TOTAL, EA21",100 log(level),1999-12 to 2026-09
+ea_2y,ecb: YC.B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y,pp levels,2004-09 to 2026-09
+eurusd,fred: DEXUSEU,100 log(level),1999-01 to 2026-09
+brent,fred: DCOILBRENTEU,100 log(level),1999-01 to 2026-09
+vix,fred: VIXCLS,log(level),1999-01 to 2026-09
+tr_ip,evds: TP.TSANAYMT2021.BCD,100 log(level),2006-01 to 2026-07
+tr_cpi,evds: TP.TUKFIY2025.GENEL,100 log(level),2006-01 to 2026-09
+tr_aofm,evds: TP.APIFON4,pp levels,2011-01 to 2026-09
+usdtry,evds: TP.DK.USD.A.YTL,100 log(level),2006-01 to 2026-09
+fedfunds,fred: FEDFUNDS,pp levels,1999-01 to 2026-09

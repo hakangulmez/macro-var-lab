@@ -1,0 +1,7 @@
+Area,Outcome,Share,Lower 90%,Upper 90%,identification,sample_start,sample_end,lag,units
+EA,activity,0.032,0.012,0.13,recursive Cholesky,2005-04,2026-07,7,fraction of forecast-error variance in native model outcome (not IRF-normalized)
+EA,price,0.002,0.001,0.053,recursive Cholesky,2005-04,2026-07,7,fraction of forecast-error variance in native model outcome (not IRF-normalized)
+EA,fx,0.063,0.015,0.185,recursive Cholesky,2005-04,2026-07,7,fraction of forecast-error variance in native model outcome (not IRF-normalized)
+TR,activity,0.022,0.012,0.076,recursive Cholesky,2011-10,2026-07,9,fraction of forecast-error variance in native model outcome (not IRF-normalized)
+TR,price,0.031,0.019,0.111,recursive Cholesky,2011-10,2026-07,9,fraction of forecast-error variance in native model outcome (not IRF-normalized)
+TR,fx,0.019,0.008,0.111,recursive Cholesky,2011-10,2026-07,9,fraction of forecast-error variance in native model outcome (not IRF-normalized)

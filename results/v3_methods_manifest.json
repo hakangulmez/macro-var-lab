@@ -1,0 +1,186 @@
+{
+  "protocol_sha256": "27ced5e937a3fb5697d162493bb28d05cf578e48afa98ea638f98878f4e58813",
+  "requested_usable_start": "2005-04",
+  "requested_usable_end": "2025-10",
+  "lags": [
+    3,
+    7
+  ],
+  "missing": {},
+  "paid_calls": 0,
+  "input_sha256": "ae88e1c60c7aecaf62b1f4c2e7c9d2ae73531a70951a7b92d0d98f890b975631",
+  "code_sha256": "002fdb7c7434506305ee0631f65431425ea757c2e5514a7d77dd686bc64092c2",
+  "instrument_workbook_sha256": "f417fb861a305e3cbb871a7571c4899ba6bca003d9e087024d2f3f0744426cef",
+  "panels": {
+    "3": {
+      "radius": 1.00072614726261,
+      "proxy": {
+        "status": "identified_conditional",
+        "F": 19.597946524941058,
+        "nobs": 247,
+        "strength_test": "conventional homoskedastic single-IV F",
+        "exclusion_not_tested": true,
+        "successful_draws": 407,
+        "failed_strength_draws": 92,
+        "total_draws": 499,
+        "inference": "conditional on fixed VAR coefficients and strength-selected draws; not weak-IV robust",
+        "instrument": "Monetary Event Window/OIS_2Y"
+      },
+      "signs": {
+        "accepted": 1000,
+        "attempts": 3810,
+        "weak_excluded": 651,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "kilian": {
+        "generator": {
+          "branch": "initially_nonstationary_unadjusted",
+          "weight": 0.0
+        },
+        "outer_branches": {
+          "initially_nonstationary_unadjusted": 286,
+          "stationary_bias_adjusted": 213
+        },
+        "bias_draws": 200,
+        "draws": 499,
+        "resampling": "iid centered residual vectors",
+        "bias_reuse": "same first-stage bias reused in second stage (Kilian step 2b)",
+        "limitations": "pointwise, lag-conditional; nonstationary fits not forcibly stabilized"
+      },
+      "LP_counts": [
+        247,
+        246,
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226,
+        225,
+        224,
+        223,
+        222,
+        221,
+        220,
+        219,
+        218,
+        217,
+        216,
+        215,
+        214,
+        213,
+        212,
+        211
+      ],
+      "usable_sample": [
+        "2005-04",
+        "2025-10"
+      ],
+      "nobs": 247
+    },
+    "7": {
+      "radius": 1.0033948427249766,
+      "proxy": {
+        "status": "identified_conditional",
+        "F": 18.826250971726683,
+        "nobs": 247,
+        "strength_test": "conventional homoskedastic single-IV F",
+        "exclusion_not_tested": true,
+        "successful_draws": 379,
+        "failed_strength_draws": 120,
+        "total_draws": 499,
+        "inference": "conditional on fixed VAR coefficients and strength-selected draws; not weak-IV robust",
+        "instrument": "Monetary Event Window/OIS_2Y"
+      },
+      "signs": {
+        "accepted": 1000,
+        "attempts": 3805,
+        "weak_excluded": 648,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "kilian": {
+        "generator": {
+          "branch": "initially_nonstationary_unadjusted",
+          "weight": 0.0
+        },
+        "outer_branches": {
+          "stationary_bias_adjusted": 72,
+          "initially_nonstationary_unadjusted": 427
+        },
+        "bias_draws": 200,
+        "draws": 499,
+        "resampling": "iid centered residual vectors",
+        "bias_reuse": "same first-stage bias reused in second stage (Kilian step 2b)",
+        "limitations": "pointwise, lag-conditional; nonstationary fits not forcibly stabilized"
+      },
+      "LP_counts": [
+        247,
+        246,
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226,
+        225,
+        224,
+        223,
+        222,
+        221,
+        220,
+        219,
+        218,
+        217,
+        216,
+        215,
+        214,
+        213,
+        212,
+        211
+      ],
+      "usable_sample": [
+        "2005-04",
+        "2025-10"
+      ],
+      "nobs": 247
+    }
+  },
+  "status": "completed",
+  "elapsed_seconds": 8.370081542001572,
+  "analysis_id": "v3_methods_bb1053fa9ce3d4e8",
+  "new_estimation": true
+}

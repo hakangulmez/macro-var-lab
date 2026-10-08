@@ -1,0 +1,132 @@
+\begin{abstract}
+We compare monetary-response methods on a common euro-area sample with fixed lag orders three and seven. Recursive and sign-restricted VARs, recursive-shock local projections and proxy VARs use identical variables, transformations and shock normalization within each panel. At twelve months, proxy euro appreciation is \PThreeFXPoint{} and \PSevenFXPoint{} log percent respectively, with conditional bands excluding zero. Proxy price estimates are \PThreePricePoint{} and \PSevenPricePoint{}, both imprecise. Türkiye's inherited recursive price estimate is \TRPricePoint{}, also imprecise. Exogeneity is assumed, proxy uncertainty conditions on fitted slopes, and slightly unstable dynamics limit causal interpretation.
+\end{abstract}
+\section{Introduction and contribution}
+Identifying the effect of monetary tightening requires distinguishing policy innovations from endogenous responses to prices, activity and financial conditions. A change in a market yield is not automatically a policy shock. This distinction matters particularly when the policy indicator embeds expectations or when an effective funding rate differs from the announced rate.
+
+The literature supplies complementary approaches. \citet{ssw} study inference in linear systems with unit roots; their analysis motivates retaining a levels specification while treating integration diagnostics as qualifications, not mechanical differencing instructions. \citet{jorda} estimates responses horizon by horizon. \citet{uhlig} demonstrates identification through sign restrictions, which need not deliver a uniquely identified model. \citet{kilian} studies small-sample impulse-response intervals. \citet{altavilla} provide high-frequency euro-area monetary-event measurements useful as external instruments.
+
+This exercise contributes a transparent empirical comparison rather than a new identification theorem. We use the same empirical estimates throughout the tables and figures. Responses are normalized to one percentage point of the policy indicator and followed for \Horizon{} months. The comparison also documents transformations, lag-screening rules, incomplete diagnostics and rejected alternatives. Our methods comparison on a common sample and lag specification holds the variables, transformations, deterministic terms and normalization fixed within each lag panel. It changes both shock identification and, for recursive-shock LP, the response estimator.
+\section{Data}
+\subsection{Official series and baseline samples}
+The euro-area baseline covers \EAStart{}--\EAEnd{}; Türkiye covers \TRStart{}--\TREnd{}. The former uses an ECB fitted AAA two-year spot yield, the latter CBRT's average funding cost (AOFM). The yield is a market-based indicator, not an overnight administered rate. Industrial production is seasonally/calendar adjusted; price indices are not, so monthly deterministic indicators enter the model. Euro-area geography follows the source's EA21 series rather than a reconstructed historical membership panel.
+\input{generated/data_main.tex}
+The table records available source coverage. The actual model windows are fixed above and are not extended to the last available value of each component. We use the acquisition vintages recorded in the source metadata. The new comparison uses \ComparisonStart{}–\ComparisonEnd{}, \ComparisonN{} usable observations at both fixed lags. Seven earlier months supply lags only; the shorter-lag fit is restricted to the same start. This mechanically reflects the frozen yield availability, not specification search. We retain the source observations privately and document series identifiers, terms and attribution in the data documentation.\footnote{The repository file \code{DATA.md} records source terms and acquisition details; FRED acquisition uses its official observations API.}
+\subsection{Alternative indicators and construction checks}
+\input{generated/data_alternatives.tex}
+We construct the announced Türkiye comparator from the CBRT overnight borrowing rate before the change to the one-week repo indicator, then the one-week repo lending rate. We average daily observations by month and do not backfill AOFM with the announced-rate comparator. The longer sample is an explicitly labelled robustness exercise.
+
+We use EONIA before the transition and €STR thereafter, with a transition-level dummy. A separately constructed adjusted-EONIA series is not substituted into these model specifications. The Bundesbank German zero-coupon two-year yield is a German long-sample alternative, not a substitute labelled as an ECB policy rate. EA21 price coverage leaves \MissingEarlyHICP{} unavailable early months; long-sample price specifications therefore begin at the first available month.
+
+Positive indices, industrial production, exchange rates and Brent enter as $100\log$ levels; VIX enters as an unscaled log and rates as percentage-point levels. We average daily observations before logging. FX is USD per EUR for the euro area and TRY per USD for Türkiye: increases mean appreciation and depreciation respectively. No missing value is interpolated. Current-base Turkish core indices are used without splicing; the incompatible old/current rebasing diagnostics are retained in the appendix.
+\input{generated/bridge.tex}
+\section{Econometric model}
+\subsection{Reduced-form system, deterministics and lag choice}
+For the euro area, the ordered vector is $(\log B,\log V,\log IP,\log P,r,\log FX)'$, with the scaling described above. Türkiye inserts the Federal funds rate after VIX and before domestic activity. Let $d_t$ contain an intercept and monthly indicators, plus an explicitly declared transition or easing dummy where applicable. The estimated system is
+\begin{equation}
+ y_t=C d_t+\sum_{\ell=1}^{p}A_\ell y_{t-\ell}+u_t,
+ \qquad \widehat\Sigma=T_u^{-1}\sum_t\widehat u_t\widehat u_t'.
+\end{equation}
+We estimate each equation by OLS on its permitted regressors. In Türkiye, our external block (Brent, VIX, Federal funds) excludes all lags of domestic variables from its own equations; domestic equations retain all lags. These lag exclusions do not turn the system into a model with contemporaneously exogenous foreign innovations. The covariance uses the common maximum-likelihood divisor $T_u$, preserving positive definiteness across different equation masks.
+
+Candidate information criteria use the same feasible-lag comparison window:
+\begin{align}
+ IC_{\mathrm{AIC}}(p)&=\log|\widehat\Sigma_p|+2q_p/T_c,\\
+ IC_{\mathrm{BIC}}(p)&=\log|\widehat\Sigma_p|+q_p\log T_c/T_c,\\
+ IC_{\mathrm{HQ}}(p)&=\log|\widehat\Sigma_p|+2q_p\log\log T_c/T_c.
+\end{align}
+Here $q_p$ counts allowed equation coefficients, including deterministics. Starting at the BIC choice, we increase the lag until every marginal equation BG test at the first residual lag has $p\geq .05$, up to the fixed cap \LagCap{}. If none passes, the BIC model is retained with an explicit failure flag. Selected models are refit using all observations available after their own lag. Inherited baseline choices are \EALag{} and \TRLag{}. The new common-sample comparison fixes $p=3$ and $p=7$ without running that lag-selection rule; both use identical residual dates.
+
+We retain a levels baseline for the euro area. For Türkiye, we first estimate levels; we switch the price transformation if the companion spectral radius is at least one or the first-difference integration agreement rule is I(2)-compatible. The saved levels radius is \TRLevelsRadius{}, and our baseline therefore uses monthly price inflation. We do not subsequently change the other transformations to force stationarity. Stability concerns remain part of interpretation.\footnote{We implement OLS estimation, propagation and historical accounting in \code{var.py}; lag screening, bias correction, cumulative local projections and proxy inference in the monetary-inference module; HAC inference and sign rotations in \code{identification.py}; and transformation criteria and recent-regime projections in the model-specification module. The source files specify the procedures described in the model section.}
+\subsection{Structural identification and propagation}
+We set $\Phi_0=I$ and recursively define $\Phi_h=\sum_{\ell=1}^{\min(p,h)}A_\ell\Phi_{h-\ell}$. If $\widehat\Sigma=LL'$ with lower-triangular $L$, recursive innovations satisfy $\epsilon_t=L^{-1}u_t$. For policy position $j$,
+\begin{equation}
+ b_j=Le_j/L_{jj},\qquad IRF_h=\Phi_h b_j.
+\end{equation}
+The shock raises the rate by one percentage point on impact. Ordered predecessors cannot respond contemporaneously under this recursive restriction. Türkiye's FX-first alternative swaps the final policy and FX positions; it leaves the prior equations unchanged. Identification changes impact exclusions, not merely the plot order.
+
+For sign identification, we hold the estimated reduced form fixed. We draw a marginal orthogonal column using a normalized Gaussian vector $q$, with Türkiye's external coordinates set to zero. We orient the vector so that the policy impact is positive. We admit rotations only if
+\begin{equation}
+ (\Phi_hLq)_j\geq0,\quad (\Phi_hLq)_P\leq0\quad(h=0,1,2,3),
+ \qquad (Lq)_j\geq\RateFloor\sqrt{\widehat\Sigma_{jj}}.
+\end{equation}
+For inflation-native prices, the price condition instead applies to the cumulative price path. We normalize each accepted rotation by its rate impact. Medians and minima/maxima across accepted rotations summarize a finite admissible set. They are not sampling confidence intervals; coordinate medians need not constitute one admissible structural model.
+
+We construct the proxy from monthly sums of event-window yield changes in EA-MPD, over \ProxyStart{}--\ProxyEnd{}.\footnote{We use the \code{OIS_2Y} field in the combined \code{Monetary Event Window}.} Known non-event months inside coverage are zero; later months are missing. With centered instrument $z_t$ and residuals,
+\begin{equation}
+ \widehat b^{IV}=\frac{\widehat\Cov(z_t,u_t)}{\widehat\Cov(z_t,u_{jt})},
+ \qquad IRF_h^{IV}=\Phi_h\widehat b^{IV}.
+\end{equation}
+The rate residual first stage includes centering, conventional homoskedastic slope variance and $F=\widehat\pi^2/\widehat\Var(\widehat\pi)$. We prefer the proxy estimate when $F>10$ and the policy covariance is non-negligible. The common-sample first-stage statistics are $F=\PThreeF{}$ at $p=3$ and $F=\PSevenF{}$ at $p=7$, each on \ComparisonN{} residual observations. Both meet the fixed relevance condition, but neither proves exclusion or separates information shocks. No replacement instrument or lag is searched.
+\subsection{Local projections and inference}
+The recursive rate-unit innovation is $s_t=L_{jj}\epsilon_{jt}$. At each horizon, we partial the shock and outcome off $W_t$, consisting of the VAR design and contemporaneous ordered predecessors. Let tildes denote those residuals. The projection coefficient and its score are
+\begin{equation}
+ \widehat\beta_h=\frac{\sum_t\widetilde s_t\widetilde y_{t+h}}{D_h},\quad
+ D_h=\sum_t\widetilde s_t^2,\quad a_{t,h}=\widetilde s_t(\widetilde y_{t+h}-\widehat\beta_h\widetilde s_t).
+\end{equation}
+For differenced prices, the dependent outcome is the cumulative price index, with its pre-shock level added as a nuisance regressor. The price-level bands therefore come from a direct regression, not a sum of standard errors. Horizon-specific Bartlett HAC variance uses $b_h=\min(h+1,n_h-1)$:
+\begin{equation}
+ \widehat{\Var}(\widehat\beta_h)=\frac{n_h}{n_h-r_h-1}\frac{\sum_t a_{t,h}^2+2\sum_{\ell=1}^{b_h}(1-\ell/(b_h+1))\sum_ta_{t,h}a_{t-\ell,h}}{D_h^2}.
+\end{equation}
+We require adequate residual degrees of freedom and leave unsupported horizons unreported. External-block responses are set to zero by the LP reporting restriction. The recent Türkiye regime uses only domestic outcomes and one lag, retaining the full-sample retrospectively identified shock and normalizing its recent policy impact. No full recent-regime VAR is estimated.
+
+We construct recursive pointwise percentile bands using the Kilian-style bootstrap-after-bootstrap: \BiasDraws{} first-stage draws estimate coefficient bias, and \OuterDraws{} outer draws reuse that bias. The coefficient-bias step is $\widehat B=\overline{\widehat A^{*}}-\widehat A$, giving candidate generator $\widetilde A=\widehat A-w\widehat B$ with our stationarity-preserving shrink weight $w$. Residual vectors are centered and sampled independently in this branch. A stable starting model receives bias correction with shrinkage if correction destabilizes it; an initially nonstationary model remains unadjusted. Hence the label does not imply successful stationarity correction for every draw.
+
+Ordinary circular residual-vector blocks of length \BlockLength{} provide the separate robustness, FEVD and historical-decomposition bands. Those draws refit coefficients and identification while conditioning on chosen lags and transforms. For common-sample proxy bands, paired residual/instrument block draws yield \PThreeDraws{} accepted at $p=3$ and \PSevenDraws{} at $p=7$, out of \OuterDraws{} at each lag; weak draws are omitted and counted, and propagation slopes remain fixed. LP bands are normal HAC intervals. All are pointwise, not simultaneous or weak-IV-robust sets. We retain both central coverage levels in the supplementary result tables.
+\section{Results}
+\subsection{Euro area: methods on the common sample}
+\fig{headline.png}{1.0}{Methods comparison on a common sample and lag specification, with separate fixed-lag panels. Shading is pointwise sampling uncertainty; thin dashed sign extrema are admissible ranges. Proxy bands condition on fixed propagation slopes and omit weak bootstrap draws. LP is explicitly recursive-shock LP.}
+\input{generated/ea_results.tex}
+At twelve months proxy euro appreciation is \PThreeFXPoint{} [\PThreeFXLow{},\PThreeFXHigh{}] at $p=3$ and \PSevenFXPoint{} [\PSevenFXLow{},\PSevenFXHigh{}] at $p=7$. The FX channel remains most clearly measured under this conditional design. Proxy price responses are \PThreePricePoint{} [\PThreePriceLow{},\PThreePriceHigh{}] and \PSevenPricePoint{} [\PSevenPriceLow{},\PSevenPriceHigh{}]; neither pins down the sign. Activity responses are \PThreeIPPoint{} and \PSevenIPPoint{}, likewise imprecise. We retain both lag panels and all methods rather than selecting a stronger narrative. Positive recursive/LP price responses and sign-conditioned early disinflation remain plainly visible.
+
+LP base origins are identical to VAR dates at impact; available leads reduce supported origins by horizon, from \ComparisonN{} at impact. Dates/counts appear in the IRF exports. This standard horizon restriction does not permit outcomes beyond the frozen comparison endpoint.
+\subsection{Türkiye: ordering sensitivity and imprecision}
+\fig{tr_identification.png}{0.82}{Türkiye recursive, FX-first and local-projection responses. Price responses accumulate the baseline monthly-inflation outcome. Intervals remain wide; exchange-rate increases indicate depreciation.}
+\input{generated/tr_results.tex}
+The baseline recursive price response is \TRPricePoint{} with interval [\TRPriceLow{}, \TRPriceHigh{}]. The FX-first and LP estimates also have negative headline point estimates but include zero. This is compatible with contractionary price transmission and also with weakly identified dynamics. LP changes the propagation estimator; it inherits the shock's identifying assumptions.
+
+The effective funding indicator and the long announced-rate comparator represent different monetary-policy operations. Their difference should not be interpreted as alternative noisy measurements of one invariant policy regime. The current full-sample VAR remains unstable by the companion criterion (radius \TRRadius{}). The price transformation addresses our transformation criterion but does not remove this limitation. No puzzle is removed through ex post ordering or lag tuning.
+\subsection{Variance accounting and historical inflation}
+\input{generated/fevd.tex}
+For recursive forecast-error variance attribution at horizon $H$, we compute
+\begin{equation}
+ FEVD_{i,j}(H)=\frac{\sum_{h=0}^{H-1}(\Phi_hL)_{ij}^{2}}{\sum_{k}\sum_{h=0}^{H-1}(\Phi_hL)_{ik}^{2}}.
+\end{equation}
+The attribution uses orthogonal unit-variance innovations, not the normalized policy shock used to display IRFs. Türkiye's FEVD describes inflation-native forecast errors; accumulation for a price-level response does not change that FEVD outcome.
+\input{generated/history.tex}
+We compute historical contributions using $y_t=y_t^{\mathrm{init,det}}+\sum_jc_{j,t}$ with $c_{j,t}=Le_j\epsilon_{j,t}+\sum_\ell A_\ell c_{j,t-\ell}$. For level prices, we difference contributions to express monthly inflation; for Türkiye's native inflation they are already monthly inflation. Conditional deterministic and initial-history components complete the accounting identity. We report arithmetic annual averages of monthly $100\Delta\log P$, in percentage points: an annual mean of monthly log inflation, not annual inflation or cumulative inflation. We difference already100log-scaled EA price contributions once, with no further multiplication; TR native monthly inflation is already on the same scale. Every year records contributing months and actual coverage. The final year is January–July only and is not annualised. Initial/deterministic plus all shock components reconstruct the represented level and monthly series; checks are exported separately.
+
+Historical accounting is descriptive conditional on the structural ordering. It is not a causal attribution of each inflation episode, and the bootstrap applies parameter draws to observed history rather than replaying an alternative policy sequence. Annual averaging also hides within-year reversals. Forecast-error shares, historical contributions and impulse responses answer distinct questions and should not be used interchangeably.
+\section{Robustness}
+\input{generated/robustness.tex}
+We report every specified alternative, including earlier regime estimates, recent native-inflation local projections, incompatible index splicing and unmet integration conditions for a VECM. Sign extrema are ranges, not intervals. Pass-through uses a recursive FX-innovation LP scaled by $100\log(1.1)$, an exact ten-percent depreciation; it is not a cointegrating elasticity. Unavailable official Türkiye bond-yield indicators remain out of scope.
+\section{Limitations and future work}
+Within each new common-sample lag panel the variables, sample, transformations, deterministic terms and shock scale are held constant. The response estimator also changes for LP, so this is a methods comparison, not an identification-only experiment. Sign-admissible ranges condition on the reduced form, while sampling intervals have different inference assumptions. Inherited robustness and TR results retain their original windows and remain separately labelled.
+
+Instrument relevance is not exclusion. Event-window yield movements can include central-bank information and concurrent financial news. Conventional first-stage inference may be fragile under serial dependence, and the conditional proxy bands exclude weak draws rather than supplying identification-robust coverage. Fixed slopes omit one component of sampling variation.
+
+Unit roots, breaks and unstable finite-sample companion estimates complicate conventional uncertainty. The euro-area radius is \EARadius{} and the Türkiye radius \TRRadius{}. Small-sample correction does not forcibly stabilize either baseline. Finite-horizon responses can still be computed, but long-horizon forecasts, variance attribution and narrow coverage interpretations require caution. Marginal residual tests show additional misspecification concerns even after the first-order screen.
+
+Sign identification imposes early disinflation; an apparently favorable price response is therefore partly assumed. A finite random search does not exhaust a continuous identified set. Latest-vintage data do not reconstruct historical information sets, and index revisions or geographical definitions can alter comparability. Regime exercises are descriptive, with the newest Türkiye segment particularly short. No raw data or private shock series are redistributed.
+\section{Conclusion}
+Both predeclared common-sample lag panels support a conditional proxy euro-appreciation response at twelve months, whereas price and activity signs remain imprecise. The conclusion relies on instrument exogeneity and conditional inference, not merely $F>10$. Comparing recursive VAR, sign-restricted VAR, recursive-shock LP and proxy VAR makes explicit which shock restriction and response estimator support each statement. Türkiye's inherited negative price point estimates remain imprecise and unstable dynamics qualify both applications.
+
+Recursive FEVD and historical accounting are conditional descriptive allocations, not proxy-identified inflation explanations or causal policy counterfactuals. Future work includes information-shock separation and alternative windows, dependence-robust strength and weak-IV/full-chain inference, persistence-robust LP, break/shrinkage/model-size diagnostics, TR intervention comparability, sign-grid sensitivity and economically interpretable counterfactual paths. None is implemented or selected on significance here.
+\input{references.tex}
+\clearpage
+\appendix
+\begingroup\small
+\renewcommand{\arraystretch}{1.0}
+\setlength{\parskip}{3pt}
+\input{generated/computation.tex}
+\section{Lag selection and baseline conventions}
+\input{generated/lags.tex}
+Information criteria compare a common window; the residual screen is an additional declared choice, not an information criterion. We retain the complete residual-screen search paths, including candidates that fail the screen and instances in which we retain the BIC choice. Model-specific maximum feasible lag respects rank and residual degrees of freedom. We distinguish the BIC-only specifications from the final models selected with the additional residual screen.
+\section{Residual diagnostics}
+\input{generated/residuals.tex}
+We use vector residual resampling with fixed lag, seasonal terms, transformation and seed \Seed{}. Kilian-style and ordinary-block simulations have distinct dependence and correction rules. Historical identities reconstruct to the reported numerical precision, but arithmetic reconstruction does not validate economic identification. Proxy acceptance counts are reported in the main text. We report the resampling design and its recorded completion statistics.
+\section{Integration and rebasing diagnostics}
+\input{generated/roots.tex}
+We assess the integration order of log CPI, nominal FX and REER over its documented longer Türkiye window. We require agreement across ADF, PP and KPSS before estimating a VECM; it is not proof of integration order. The baseline price switch also responds to levels stability, so failure of the I(2) rule alone would not prevent that switch. The narrower baseline diagnostic rows remain separately labelled.
+Old/current core-index growth disagreement preserves our use of unspliced current-base indices. Current indices cover the target period, so the alternative price responses do not require a synthetic bridge. A failed tolerance check is a finding, not an instruction to search for a rescaling that passes.
+\endgroup

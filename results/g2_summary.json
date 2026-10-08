@@ -1,0 +1,6050 @@
+{
+  "gate": "G2",
+  "kind": "results_pending_review",
+  "analysis_id": "g2_e0f93976a3379b2c",
+  "G1_run": "g1_20261007T005036+0200",
+  "seed": 20261007,
+  "TR_transform_decision": {
+    "levels_lag": 2,
+    "levels_radius": 1.0129810913735735,
+    "levels_stable": false,
+    "switch_to_inflation": true,
+    "trigger": "levels instability",
+    "preserved_levels_diagnostics": {
+      "companion_spectral_radius": 1.0129810913735735,
+      "stable": false,
+      "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+      "BG_LM": {
+        "brent": {
+          "1": {
+            "statistic": 20.335382575653718,
+            "df": 7,
+            "pvalue": 0.004889044579938506
+          },
+          "6": {
+            "statistic": 48.01417223841431,
+            "df": 42,
+            "pvalue": 0.24219692920807073
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        },
+        "vix": {
+          "1": {
+            "statistic": 6.256241320670246,
+            "df": 7,
+            "pvalue": 0.5101683605342221
+          },
+          "6": {
+            "statistic": 63.73947353327796,
+            "df": 42,
+            "pvalue": 0.016821320836986318
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        },
+        "fedfunds": {
+          "1": {
+            "statistic": 13.141427295738872,
+            "df": 7,
+            "pvalue": 0.0687366043586609
+          },
+          "6": {
+            "statistic": 62.511805975178795,
+            "df": 42,
+            "pvalue": 0.02159288880742802
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        },
+        "activity": {
+          "1": {
+            "statistic": 15.525638125137444,
+            "df": 7,
+            "pvalue": 0.029821734203787906
+          },
+          "6": {
+            "statistic": 65.32314177534467,
+            "df": 42,
+            "pvalue": 0.012079521059731405
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        },
+        "price": {
+          "1": {
+            "statistic": 5.122123350141349,
+            "df": 7,
+            "pvalue": 0.6450627695488065
+          },
+          "6": {
+            "statistic": 47.151017199330425,
+            "df": 42,
+            "pvalue": 0.27004749431674785
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        },
+        "policy": {
+          "1": {
+            "statistic": 32.07638403091613,
+            "df": 7,
+            "pvalue": 3.931272470625502e-05
+          },
+          "6": {
+            "statistic": 77.96388313764069,
+            "df": 42,
+            "pvalue": 0.0006225206556675313
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        },
+        "fx": {
+          "1": {
+            "statistic": 13.657126581641087,
+            "df": 7,
+            "pvalue": 0.057626752818049534
+          },
+          "6": {
+            "statistic": 50.84720368977021,
+            "df": 42,
+            "pvalue": 0.16442537822200187
+          },
+          "12": {
+            "status": "insufficient_df_or_rank"
+          }
+        }
+      },
+      "JB_marginal": {
+        "brent": {
+          "statistic": 244.66743602633346,
+          "pvalue": 7.432609501016794e-54
+        },
+        "vix": {
+          "statistic": 399.8127427821944,
+          "pvalue": 1.5197284983310506e-87
+        },
+        "fedfunds": {
+          "statistic": 5071.952613864298,
+          "pvalue": 0.0
+        },
+        "activity": {
+          "statistic": 401.55609681192703,
+          "pvalue": 6.356257606514726e-88
+        },
+        "price": {
+          "statistic": 953.809291571153,
+          "pvalue": 7.6373719407228156e-208
+        },
+        "policy": {
+          "statistic": 156.65796799364745,
+          "pvalue": 9.597419478033197e-35
+        },
+        "fx": {
+          "statistic": 182.251376449017,
+          "pvalue": 2.658376226553724e-40
+        }
+      },
+      "granger_policy_to": {
+        "brent": {
+          "status": "excluded_by_design"
+        },
+        "vix": {
+          "status": "excluded_by_design"
+        },
+        "fedfunds": {
+          "status": "excluded_by_design"
+        },
+        "activity": {
+          "statistic": 0.12138294008047677,
+          "df": 2,
+          "pvalue": 0.9411135567157546,
+          "not_causality_identification": true
+        },
+        "price": {
+          "statistic": 4.890241648651197,
+          "df": 2,
+          "pvalue": 0.08671565690798087,
+          "not_causality_identification": true
+        },
+        "policy": {
+          "statistic": 5086.810857781542,
+          "df": 2,
+          "pvalue": 0.0,
+          "not_causality_identification": true
+        },
+        "fx": {
+          "statistic": 8.478927297650362,
+          "df": 2,
+          "pvalue": 0.014415321444628853,
+          "not_causality_identification": true
+        }
+      }
+    },
+    "levels_lag_selection": [
+      {
+        "lag": 1,
+        "nobs_common": 175,
+        "nparams": 121,
+        "AIC": 4.063509373435806,
+        "BIC": 6.251732818262921,
+        "HQ": 4.951115125861376
+      },
+      {
+        "lag": 2,
+        "nobs_common": 175,
+        "nparams": 158,
+        "AIC": 1.9711181730233396,
+        "BIC": 4.8284677951942845,
+        "HQ": 3.130140560488134
+      },
+      {
+        "lag": 3,
+        "nobs_common": 175,
+        "nparams": 195,
+        "AIC": 1.8619253757833372,
+        "BIC": 5.38840117529811,
+        "HQ": 3.292364398287356
+      },
+      {
+        "lag": 4,
+        "nobs_common": 175,
+        "nparams": 232,
+        "AIC": 1.8947645575679712,
+        "BIC": 6.090366534426574,
+        "HQ": 3.5966202151112143
+      },
+      {
+        "lag": 5,
+        "nobs_common": 175,
+        "nparams": 269,
+        "AIC": 1.949457836744488,
+        "BIC": 6.8141859909469185,
+        "HQ": 3.922730129326955
+      },
+      {
+        "lag": 6,
+        "nobs_common": 175,
+        "nparams": 306,
+        "AIC": 1.8821271606115393,
+        "BIC": 7.415981492157799,
+        "HQ": 4.12681608823323
+      },
+      {
+        "lag": 7,
+        "nobs_common": 175,
+        "nparams": 343,
+        "AIC": 2.0717928654514095,
+        "BIC": 8.274773374341498,
+        "HQ": 4.587898428112325
+      },
+      {
+        "lag": 8,
+        "nobs_common": 175,
+        "nparams": 380,
+        "AIC": 2.188821369879881,
+        "BIC": 9.060928056113799,
+        "HQ": 4.97634356758002
+      },
+      {
+        "lag": 9,
+        "nobs_common": 175,
+        "nparams": 417,
+        "AIC": 2.1198548187202277,
+        "BIC": 9.661087682297975,
+        "HQ": 5.178793651459592
+      },
+      {
+        "lag": 10,
+        "nobs_common": 175,
+        "nparams": 454,
+        "AIC": 2.1841066023251186,
+        "BIC": 10.394465643246694,
+        "HQ": 5.514462070103707
+      },
+      {
+        "lag": 11,
+        "nobs_common": 175,
+        "nparams": 491,
+        "AIC": 2.1998497338324134,
+        "BIC": 11.079334952097819,
+        "HQ": 5.8016218366502255
+      },
+      {
+        "lag": 12,
+        "nobs_common": 175,
+        "nparams": 528,
+        "AIC": 2.096636961063558,
+        "BIC": 11.645248356672791,
+        "HQ": 5.969825698920594
+      }
+    ],
+    "no_extra_transform_to_force_stability": true,
+    "baseline_CPI_unit_roots": {
+      "sample": [
+        "2011-01",
+        "2026-07"
+      ],
+      "log_level": {
+        "observations": 187,
+        "start": "2011-01",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": 2.3618928436237803,
+          "pvalue": 0.9989912327112,
+          "lags": 3,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 1.7756970447259115,
+          "pvalue": 0.01,
+          "lags": 9,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": 3.5192704957286756,
+          "pvalue": 1.0,
+          "lags": 15,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -5.372032736089495,
+          "pvalue": 0.006697443319930905,
+          "lags": 1,
+          "break_month": "2021-11",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -0.4208600296355079,
+          "pvalue": 0.9862338883724506,
+          "lags": 1,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.4682021770374372,
+          "pvalue": 0.01,
+          "lags": 9,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -0.3770855570276216,
+          "pvalue": 0.9875475014671362,
+          "lags": 15,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -3.5480513061871113,
+          "pvalue": 0.7876154018431134,
+          "lags": 1,
+          "break_month": "2018-09",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "first_difference": {
+        "observations": 187,
+        "start": "2011-01",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": -4.023182269144338,
+          "pvalue": 0.0012938702112778946,
+          "lags": 2,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 1.216021499064813,
+          "pvalue": 0.01,
+          "lags": 8,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": -7.700204862625721,
+          "pvalue": 1.3456247759074895e-11,
+          "lags": 15,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -8.84677694892436,
+          "pvalue": 1e-05,
+          "lags": 0,
+          "break_month": "2021-09",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -7.739472930016723,
+          "pvalue": 2.8585539297107474e-10,
+          "lags": 0,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.13706277300497277,
+          "pvalue": 0.06655042036116152,
+          "lags": 6,
+          "warnings": [
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -8.283554101714097,
+          "pvalue": 1.5809552494948542e-11,
+          "lags": 15,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -10.245088357787848,
+          "pvalue": 0.0008810632028290619,
+          "lags": 0,
+          "break_month": "2021-10",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      }
+    }
+  },
+  "unit_root_tests": {
+    "tr_cpi": {
+      "level": {
+        "observations": 247,
+        "start": "2006-01",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": 3.2150919827592332,
+          "pvalue": 1.0,
+          "lags": 3,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 2.0500847915506477,
+          "pvalue": 0.01,
+          "lags": 10,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": 4.554217145279418,
+          "pvalue": 1.0,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -5.9129177737392595,
+          "pvalue": 0.0009158133375308486,
+          "lags": 3,
+          "break_month": "2021-11",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": 0.45656820674172915,
+          "pvalue": 0.996762791930279,
+          "lags": 3,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.5106068195484623,
+          "pvalue": 0.01,
+          "lags": 10,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": 0.7790436854537751,
+          "pvalue": 1.0,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -4.03320062255651,
+          "pvalue": 0.4813598745348234,
+          "lags": 3,
+          "break_month": "2018-09",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "first_difference": {
+        "observations": 246,
+        "start": "2006-02",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": -2.784908927891741,
+          "pvalue": 0.06046196418145493,
+          "lags": 5,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 1.4959893840105525,
+          "pvalue": 0.01,
+          "lags": 8,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": -8.996037033462656,
+          "pvalue": 6.6908934848226e-15,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -7.430573915183145,
+          "pvalue": 1e-05,
+          "lags": 2,
+          "break_month": "2021-09",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -5.785613986298383,
+          "pvalue": 6.124748167395882e-06,
+          "lags": 2,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.232803065336244,
+          "pvalue": 0.01,
+          "lags": 7,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -9.725125754352304,
+          "pvalue": 8.957463879154369e-15,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -9.372700765324181,
+          "pvalue": 0.0009082678401448285,
+          "lags": 2,
+          "break_month": "2021-11",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "I1_established_by_agreement_rule": false,
+      "I2_compatible_by_agreement_rule": false,
+      "not_proof_of_integration_order": true
+    },
+    "usdtry": {
+      "level": {
+        "observations": 247,
+        "start": "2006-01",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": 2.239773179026837,
+          "pvalue": 0.998913667311222,
+          "lags": 2,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 2.1638481558029787,
+          "pvalue": 0.01,
+          "lags": 10,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": 2.5245127216077896,
+          "pvalue": 0.999057330978499,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -4.306351700163473,
+          "pvalue": 0.1892948462692192,
+          "lags": 2,
+          "break_month": "2021-09",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -1.4445917021009247,
+          "pvalue": 0.8473434125664667,
+          "lags": 2,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.5517970689515571,
+          "pvalue": 0.01,
+          "lags": 10,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -1.383200865460925,
+          "pvalue": 0.8657770411930739,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -2.996111525331903,
+          "pvalue": 0.9649690545473913,
+          "lags": 2,
+          "break_month": "2015-09",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "first_difference": {
+        "observations": 246,
+        "start": "2006-02",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": -11.019257611940715,
+          "pvalue": 6.045661611063307e-20,
+          "lags": 1,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 0.8397525295265766,
+          "pvalue": 0.01,
+          "lags": 2,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": -10.032902733392822,
+          "pvalue": 1.5678640569487588e-17,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -11.752271875696584,
+          "pvalue": 1e-05,
+          "lags": 1,
+          "break_month": "2023-07",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -11.54885718087356,
+          "pvalue": 2.2105571120408106e-18,
+          "lags": 1,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.04327072716747231,
+          "pvalue": 0.1,
+          "lags": 1,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is greater than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -9.985507222527453,
+          "pvalue": 2.4763639573944247e-15,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -12.317633611755683,
+          "pvalue": 0.0008164327078039317,
+          "lags": 1,
+          "break_month": "2021-09",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "I1_established_by_agreement_rule": false,
+      "I2_compatible_by_agreement_rule": false,
+      "not_proof_of_integration_order": true
+    },
+    "tr_reer": {
+      "level": {
+        "observations": 247,
+        "start": "2006-01",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": -1.2445016786237937,
+          "pvalue": 0.6541654272780627,
+          "lags": 2,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 2.0573640168060576,
+          "pvalue": 0.01,
+          "lags": 10,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": -1.1831312608610487,
+          "pvalue": 0.6808098003663141,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -3.0155361981680135,
+          "pvalue": 0.9072385524537051,
+          "lags": 2,
+          "break_month": "2017-09",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -1.8990015239676064,
+          "pvalue": 0.6551863935210565,
+          "lags": 2,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.25026563534040613,
+          "pvalue": 0.01,
+          "lags": 9,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is smaller than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -1.8901529714097194,
+          "pvalue": 0.6597564074813067,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -3.6740162956824256,
+          "pvalue": 0.7150615111543531,
+          "lags": 2,
+          "break_month": "2021-02",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "first_difference": {
+        "observations": 246,
+        "start": "2006-02",
+        "end": "2026-07",
+        "sample_rule": "longest contiguous complete monthly block; never compress gaps",
+        "baseline_transform_changed": false,
+        "ADF_c": {
+          "statistic": -12.767121493153454,
+          "pvalue": 7.913735051240015e-24,
+          "lags": 1,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_c": {
+          "statistic": 0.1103446235804415,
+          "pvalue": 0.1,
+          "lags": 7,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is greater than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_c": {
+          "statistic": -11.290694332161753,
+          "pvalue": 1.3822030907133532e-20,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_c": {
+          "statistic": -13.250928995743111,
+          "pvalue": 1e-05,
+          "lags": 1,
+          "break_month": "2021-12",
+          "warnings": []
+        },
+        "ADF_ct": {
+          "statistic": -12.755020226761848,
+          "pvalue": 2.8656489300084886e-20,
+          "lags": 1,
+          "warnings": [
+            "adfuller currently returns a plain tuple whose length depends on the store and autolag arguments. In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning an ADFullerResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "KPSS_ct": {
+          "statistic": 0.1006148311750359,
+          "pvalue": 0.1,
+          "lags": 7,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the look-up table. The actual p-value is greater than the p-value returned.",
+            "kpss currently returns a plain tuple whose length and layout depends on the store argument (and which silently drops `lags` when store=True). In release 0.16 or after July 2027, whichever is later, the default behavior will switch to always returning a KPSSResult. Set result_object=True to switch now, or result_object=False to keep the current behavior and silence this warning."
+          ]
+        },
+        "PP_ct": {
+          "statistic": -11.270462176775073,
+          "pvalue": 6.96677286828916e-18,
+          "lags": 16,
+          "warnings": []
+        },
+        "ZA_ct": {
+          "statistic": -13.188356433462856,
+          "pvalue": 0.0007892799848952882,
+          "lags": 1,
+          "break_month": "2021-12",
+          "warnings": []
+        },
+        "status": "diagnostics_only",
+        "nulls": {
+          "ADF_PP": "unit root",
+          "KPSS": "level/trend stationarity",
+          "ZA": "unit root without a structural break; approximate single-break test"
+        }
+      },
+      "I1_established_by_agreement_rule": true,
+      "I2_compatible_by_agreement_rule": false,
+      "not_proof_of_integration_order": true
+    }
+  },
+  "models": {
+    "EA_baseline": {
+      "spec": {
+        "name": "EA_baseline",
+        "area": "EA",
+        "start": "2004-09",
+        "end": "2026-07",
+        "policy": "ea_2y",
+        "price": "ea_hicp",
+        "kind": "baseline"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 263,
+      "nobs": 262,
+      "lag": 1,
+      "price_transform": "100 log level",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 0,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 251,
+          "nparams": 108,
+          "AIC": -2.80706602213095,
+          "BIC": -1.2901380642575129,
+          "HQ": -2.1966162676328143
+        },
+        {
+          "lag": 2,
+          "nobs_common": 251,
+          "nparams": 144,
+          "AIC": -3.0797643638149994,
+          "BIC": -1.0571937533170837,
+          "HQ": -2.2658313578174853
+        },
+        {
+          "lag": 3,
+          "nobs_common": 251,
+          "nparams": 180,
+          "AIC": -3.0005350063424223,
+          "BIC": -0.47232174322002773,
+          "HQ": -1.9831187488455302
+        },
+        {
+          "lag": 4,
+          "nobs_common": 251,
+          "nparams": 216,
+          "AIC": -2.9573245795383425,
+          "BIC": 0.07653133620853136,
+          "HQ": -1.7364250705420718
+        },
+        {
+          "lag": 5,
+          "nobs_common": 251,
+          "nparams": 252,
+          "AIC": -2.8584478408820084,
+          "BIC": 0.6810507274893434,
+          "HQ": -1.4340650803863593
+        },
+        {
+          "lag": 6,
+          "nobs_common": 251,
+          "nparams": 288,
+          "AIC": -2.821592360212613,
+          "BIC": 1.2235488607832181,
+          "HQ": -1.1937263482175853
+        },
+        {
+          "lag": 7,
+          "nobs_common": 251,
+          "nparams": 324,
+          "AIC": -2.80294460052114,
+          "BIC": 1.7478392730991699,
+          "HQ": -0.9715953370267334
+        },
+        {
+          "lag": 8,
+          "nobs_common": 251,
+          "nparams": 360,
+          "AIC": -2.6203401908662025,
+          "BIC": 2.4360863353785867,
+          "HQ": -0.5855076758724183
+        },
+        {
+          "lag": 9,
+          "nobs_common": 251,
+          "nparams": 396,
+          "AIC": -2.550554981350328,
+          "BIC": 3.01151419751894,
+          "HQ": -0.3122392148571649
+        },
+        {
+          "lag": 10,
+          "nobs_common": 251,
+          "nparams": 432,
+          "AIC": -2.5133722879699776,
+          "BIC": 3.5543395435237706,
+          "HQ": -0.07157326997743585
+        },
+        {
+          "lag": 11,
+          "nobs_common": 251,
+          "nparams": 468,
+          "AIC": -2.485486365503459,
+          "BIC": 4.087868118614768,
+          "HQ": 0.15979590398846089
+        },
+        {
+          "lag": 12,
+          "nobs_common": 251,
+          "nparams": 504,
+          "AIC": -2.4157290301105805,
+          "BIC": 4.663268106632123,
+          "HQ": 0.43303649088071783
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0029061718287686,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 46.16905598835202,
+              "df": 6,
+              "pvalue": 2.7397517550639443e-08
+            },
+            "6": {
+              "statistic": 71.67778733005073,
+              "df": 36,
+              "pvalue": 0.0003717733125874261
+            },
+            "12": {
+              "statistic": 97.6508100915017,
+              "df": 72,
+              "pvalue": 0.02383651633883794
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 4.76805276163002,
+              "df": 6,
+              "pvalue": 0.5738876358166465
+            },
+            "6": {
+              "statistic": 46.95787022821972,
+              "df": 36,
+              "pvalue": 0.10447077078810048
+            },
+            "12": {
+              "statistic": 85.74648808028954,
+              "df": 72,
+              "pvalue": 0.12827702260155974
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 40.122211502407325,
+              "df": 6,
+              "pvalue": 4.3100548779859265e-07
+            },
+            "6": {
+              "statistic": 78.36147800445579,
+              "df": 36,
+              "pvalue": 5.614891337188321e-05
+            },
+            "12": {
+              "statistic": 103.00697897063522,
+              "df": 72,
+              "pvalue": 0.009670199765667126
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 32.16253444095853,
+              "df": 6,
+              "pvalue": 1.5187647232994393e-05
+            },
+            "6": {
+              "statistic": 94.35057090003681,
+              "df": 36,
+              "pvalue": 3.988793350362741e-07
+            },
+            "12": {
+              "statistic": 124.92821078473712,
+              "df": 72,
+              "pvalue": 0.00011082458919747374
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 37.15621088653689,
+              "df": 6,
+              "pvalue": 1.6416259597475838e-06
+            },
+            "6": {
+              "statistic": 66.65550758425906,
+              "df": 36,
+              "pvalue": 0.001413076581469058
+            },
+            "12": {
+              "statistic": 104.62202396124603,
+              "df": 72,
+              "pvalue": 0.00724934981537161
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 33.07699323662547,
+              "df": 6,
+              "pvalue": 1.0134130826957821e-05
+            },
+            "6": {
+              "statistic": 64.11611849323717,
+              "df": 36,
+              "pvalue": 0.0026901684935163326
+            },
+            "12": {
+              "statistic": 88.93545289207708,
+              "df": 72,
+              "pvalue": 0.0856110726658606
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 792.2339178690155,
+            "pvalue": 9.302304391165622e-173
+          },
+          "vix": {
+            "statistic": 602.935764793787,
+            "pvalue": 1.1862117018068352e-131
+          },
+          "activity": {
+            "statistic": 17313.16867241858,
+            "pvalue": 0.0
+          },
+          "price": {
+            "statistic": 61.03328774824448,
+            "pvalue": 5.5820016337415044e-14
+          },
+          "policy": {
+            "statistic": 372.171216733777,
+            "pvalue": 1.5277318211608529e-81
+          },
+          "fx": {
+            "statistic": 12.283247704105257,
+            "pvalue": 0.002151427180773721
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "statistic": 0.01183137682428809,
+            "df": 1,
+            "pvalue": 0.9133832276294759,
+            "not_causality_identification": true
+          },
+          "vix": {
+            "statistic": 0.01526744226133031,
+            "df": 1,
+            "pvalue": 0.9016624838412393,
+            "not_causality_identification": true
+          },
+          "activity": {
+            "statistic": 0.3159761694211793,
+            "df": 1,
+            "pvalue": 0.5740359139835388,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 0.1224766390730366,
+            "df": 1,
+            "pvalue": 0.7263637445958961,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 20279.202391432096,
+            "df": 1,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 3.9627592904420785,
+            "df": 1,
+            "pvalue": 0.046517393337026994,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 350,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3529,
+        "weak_excluded": 589,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        262,
+        261,
+        260,
+        259,
+        258,
+        257,
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247,
+        246,
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 9.663381206337363e-13,
+      "HD_inflation_reconstruction_error": 1.4077627952246985e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_regime_3_LP": {
+      "spec": {
+        "start": "2023-06",
+        "end": "2026-07",
+        "kind": "LP_only"
+      },
+      "variables": [
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 38,
+      "lag": 1,
+      "no_VAR_estimated": true,
+      "price_transform": "monthly inflation",
+      "LP_nobs_by_horizon": [
+        37,
+        36,
+        35,
+        34,
+        33,
+        32,
+        31,
+        30,
+        29,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "shock_source": "TR_baseline full-sample recursive shock; retrospective",
+      "normalization": "divide by recent LP policy impact in point and every draw",
+      "original_policy_impact": 0.5313207374126777,
+      "HAC_note": "conditional on point-estimated impact divisor; joint bootstrap propagates divisor uncertainty",
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 399,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "limited_horizons_are_not_filled": true
+    },
+    "TR_baseline": {
+      "spec": {
+        "name": "TR_baseline",
+        "area": "TR",
+        "start": "2011-01",
+        "end": "2026-07",
+        "policy": "tr_aofm",
+        "price": "tr_cpi",
+        "kind": "baseline"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 187,
+      "nobs": 185,
+      "lag": 2,
+      "price_transform": "monthly inflation",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 175,
+          "nparams": 121,
+          "AIC": 3.774002823924871,
+          "BIC": 5.962226268751987,
+          "HQ": 4.661608576350442
+        },
+        {
+          "lag": 2,
+          "nobs_common": 175,
+          "nparams": 158,
+          "AIC": 2.029038659988244,
+          "BIC": 4.886388282159189,
+          "HQ": 3.1880610474530386
+        },
+        {
+          "lag": 3,
+          "nobs_common": 175,
+          "nparams": 195,
+          "AIC": 1.9407730330788775,
+          "BIC": 5.467248832593651,
+          "HQ": 3.3712120555828964
+        },
+        {
+          "lag": 4,
+          "nobs_common": 175,
+          "nparams": 232,
+          "AIC": 1.967369103395488,
+          "BIC": 6.162971080254091,
+          "HQ": 3.6692247609387314
+        },
+        {
+          "lag": 5,
+          "nobs_common": 175,
+          "nparams": 269,
+          "AIC": 1.9870272225752525,
+          "BIC": 6.851755376777683,
+          "HQ": 3.960299515157719
+        },
+        {
+          "lag": 6,
+          "nobs_common": 175,
+          "nparams": 306,
+          "AIC": 1.9706098279958744,
+          "BIC": 7.504464159542134,
+          "HQ": 4.215298755617566
+        },
+        {
+          "lag": 7,
+          "nobs_common": 175,
+          "nparams": 343,
+          "AIC": 2.1101266621878043,
+          "BIC": 8.313107171077892,
+          "HQ": 4.62623222484872
+        },
+        {
+          "lag": 8,
+          "nobs_common": 175,
+          "nparams": 380,
+          "AIC": 2.208536354159252,
+          "BIC": 9.08064304039317,
+          "HQ": 4.996058551859392
+        },
+        {
+          "lag": 9,
+          "nobs_common": 175,
+          "nparams": 417,
+          "AIC": 2.252851238565001,
+          "BIC": 9.794084102142747,
+          "HQ": 5.311790071304365
+        },
+        {
+          "lag": 10,
+          "nobs_common": 175,
+          "nparams": 454,
+          "AIC": 2.3976280304148045,
+          "BIC": 10.60798707133638,
+          "HQ": 5.727983498193392
+        },
+        {
+          "lag": 11,
+          "nobs_common": 175,
+          "nparams": 491,
+          "AIC": 2.3584013455683284,
+          "BIC": 11.237886563833733,
+          "HQ": 5.960173448386141
+        },
+        {
+          "lag": 12,
+          "nobs_common": 175,
+          "nparams": 528,
+          "AIC": 2.3170614318615335,
+          "BIC": 11.865672827470766,
+          "HQ": 6.190250169718569
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0123195445922242,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 20.467899499249782,
+              "df": 7,
+              "pvalue": 0.004642930641685788
+            },
+            "6": {
+              "statistic": 47.4508894589982,
+              "df": 42,
+              "pvalue": 0.2601550576386245
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 6.446586996722689,
+              "df": 7,
+              "pvalue": 0.48867458896063
+            },
+            "6": {
+              "statistic": 65.96378503034555,
+              "df": 42,
+              "pvalue": 0.010535535201447628
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 13.285743290618882,
+              "df": 7,
+              "pvalue": 0.06544488824276785
+            },
+            "6": {
+              "statistic": 61.11164976401507,
+              "df": 42,
+              "pvalue": 0.028487521021744344
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 16.084259812988606,
+              "df": 7,
+              "pvalue": 0.024357601335981714
+            },
+            "6": {
+              "statistic": 74.41644012956208,
+              "df": 42,
+              "pvalue": 0.0015089000208433063
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 6.649897466112175,
+              "df": 7,
+              "pvalue": 0.4662189976621225
+            },
+            "6": {
+              "statistic": 56.65696127643689,
+              "df": 42,
+              "pvalue": 0.06492678851677872
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 29.102086496544555,
+              "df": 7,
+              "pvalue": 0.0001386143703279314
+            },
+            "6": {
+              "statistic": 72.48011725465575,
+              "df": 42,
+              "pvalue": 0.0024063767466724335
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 9.393010007356166,
+              "df": 7,
+              "pvalue": 0.22565711569677033
+            },
+            "6": {
+              "statistic": 44.49488814264241,
+              "df": 42,
+              "pvalue": 0.36712671498321814
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 244.66743602633346,
+            "pvalue": 7.432609501016794e-54
+          },
+          "vix": {
+            "statistic": 399.8127427821944,
+            "pvalue": 1.5197284983310506e-87
+          },
+          "fedfunds": {
+            "statistic": 5071.952613864298,
+            "pvalue": 0.0
+          },
+          "activity": {
+            "statistic": 318.0095937890024,
+            "pvalue": 8.812398189278688e-70
+          },
+          "price": {
+            "statistic": 1107.1147513209528,
+            "pvalue": 3.918197595859283e-241
+          },
+          "policy": {
+            "statistic": 155.90065273717772,
+            "pvalue": 1.401533218166424e-34
+          },
+          "fx": {
+            "statistic": 134.86504681804004,
+            "pvalue": 5.18116213140758e-30
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 0.23944626586530035,
+            "df": 2,
+            "pvalue": 0.8871660297741899,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 5.482649903930506,
+            "df": 2,
+            "pvalue": 0.06448485093668044,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 5196.647720236307,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 9.361738099160608,
+            "df": 2,
+            "pvalue": 0.009270953466900234,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 399,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3156,
+        "weak_excluded": 382,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        185,
+        184,
+        183,
+        182,
+        181,
+        180,
+        179,
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        168,
+        167,
+        166,
+        165,
+        164,
+        163,
+        162,
+        161,
+        160,
+        159,
+        158,
+        157,
+        156,
+        155,
+        154,
+        153,
+        152,
+        151,
+        150,
+        149
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 1.3642420526593924e-12,
+      "HD_inflation_reconstruction_error": 7.638334409421077e-14,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_announced": {
+      "spec": {
+        "name": "TR_announced",
+        "area": "TR",
+        "start": "2006-01",
+        "end": "2026-07",
+        "policy": "tr_announced",
+        "price": "tr_cpi",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 247,
+      "nobs": 245,
+      "lag": 2,
+      "price_transform": "monthly inflation",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 235,
+          "nparams": 121,
+          "AIC": 3.5742987329181215,
+          "BIC": 5.35561723169022,
+          "HQ": 4.292444415637247
+        },
+        {
+          "lag": 2,
+          "nobs_common": 235,
+          "nparams": 158,
+          "AIC": 2.0991627869493548,
+          "BIC": 4.425181983693087,
+          "HQ": 3.0369067362850726
+        },
+        {
+          "lag": 3,
+          "nobs_common": 235,
+          "nparams": 195,
+          "AIC": 2.044985021985365,
+          "BIC": 4.915704916700731,
+          "HQ": 3.2023272379376753
+        },
+        {
+          "lag": 4,
+          "nobs_common": 235,
+          "nparams": 232,
+          "AIC": 2.108932880747068,
+          "BIC": 5.524353473434068,
+          "HQ": 3.48587336331597
+        },
+        {
+          "lag": 5,
+          "nobs_common": 235,
+          "nparams": 269,
+          "AIC": 2.1436077517341214,
+          "BIC": 6.103729042392755,
+          "HQ": 3.740146500919616
+        },
+        {
+          "lag": 6,
+          "nobs_common": 235,
+          "nparams": 306,
+          "AIC": 2.222645733337576,
+          "BIC": 6.727467721967843,
+          "HQ": 4.038782749139662
+        },
+        {
+          "lag": 7,
+          "nobs_common": 235,
+          "nparams": 343,
+          "AIC": 2.3703020921311104,
+          "BIC": 7.419824778733011,
+          "HQ": 4.40603737454979
+        },
+        {
+          "lag": 8,
+          "nobs_common": 235,
+          "nparams": 380,
+          "AIC": 2.4565013026505995,
+          "BIC": 8.050724687224132,
+          "HQ": 4.711834851685871
+        },
+        {
+          "lag": 9,
+          "nobs_common": 235,
+          "nparams": 417,
+          "AIC": 2.5589729870245153,
+          "BIC": 8.697897069569681,
+          "HQ": 5.0339048026763775
+        },
+        {
+          "lag": 10,
+          "nobs_common": 235,
+          "nparams": 454,
+          "AIC": 2.7285050855455535,
+          "BIC": 9.412129866062354,
+          "HQ": 5.4230351678140085
+        },
+        {
+          "lag": 11,
+          "nobs_common": 235,
+          "nparams": 491,
+          "AIC": 2.820125294819319,
+          "BIC": 10.048450773307753,
+          "HQ": 5.734253643704366
+        },
+        {
+          "lag": 12,
+          "nobs_common": 235,
+          "nparams": 528,
+          "AIC": 2.9402696453771684,
+          "BIC": 10.713295821837235,
+          "HQ": 6.073996260878808
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0060717784081357,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 14.565069239093958,
+              "df": 7,
+              "pvalue": 0.04199676423149326
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 5.828040653657422,
+              "df": 7,
+              "pvalue": 0.5599657295005747
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 17.24736076746375,
+              "df": 7,
+              "pvalue": 0.015868926845560065
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 17.6771438635044,
+              "df": 7,
+              "pvalue": 0.013514761531211523
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 12.253143644713193,
+              "df": 7,
+              "pvalue": 0.09253544479757668
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 23.112835321546537,
+              "df": 7,
+              "pvalue": 0.001629161341203225
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 26.192900942314427,
+              "df": 7,
+              "pvalue": 0.0004652145319379845
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 266.1480461509408,
+            "pvalue": 1.609481887477015e-58
+          },
+          "vix": {
+            "statistic": 450.02602855843907,
+            "pvalue": 1.8970970212149514e-98
+          },
+          "fedfunds": {
+            "statistic": 4297.645486888039,
+            "pvalue": 0.0
+          },
+          "activity": {
+            "statistic": 1877.543839252383,
+            "pvalue": 0.0
+          },
+          "price": {
+            "statistic": 3267.9369864745536,
+            "pvalue": 0.0
+          },
+          "policy": {
+            "statistic": 4759.17033991506,
+            "pvalue": 0.0
+          },
+          "fx": {
+            "statistic": 292.61418389182626,
+            "pvalue": 2.8816239469627054e-64
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 1.0362226928937026,
+            "df": 2,
+            "pvalue": 0.5956444523144231,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 5.0478019403223655,
+            "df": 2,
+            "pvalue": 0.08014634762891654,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 5858.2926844831545,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 5.268048037084395,
+            "df": 2,
+            "pvalue": 0.07178899996160797,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 336,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3008,
+        "weak_excluded": 373,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226,
+        225,
+        224,
+        223,
+        222,
+        221,
+        220,
+        219,
+        218,
+        217,
+        216,
+        215,
+        214,
+        213,
+        212,
+        211,
+        210,
+        209
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 2.1600499167107046e-12,
+      "HD_inflation_reconstruction_error": 4.707345624410664e-14,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "EA_overnight_long": {
+      "spec": {
+        "name": "EA_overnight_long",
+        "area": "EA",
+        "start": "1999-12",
+        "end": "2019-12",
+        "policy": "ea_overnight",
+        "price": "ea_hicp",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 241,
+      "nobs": 240,
+      "lag": 1,
+      "price_transform": "100 log level",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 0,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 229,
+          "nparams": 114,
+          "AIC": -5.264430091127863,
+          "BIC": -3.5550662989654906,
+          "HQ": -4.574830300629873
+        },
+        {
+          "lag": 2,
+          "nobs_common": 229,
+          "nparams": 150,
+          "AIC": -5.462634986991611,
+          "BIC": -3.2134721025674358,
+          "HQ": -4.555266841599519
+        },
+        {
+          "lag": 3,
+          "nobs_common": 229,
+          "nparams": 186,
+          "AIC": -5.502780503726521,
+          "BIC": -2.7138185270405444,
+          "HQ": -4.377644003440327
+        },
+        {
+          "lag": 4,
+          "nobs_common": 229,
+          "nparams": 222,
+          "AIC": -5.415487595564693,
+          "BIC": -2.086726526616915,
+          "HQ": -4.072582740384398
+        },
+        {
+          "lag": 5,
+          "nobs_common": 229,
+          "nparams": 258,
+          "AIC": -5.297569719988015,
+          "BIC": -1.4290095587784348,
+          "HQ": -3.7368965099136178
+        },
+        {
+          "lag": 6,
+          "nobs_common": 229,
+          "nparams": 294,
+          "AIC": -5.234414932638315,
+          "BIC": -0.8260556791669327,
+          "HQ": -3.4559733676698157
+        },
+        {
+          "lag": 7,
+          "nobs_common": 229,
+          "nparams": 330,
+          "AIC": -5.246226834958361,
+          "BIC": -0.2980684892251775,
+          "HQ": -3.2500169150957587
+        },
+        {
+          "lag": 8,
+          "nobs_common": 229,
+          "nparams": 366,
+          "AIC": -5.099855543789652,
+          "BIC": 0.3881018942053345,
+          "HQ": -2.8858772690329486
+        },
+        {
+          "lag": 9,
+          "nobs_common": 229,
+          "nparams": 402,
+          "AIC": -5.147792025885048,
+          "BIC": 0.8799645043717401,
+          "HQ": -2.716045396234243
+        },
+        {
+          "lag": 10,
+          "nobs_common": 229,
+          "nparams": 438,
+          "AIC": -5.052940009591122,
+          "BIC": 1.514615612927468,
+          "HQ": -2.4034250250462152
+        },
+        {
+          "lag": 11,
+          "nobs_common": 229,
+          "nparams": 474,
+          "AIC": -5.0978964909971864,
+          "BIC": 2.0094582237832057,
+          "HQ": -2.2306131515581775
+        },
+        {
+          "lag": 12,
+          "nobs_common": 229,
+          "nparams": 510,
+          "AIC": -5.060239386120374,
+          "BIC": 2.5869144209218184,
+          "HQ": -1.9751876917872622
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 0.9956691881122242,
+        "stable": true,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 13.114412252978614,
+              "df": 6,
+              "pvalue": 0.04125462459992819
+            },
+            "6": {
+              "statistic": 34.61705202507321,
+              "df": 36,
+              "pvalue": 0.5343440502104655
+            },
+            "12": {
+              "statistic": 74.56402252274225,
+              "df": 72,
+              "pvalue": 0.3948834732847014
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 2.6765129080236214,
+              "df": 6,
+              "pvalue": 0.8482136111337422
+            },
+            "6": {
+              "statistic": 29.676966325195686,
+              "df": 36,
+              "pvalue": 0.7623942055704592
+            },
+            "12": {
+              "statistic": 81.86291266558074,
+              "df": 72,
+              "pvalue": 0.19986458341986885
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 31.718994876709203,
+              "df": 6,
+              "pvalue": 1.8471078309311672e-05
+            },
+            "6": {
+              "statistic": 75.68198792384838,
+              "df": 36,
+              "pvalue": 0.00012154014693369219
+            },
+            "12": {
+              "statistic": 101.13283792133366,
+              "df": 72,
+              "pvalue": 0.013386103275772842
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 26.698665135248774,
+              "df": 6,
+              "pvalue": 0.00016489065583101642
+            },
+            "6": {
+              "statistic": 75.69210110786426,
+              "df": 36,
+              "pvalue": 0.00012119067442911531
+            },
+            "12": {
+              "statistic": 136.2015305332792,
+              "df": 72,
+              "pvalue": 7.435662935530108e-06
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 25.230319415236313,
+              "df": 6,
+              "pvalue": 0.0003094979366212723
+            },
+            "6": {
+              "statistic": 78.24682672382868,
+              "df": 36,
+              "pvalue": 5.805700701752722e-05
+            },
+            "12": {
+              "statistic": 122.4388306084549,
+              "df": 72,
+              "pvalue": 0.00019460977445681454
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 32.09349370094429,
+              "df": 6,
+              "pvalue": 1.565782270179003e-05
+            },
+            "6": {
+              "statistic": 69.28555409997125,
+              "df": 36,
+              "pvalue": 0.0007091729100961602
+            },
+            "12": {
+              "statistic": 92.8196636288102,
+              "df": 72,
+              "pvalue": 0.04991730011972339
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 20.704782934696983,
+            "pvalue": 3.1916371477903516e-05
+          },
+          "vix": {
+            "statistic": 158.38756109645743,
+            "pvalue": 4.041830593554347e-35
+          },
+          "activity": {
+            "statistic": 2.475211247981191,
+            "pvalue": 0.29007794275558396
+          },
+          "price": {
+            "statistic": 17.726654299820293,
+            "pvalue": 0.0001414835432294273
+          },
+          "policy": {
+            "statistic": 56.09027547305434,
+            "pvalue": 6.609238694340378e-13
+          },
+          "fx": {
+            "statistic": 0.9639855642243623,
+            "pvalue": 0.6175515191661811
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "statistic": 3.3936873325254506,
+            "df": 1,
+            "pvalue": 0.06544643651713476,
+            "not_causality_identification": true
+          },
+          "vix": {
+            "statistic": 10.063480705156428,
+            "df": 1,
+            "pvalue": 0.0015123722936241522,
+            "not_causality_identification": true
+          },
+          "activity": {
+            "statistic": 0.23694921157806906,
+            "df": 1,
+            "pvalue": 0.626418290373937,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 5.884570640007654,
+            "df": 1,
+            "pvalue": 0.015274121563526269,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 3521.216046713375,
+            "df": 1,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 0.6634558318957042,
+            "df": 1,
+            "pvalue": 0.41534254931722303,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 6,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 2911,
+        "weak_excluded": 496,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226,
+        225,
+        224,
+        223,
+        222,
+        221,
+        220,
+        219,
+        218,
+        217,
+        216,
+        215,
+        214,
+        213,
+        212,
+        211,
+        210,
+        209,
+        208,
+        207,
+        206,
+        205,
+        204
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 1.0800249583553523e-12,
+      "HD_inflation_reconstruction_error": 1.4559187189178147e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": "2019-10 level shift"
+    },
+    "EA_bundesbank_long": {
+      "spec": {
+        "name": "EA_bundesbank_long",
+        "area": "EA",
+        "start": "1999-12",
+        "end": "2026-07",
+        "policy": "de_2y",
+        "price": "ea_hicp",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 320,
+      "nobs": 319,
+      "lag": 1,
+      "price_transform": "100 log level",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 0,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 308,
+          "nparams": 108,
+          "AIC": -2.7911283116935452,
+          "BIC": -1.4831712449365777,
+          "HQ": -2.268146766055194
+        },
+        {
+          "lag": 2,
+          "nobs_common": 308,
+          "nparams": 144,
+          "AIC": -3.1095171159912076,
+          "BIC": -1.3655743603152506,
+          "HQ": -2.412208388473406
+        },
+        {
+          "lag": 3,
+          "nobs_common": 308,
+          "nparams": 180,
+          "AIC": -3.045936045160948,
+          "BIC": -0.8660076005660016,
+          "HQ": -2.174300135763696
+        },
+        {
+          "lag": 4,
+          "nobs_common": 308,
+          "nparams": 216,
+          "AIC": -2.980749099204651,
+          "BIC": -0.36483496569071594,
+          "HQ": -1.9347860079279489
+        },
+        {
+          "lag": 5,
+          "nobs_common": 308,
+          "nparams": 252,
+          "AIC": -2.9187201957893274,
+          "BIC": 0.13317962664359673,
+          "HQ": -1.6984299226331747
+        },
+        {
+          "lag": 6,
+          "nobs_common": 308,
+          "nparams": 288,
+          "AIC": -2.890605913145105,
+          "BIC": 0.5972795982068089,
+          "HQ": -1.495988458109502
+        },
+        {
+          "lag": 7,
+          "nobs_common": 308,
+          "nparams": 324,
+          "AIC": -2.8940658874194662,
+          "BIC": 1.0298053128514368,
+          "HQ": -1.3251212505044134
+        },
+        {
+          "lag": 8,
+          "nobs_common": 308,
+          "nparams": 360,
+          "AIC": -2.7360874291629087,
+          "BIC": 1.6237694600269839,
+          "HQ": -0.9928156103684049
+        },
+        {
+          "lag": 9,
+          "nobs_common": 308,
+          "nparams": 396,
+          "AIC": -2.694705564792877,
+          "BIC": 2.1011370133160048,
+          "HQ": -0.777106564118923
+        },
+        {
+          "lag": 10,
+          "nobs_common": 308,
+          "nparams": 432,
+          "AIC": -2.636131184433566,
+          "BIC": 2.595697082594304,
+          "HQ": -0.5442050018801616
+        },
+        {
+          "lag": 11,
+          "nobs_common": 308,
+          "nparams": 468,
+          "AIC": -2.5726460461829865,
+          "BIC": 3.0951679097638722,
+          "HQ": -0.3063926817501317
+        },
+        {
+          "lag": 12,
+          "nobs_common": 308,
+          "nparams": 504,
+          "AIC": -2.454303099126808,
+          "BIC": 3.6494965457390407,
+          "HQ": -0.013722552814502187
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0020934475757493,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 42.93744147705996,
+              "df": 6,
+              "pvalue": 1.2001600106015243e-07
+            },
+            "6": {
+              "statistic": 70.20556576804047,
+              "df": 36,
+              "pvalue": 0.0005543403514513554
+            },
+            "12": {
+              "statistic": 95.65114262523682,
+              "df": 72,
+              "pvalue": 0.03265662051441898
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 5.490847779372649,
+              "df": 6,
+              "pvalue": 0.48256356469272943
+            },
+            "6": {
+              "statistic": 36.90458823142001,
+              "df": 36,
+              "pvalue": 0.4269148779550075
+            },
+            "12": {
+              "statistic": 73.63975034591428,
+              "df": 72,
+              "pvalue": 0.4242197337718105
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 38.13615853088016,
+              "df": 6,
+              "pvalue": 1.0565670431592506e-06
+            },
+            "6": {
+              "statistic": 78.20002785996772,
+              "df": 36,
+              "pvalue": 5.8853817061306105e-05
+            },
+            "12": {
+              "statistic": 106.53283207946009,
+              "df": 72,
+              "pvalue": 0.00510788524605685
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 35.51379998236407,
+              "df": 6,
+              "pvalue": 3.4261085205039745e-06
+            },
+            "6": {
+              "statistic": 102.62063647782902,
+              "df": 36,
+              "pvalue": 2.5564965237192455e-08
+            },
+            "12": {
+              "statistic": 145.90407075490342,
+              "df": 72,
+              "pvalue": 6.076679001784058e-07
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 52.22266421574012,
+              "df": 6,
+              "pvalue": 1.6821112854693325e-09
+            },
+            "6": {
+              "statistic": 87.04699841262672,
+              "df": 36,
+              "pvalue": 4.0830781790095466e-06
+            },
+            "12": {
+              "statistic": 118.14315092626764,
+              "df": 72,
+              "pvalue": 0.0004984775119081401
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 36.22184499728958,
+              "df": 6,
+              "pvalue": 2.4960143958661875e-06
+            },
+            "6": {
+              "statistic": 62.47140763026168,
+              "df": 36,
+              "pvalue": 0.004032809677880514
+            },
+            "12": {
+              "statistic": 93.25240625399998,
+              "df": 72,
+              "pvalue": 0.046860768600049084
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 743.6647156128804,
+            "pvalue": 3.2753582702337096e-162
+          },
+          "vix": {
+            "statistic": 733.7965009712814,
+            "pvalue": 4.551079207986721e-160
+          },
+          "activity": {
+            "statistic": 26619.965139380427,
+            "pvalue": 0.0
+          },
+          "price": {
+            "statistic": 101.30005544785956,
+            "pvalue": 1.0068677978389378e-22
+          },
+          "policy": {
+            "statistic": 219.98099127445678,
+            "pvalue": 1.7050404358337728e-48
+          },
+          "fx": {
+            "statistic": 3.5777854342286943,
+            "pvalue": 0.16714514419616447
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "statistic": 0.13997191935841216,
+            "df": 1,
+            "pvalue": 0.7083089298396865,
+            "not_causality_identification": true
+          },
+          "vix": {
+            "statistic": 1.4781782519148081,
+            "df": 1,
+            "pvalue": 0.2240597693437032,
+            "not_causality_identification": true
+          },
+          "activity": {
+            "statistic": 0.35547200218871544,
+            "df": 1,
+            "pvalue": 0.5510317877050824,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 0.5100238975393818,
+            "df": 1,
+            "pvalue": 0.47512851120483446,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 24353.942642223978,
+            "df": 1,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 0.7722571514924546,
+            "df": 1,
+            "pvalue": 0.37951968895394794,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 331,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3304,
+        "weak_excluded": 565,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        319,
+        318,
+        317,
+        316,
+        315,
+        314,
+        313,
+        312,
+        311,
+        310,
+        309,
+        308,
+        307,
+        306,
+        305,
+        304,
+        303,
+        302,
+        301,
+        300,
+        299,
+        298,
+        297,
+        296,
+        295,
+        294,
+        293,
+        292,
+        291,
+        290,
+        289,
+        288,
+        287,
+        286,
+        285,
+        284,
+        283
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 3.694822225952521e-12,
+      "HD_inflation_reconstruction_error": 1.4838130724115217e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "EA_overnight_common": {
+      "spec": {
+        "name": "EA_overnight_common",
+        "area": "EA",
+        "start": "2004-09",
+        "end": "2026-07",
+        "policy": "ea_overnight",
+        "price": "ea_hicp",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 263,
+      "nobs": 261,
+      "lag": 2,
+      "price_transform": "100 log level",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 0,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 251,
+          "nparams": 114,
+          "AIC": -3.2123238436805774,
+          "BIC": -1.611122110369728,
+          "HQ": -2.5679602139325457
+        },
+        {
+          "lag": 2,
+          "nobs_common": 251,
+          "nparams": 150,
+          "AIC": -3.9010692916825764,
+          "BIC": -1.7942249057472472,
+          "HQ": -3.053222410435166
+        },
+        {
+          "lag": 3,
+          "nobs_common": 251,
+          "nparams": 186,
+          "AIC": -3.896481411598448,
+          "BIC": -1.2839943730386407,
+          "HQ": -2.845151278851659
+        },
+        {
+          "lag": 4,
+          "nobs_common": 251,
+          "nparams": 222,
+          "AIC": -3.8311392451835244,
+          "BIC": -0.713009553999238,
+          "HQ": -2.5763258609373576
+        },
+        {
+          "lag": 5,
+          "nobs_common": 251,
+          "nparams": 258,
+          "AIC": -3.6742730253259595,
+          "BIC": -0.050500681517193335,
+          "HQ": -2.215976389580414
+        },
+        {
+          "lag": 6,
+          "nobs_common": 251,
+          "nparams": 294,
+          "AIC": -3.589137496397624,
+          "BIC": 0.5402775000356206,
+          "HQ": -1.9273576091526996
+        },
+        {
+          "lag": 7,
+          "nobs_common": 251,
+          "nparams": 330,
+          "AIC": -3.607079397758113,
+          "BIC": 1.0279782512996105,
+          "HQ": -1.7418162590138104
+        },
+        {
+          "lag": 8,
+          "nobs_common": 251,
+          "nparams": 366,
+          "AIC": -3.4390578280114346,
+          "BIC": 1.701642473670768,
+          "HQ": -1.3703114377677537
+        },
+        {
+          "lag": 9,
+          "nobs_common": 251,
+          "nparams": 402,
+          "AIC": -3.4202578732410025,
+          "BIC": 2.226085081065677,
+          "HQ": -1.1480282314979426
+        },
+        {
+          "lag": 10,
+          "nobs_common": 251,
+          "nparams": 438,
+          "AIC": -3.3783560070292133,
+          "BIC": 2.7736295999019465,
+          "HQ": -0.9026431137867759
+        },
+        {
+          "lag": 11,
+          "nobs_common": 251,
+          "nparams": 474,
+          "AIC": -3.3651870947265348,
+          "BIC": 3.2924411648291034,
+          "HQ": -0.6859909499847188
+        },
+        {
+          "lag": 12,
+          "nobs_common": 251,
+          "nparams": 510,
+          "AIC": -3.2858036373712354,
+          "BIC": 3.8774672748088816,
+          "HQ": -0.4031242411300404
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 0.9954114321874055,
+        "stable": true,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 11.49907289126788,
+              "df": 6,
+              "pvalue": 0.07412350917875528
+            },
+            "6": {
+              "statistic": 33.50709974050528,
+              "df": 36,
+              "pvalue": 0.5877380449992283
+            },
+            "12": {
+              "statistic": 88.69126557606612,
+              "df": 72,
+              "pvalue": 0.08841381000999789
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 7.664433129224686,
+              "df": 6,
+              "pvalue": 0.2637327813687364
+            },
+            "6": {
+              "statistic": 36.54683102507066,
+              "df": 36,
+              "pvalue": 0.4432664972818611
+            },
+            "12": {
+              "statistic": 93.73886078814262,
+              "df": 72,
+              "pvalue": 0.04361619324460086
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 11.705787067819625,
+              "df": 6,
+              "pvalue": 0.06886352987761073
+            },
+            "6": {
+              "statistic": 46.6688703143691,
+              "df": 36,
+              "pvalue": 0.1097454993147936
+            },
+            "12": {
+              "statistic": 118.61563548267648,
+              "df": 72,
+              "pvalue": 0.0004503781948533106
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 17.138864210128578,
+              "df": 6,
+              "pvalue": 0.00878622057833123
+            },
+            "6": {
+              "statistic": 66.33717804369776,
+              "df": 36,
+              "pvalue": 0.0015337010694262082
+            },
+            "12": {
+              "statistic": 114.2214762922327,
+              "df": 72,
+              "pvalue": 0.0011346745252824649
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 23.211490971917573,
+              "df": 6,
+              "pvalue": 0.0007286522901821565
+            },
+            "6": {
+              "statistic": 64.33680240510907,
+              "df": 36,
+              "pvalue": 0.0025460411032287946
+            },
+            "12": {
+              "statistic": 98.90759501855065,
+              "df": 72,
+              "pvalue": 0.01943567821103973
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 4.3708260492740365,
+              "df": 6,
+              "pvalue": 0.6266276917294444
+            },
+            "6": {
+              "statistic": 38.534727079034454,
+              "df": 36,
+              "pvalue": 0.3556147300923828
+            },
+            "12": {
+              "statistic": 63.66505787872572,
+              "df": 72,
+              "pvalue": 0.7476789840007613
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 196.21162616183165,
+            "pvalue": 2.4727871562912977e-43
+          },
+          "vix": {
+            "statistic": 388.7726275862487,
+            "pvalue": 3.7939933220223107e-85
+          },
+          "activity": {
+            "statistic": 5333.0713629240445,
+            "pvalue": 0.0
+          },
+          "price": {
+            "statistic": 38.10143781803753,
+            "pvalue": 5.325714749933223e-09
+          },
+          "policy": {
+            "statistic": 216.38790298662212,
+            "pvalue": 1.027930828593928e-47
+          },
+          "fx": {
+            "statistic": 8.320977311703173,
+            "pvalue": 0.015599933058594554
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "statistic": 0.9614653717050761,
+            "df": 2,
+            "pvalue": 0.6183301840189206,
+            "not_causality_identification": true
+          },
+          "vix": {
+            "statistic": 2.9258292221614237,
+            "df": 2,
+            "pvalue": 0.23156038177111501,
+            "not_causality_identification": true
+          },
+          "activity": {
+            "statistic": 8.526047589871931,
+            "df": 2,
+            "pvalue": 0.014079663961103236,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 1.5565966726409806,
+            "df": 2,
+            "pvalue": 0.4591867282355617,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 52087.4271278369,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 3.9538787097158217,
+            "df": 2,
+            "pvalue": 0.13849246559675468,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 49,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3236,
+        "weak_excluded": 544,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        261,
+        260,
+        259,
+        258,
+        257,
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247,
+        246,
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226,
+        225
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 2.3874235921539366e-12,
+      "HD_inflation_reconstruction_error": 1.8912649224489542e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": "2019-10 level shift"
+    },
+    "EA_core": {
+      "spec": {
+        "name": "EA_core",
+        "area": "EA",
+        "start": "2004-09",
+        "end": "2026-07",
+        "policy": "ea_2y",
+        "price": "ea_core",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 263,
+      "nobs": 262,
+      "lag": 1,
+      "price_transform": "100 log level",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 0,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 251,
+          "nparams": 108,
+          "AIC": -2.703891709589625,
+          "BIC": -1.186963751716188,
+          "HQ": -2.09344195509149
+        },
+        {
+          "lag": 2,
+          "nobs_common": 251,
+          "nparams": 144,
+          "AIC": -2.934503885051015,
+          "BIC": -0.9119332745530992,
+          "HQ": -2.120570879053501
+        },
+        {
+          "lag": 3,
+          "nobs_common": 251,
+          "nparams": 180,
+          "AIC": -2.856694305084757,
+          "BIC": -0.3284810419623625,
+          "HQ": -1.839278047587865
+        },
+        {
+          "lag": 4,
+          "nobs_common": 251,
+          "nparams": 216,
+          "AIC": -2.795088305806141,
+          "BIC": 0.23876760994073276,
+          "HQ": -1.5741887968098704
+        },
+        {
+          "lag": 5,
+          "nobs_common": 251,
+          "nparams": 252,
+          "AIC": -2.728066748150594,
+          "BIC": 0.8114318202207578,
+          "HQ": -1.3036839876549449
+        },
+        {
+          "lag": 6,
+          "nobs_common": 251,
+          "nparams": 288,
+          "AIC": -2.7311141128076666,
+          "BIC": 1.3140271081881645,
+          "HQ": -1.103248100812639
+        },
+        {
+          "lag": 7,
+          "nobs_common": 251,
+          "nparams": 324,
+          "AIC": -2.7030311328973515,
+          "BIC": 1.8477527407229584,
+          "HQ": -0.8716818694029449
+        },
+        {
+          "lag": 8,
+          "nobs_common": 251,
+          "nparams": 360,
+          "AIC": -2.5910062531289144,
+          "BIC": 2.4654202731158747,
+          "HQ": -0.5561737381351302
+        },
+        {
+          "lag": 9,
+          "nobs_common": 251,
+          "nparams": 396,
+          "AIC": -2.5198580725609974,
+          "BIC": 3.0422111063082706,
+          "HQ": -0.28154230606783415
+        },
+        {
+          "lag": 10,
+          "nobs_common": 251,
+          "nparams": 432,
+          "AIC": -2.5504082414476836,
+          "BIC": 3.5173035900460645,
+          "HQ": -0.1086092234551419
+        },
+        {
+          "lag": 11,
+          "nobs_common": 251,
+          "nparams": 468,
+          "AIC": -2.4336477339901488,
+          "BIC": 4.139706750128078,
+          "HQ": 0.21163453550177103
+        },
+        {
+          "lag": 12,
+          "nobs_common": 251,
+          "nparams": 504,
+          "AIC": -2.3376115860221827,
+          "BIC": 4.741385550720521,
+          "HQ": 0.5111539349691157
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0051073841329696,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 46.17430566285278,
+              "df": 6,
+              "pvalue": 2.733164404662484e-08
+            },
+            "6": {
+              "statistic": 70.74918116454182,
+              "df": 36,
+              "pvalue": 0.00047867432109084803
+            },
+            "12": {
+              "statistic": 93.21477143711266,
+              "df": 72,
+              "pvalue": 0.04712012387962616
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 5.747932108518315,
+              "df": 6,
+              "pvalue": 0.4520109770685674
+            },
+            "6": {
+              "statistic": 50.458467228190926,
+              "df": 36,
+              "pvalue": 0.0554528224077773
+            },
+            "12": {
+              "statistic": 82.81256226373235,
+              "df": 72,
+              "pvalue": 0.18023964836247441
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 40.75898162491524,
+              "df": 6,
+              "pvalue": 3.230081066649054e-07
+            },
+            "6": {
+              "statistic": 77.26289284837128,
+              "df": 36,
+              "pvalue": 7.723525946152063e-05
+            },
+            "12": {
+              "statistic": 100.28566394928554,
+              "df": 72,
+              "pvalue": 0.015454381421492351
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 6.613237419600255,
+              "df": 6,
+              "pvalue": 0.3580989716373561
+            },
+            "6": {
+              "statistic": 91.05607982575583,
+              "df": 36,
+              "pvalue": 1.153343922305819e-06
+            },
+            "12": {
+              "statistic": 161.5410920610616,
+              "df": 72,
+              "pvalue": 7.968458786822177e-09
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 33.384794830724644,
+              "df": 6,
+              "pvalue": 8.841226311131443e-06
+            },
+            "6": {
+              "statistic": 60.0836343898865,
+              "df": 36,
+              "pvalue": 0.007129422920659744
+            },
+            "12": {
+              "statistic": 98.40601746053812,
+              "df": 72,
+              "pvalue": 0.021097172310541226
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 31.725437828164907,
+              "df": 6,
+              "pvalue": 1.8418682047177978e-05
+            },
+            "6": {
+              "statistic": 58.25633233413808,
+              "df": 36,
+              "pvalue": 0.01085988516645866
+            },
+            "12": {
+              "statistic": 77.20061974310404,
+              "df": 72,
+              "pvalue": 0.3160990898922569
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 790.3130561145368,
+            "pvalue": 2.4305265903114608e-172
+          },
+          "vix": {
+            "statistic": 602.3890680865555,
+            "pvalue": 1.5591068713459018e-131
+          },
+          "activity": {
+            "statistic": 17302.25058848424,
+            "pvalue": 0.0
+          },
+          "price": {
+            "statistic": 3.190902489107877,
+            "pvalue": 0.20281698778928706
+          },
+          "policy": {
+            "statistic": 373.07092260041804,
+            "pvalue": 9.742680891378369e-82
+          },
+          "fx": {
+            "statistic": 12.344804180806385,
+            "pvalue": 0.002086218691015468
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "statistic": 0.0002898887672980637,
+            "df": 1,
+            "pvalue": 0.9864157779255135,
+            "not_causality_identification": true
+          },
+          "vix": {
+            "statistic": 0.02003464887588406,
+            "df": 1,
+            "pvalue": 0.8874403565769842,
+            "not_causality_identification": true
+          },
+          "activity": {
+            "statistic": 0.35836923143655497,
+            "df": 1,
+            "pvalue": 0.5494133204132123,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 6.2298773549318005,
+            "df": 1,
+            "pvalue": 0.012561243613489648,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 20401.806469138857,
+            "df": 1,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 3.8694479919425064,
+            "df": 1,
+            "pvalue": 0.04917269165788554,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 425,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 2873,
+        "weak_excluded": 428,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        262,
+        261,
+        260,
+        259,
+        258,
+        257,
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247,
+        246,
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 9.663381206337363e-13,
+      "HD_inflation_reconstruction_error": 1.2601031329495527e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_core_b": {
+      "spec": {
+        "name": "TR_core_b",
+        "area": "TR",
+        "start": "2011-01",
+        "end": "2026-07",
+        "policy": "tr_aofm",
+        "price": "tr_core_b",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 187,
+      "nobs": 185,
+      "lag": 2,
+      "price_transform": "monthly inflation",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 175,
+          "nparams": 121,
+          "AIC": 3.935431341873734,
+          "BIC": 6.12365478670085,
+          "HQ": 4.8230370942993055
+        },
+        {
+          "lag": 2,
+          "nobs_common": 175,
+          "nparams": 158,
+          "AIC": 2.176455304393788,
+          "BIC": 5.033804926564733,
+          "HQ": 3.335477691858583
+        },
+        {
+          "lag": 3,
+          "nobs_common": 175,
+          "nparams": 195,
+          "AIC": 2.052182287043875,
+          "BIC": 5.578658086558648,
+          "HQ": 3.482621309547894
+        },
+        {
+          "lag": 4,
+          "nobs_common": 175,
+          "nparams": 232,
+          "AIC": 2.110605533545285,
+          "BIC": 6.306207510403888,
+          "HQ": 3.812461191088528
+        },
+        {
+          "lag": 5,
+          "nobs_common": 175,
+          "nparams": 269,
+          "AIC": 2.1425508500870274,
+          "BIC": 7.007279004289458,
+          "HQ": 4.115823142669495
+        },
+        {
+          "lag": 6,
+          "nobs_common": 175,
+          "nparams": 306,
+          "AIC": 2.1374935454866764,
+          "BIC": 7.671347877032936,
+          "HQ": 4.382182473108368
+        },
+        {
+          "lag": 7,
+          "nobs_common": 175,
+          "nparams": 343,
+          "AIC": 2.2974693229900205,
+          "BIC": 8.500449831880108,
+          "HQ": 4.813574885650937
+        },
+        {
+          "lag": 8,
+          "nobs_common": 175,
+          "nparams": 380,
+          "AIC": 2.393998093789959,
+          "BIC": 9.266104780023877,
+          "HQ": 5.181520291490099
+        },
+        {
+          "lag": 9,
+          "nobs_common": 175,
+          "nparams": 417,
+          "AIC": 2.458223536292007,
+          "BIC": 9.999456399869754,
+          "HQ": 5.517162369031372
+        },
+        {
+          "lag": 10,
+          "nobs_common": 175,
+          "nparams": 454,
+          "AIC": 2.5571958527529026,
+          "BIC": 10.767554893674479,
+          "HQ": 5.887551320531491
+        },
+        {
+          "lag": 11,
+          "nobs_common": 175,
+          "nparams": 491,
+          "AIC": 2.51060661016299,
+          "BIC": 11.390091828428396,
+          "HQ": 6.112378712980803
+        },
+        {
+          "lag": 12,
+          "nobs_common": 175,
+          "nparams": 528,
+          "AIC": 2.486503645836115,
+          "BIC": 12.035115041445348,
+          "HQ": 6.359692383693151
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.011432548401039,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 19.664798706655617,
+              "df": 7,
+              "pvalue": 0.006341089373506912
+            },
+            "6": {
+              "statistic": 52.45522679847118,
+              "df": 42,
+              "pvalue": 0.12939268311558622
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 7.398199473729893,
+              "df": 7,
+              "pvalue": 0.38862866365801485
+            },
+            "6": {
+              "statistic": 64.76752329618891,
+              "df": 42,
+              "pvalue": 0.013583047402641898
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 13.60567638027555,
+              "df": 7,
+              "pvalue": 0.05865604836385485
+            },
+            "6": {
+              "statistic": 60.86115382834575,
+              "df": 42,
+              "pvalue": 0.02990888398207239
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 17.3513579265462,
+              "df": 7,
+              "pvalue": 0.015265769978137882
+            },
+            "6": {
+              "statistic": 73.47849710739787,
+              "df": 42,
+              "pvalue": 0.0018945377183679055
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 7.3468142801465435,
+              "df": 7,
+              "pvalue": 0.39368428201004696
+            },
+            "6": {
+              "statistic": 46.09146632925032,
+              "df": 42,
+              "pvalue": 0.3067998742218051
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 28.522166652713857,
+              "df": 7,
+              "pvalue": 0.00017677992611413878
+            },
+            "6": {
+              "statistic": 74.20281487341248,
+              "df": 42,
+              "pvalue": 0.0015895696734936071
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 10.385968334128187,
+              "df": 7,
+              "pvalue": 0.16773549490003553
+            },
+            "6": {
+              "statistic": 47.369507680257094,
+              "df": 42,
+              "pvalue": 0.2628170940478129
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 244.66743602633346,
+            "pvalue": 7.432609501016794e-54
+          },
+          "vix": {
+            "statistic": 399.8127427821944,
+            "pvalue": 1.5197284983310506e-87
+          },
+          "fedfunds": {
+            "statistic": 5071.952613864298,
+            "pvalue": 0.0
+          },
+          "activity": {
+            "statistic": 312.25854009889514,
+            "pvalue": 1.5628581215327016e-68
+          },
+          "price": {
+            "statistic": 3655.5727022365354,
+            "pvalue": 0.0
+          },
+          "policy": {
+            "statistic": 153.6462146807823,
+            "pvalue": 4.326616472426285e-34
+          },
+          "fx": {
+            "statistic": 207.43022779850253,
+            "pvalue": 9.059377222690305e-46
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 0.21793184017404724,
+            "df": 2,
+            "pvalue": 0.8967609785135825,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 8.093525104848734,
+            "df": 2,
+            "pvalue": 0.01747887006517702,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 5168.718029112462,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 8.669083087755203,
+            "df": 2,
+            "pvalue": 0.013107882084474894,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 395,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3107,
+        "weak_excluded": 393,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        185,
+        184,
+        183,
+        182,
+        181,
+        180,
+        179,
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        168,
+        167,
+        166,
+        165,
+        164,
+        163,
+        162,
+        161,
+        160,
+        159,
+        158,
+        157,
+        156,
+        155,
+        154,
+        153,
+        152,
+        151,
+        150,
+        149
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 4.945377440890297e-12,
+      "HD_inflation_reconstruction_error": 1.1102230246251565e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_core_c": {
+      "spec": {
+        "name": "TR_core_c",
+        "area": "TR",
+        "start": "2011-01",
+        "end": "2026-07",
+        "policy": "tr_aofm",
+        "price": "tr_core_c",
+        "kind": "robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 187,
+      "nobs": 185,
+      "lag": 2,
+      "price_transform": "monthly inflation",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 175,
+          "nparams": 121,
+          "AIC": 4.029678777166807,
+          "BIC": 6.217902221993922,
+          "HQ": 4.9172845295923775
+        },
+        {
+          "lag": 2,
+          "nobs_common": 175,
+          "nparams": 158,
+          "AIC": 2.28768426902204,
+          "BIC": 5.145033891192984,
+          "HQ": 3.4467066564868345
+        },
+        {
+          "lag": 3,
+          "nobs_common": 175,
+          "nparams": 195,
+          "AIC": 2.1682899098363206,
+          "BIC": 5.694765709351094,
+          "HQ": 3.5987289323403395
+        },
+        {
+          "lag": 4,
+          "nobs_common": 175,
+          "nparams": 232,
+          "AIC": 2.223102187235968,
+          "BIC": 6.418704164094571,
+          "HQ": 3.924957844779211
+        },
+        {
+          "lag": 5,
+          "nobs_common": 175,
+          "nparams": 269,
+          "AIC": 2.250705481788277,
+          "BIC": 7.1154336359907076,
+          "HQ": 4.223977774370744
+        },
+        {
+          "lag": 6,
+          "nobs_common": 175,
+          "nparams": 306,
+          "AIC": 2.2401900793274647,
+          "BIC": 7.774044410873724,
+          "HQ": 4.484879006949156
+        },
+        {
+          "lag": 7,
+          "nobs_common": 175,
+          "nparams": 343,
+          "AIC": 2.4042225703614397,
+          "BIC": 8.607203079251528,
+          "HQ": 4.920328133022355
+        },
+        {
+          "lag": 8,
+          "nobs_common": 175,
+          "nparams": 380,
+          "AIC": 2.5169665630758997,
+          "BIC": 9.389073249309817,
+          "HQ": 5.30448876077604
+        },
+        {
+          "lag": 9,
+          "nobs_common": 175,
+          "nparams": 417,
+          "AIC": 2.6024221153409246,
+          "BIC": 10.14365497891867,
+          "HQ": 5.661360948080288
+        },
+        {
+          "lag": 10,
+          "nobs_common": 175,
+          "nparams": 454,
+          "AIC": 2.691152410346847,
+          "BIC": 10.901511451268423,
+          "HQ": 6.021507878125435
+        },
+        {
+          "lag": 11,
+          "nobs_common": 175,
+          "nparams": 491,
+          "AIC": 2.6719969380786655,
+          "BIC": 11.551482156344072,
+          "HQ": 6.273769040896478
+        },
+        {
+          "lag": 12,
+          "nobs_common": 175,
+          "nparams": 528,
+          "AIC": 2.5529600965028445,
+          "BIC": 12.101571492112077,
+          "HQ": 6.42614883435988
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0114581762823907,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 19.674843971588956,
+              "df": 7,
+              "pvalue": 0.006316540359794438
+            },
+            "6": {
+              "statistic": 51.903682519480384,
+              "df": 42,
+              "pvalue": 0.14069653593015224
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 7.217811675950139,
+              "df": 7,
+              "pvalue": 0.4065593538550912
+            },
+            "6": {
+              "statistic": 64.73528533482475,
+              "df": 42,
+              "pvalue": 0.013675306389695836
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 13.926663448856539,
+              "df": 7,
+              "pvalue": 0.05250119481399107
+            },
+            "6": {
+              "statistic": 61.278107806609526,
+              "df": 42,
+              "pvalue": 0.027576422996869358
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 16.54915437968966,
+              "df": 7,
+              "pvalue": 0.020546415799607833
+            },
+            "6": {
+              "statistic": 71.76708394506531,
+              "df": 42,
+              "pvalue": 0.0028488460851391903
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 7.113235034537756,
+              "df": 7,
+              "pvalue": 0.4171859589662453
+            },
+            "6": {
+              "statistic": 45.903578881462835,
+              "df": 42,
+              "pvalue": 0.313601200720491
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 27.475904154937844,
+              "df": 7,
+              "pvalue": 0.0002735356034462235
+            },
+            "6": {
+              "statistic": 73.63218003588743,
+              "df": 42,
+              "pvalue": 0.0018255396541057892
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 10.341902515894507,
+              "df": 7,
+              "pvalue": 0.17001181819923422
+            },
+            "6": {
+              "statistic": 47.14430498693014,
+              "df": 42,
+              "pvalue": 0.2702715364504618
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 244.66743602633346,
+            "pvalue": 7.432609501016794e-54
+          },
+          "vix": {
+            "statistic": 399.8127427821944,
+            "pvalue": 1.5197284983310506e-87
+          },
+          "fedfunds": {
+            "statistic": 5071.952613864298,
+            "pvalue": 0.0
+          },
+          "activity": {
+            "statistic": 323.93820782859643,
+            "pvalue": 4.54686365313843e-71
+          },
+          "price": {
+            "statistic": 2477.115945424962,
+            "pvalue": 0.0
+          },
+          "policy": {
+            "statistic": 135.98274098764804,
+            "pvalue": 2.9629408217947216e-30
+          },
+          "fx": {
+            "statistic": 197.81925173346184,
+            "pvalue": 1.1068665905027348e-43
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 0.23108342657326167,
+            "df": 2,
+            "pvalue": 0.8908834097869724,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 9.005643750113576,
+            "df": 2,
+            "pvalue": 0.011077692526782422,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 5142.900125444552,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 8.353649095294603,
+            "df": 2,
+            "pvalue": 0.015347164461510592,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 388,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3268,
+        "weak_excluded": 392,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        185,
+        184,
+        183,
+        182,
+        181,
+        180,
+        179,
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        168,
+        167,
+        166,
+        165,
+        164,
+        163,
+        162,
+        161,
+        160,
+        159,
+        158,
+        157,
+        156,
+        155,
+        154,
+        153,
+        152,
+        151,
+        150,
+        149
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 3.069544618483633e-12,
+      "HD_inflation_reconstruction_error": 7.327471962526033e-14,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "EA_growth": {
+      "spec": {
+        "name": "EA_growth",
+        "area": "EA",
+        "start": "2004-09",
+        "end": "2026-07",
+        "policy": "ea_2y",
+        "price": "ea_hicp",
+        "kind": "growth_robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 263,
+      "nobs": 262,
+      "lag": 1,
+      "price_transform": "monthly inflation",
+      "growth_robustness": true,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 0,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 251,
+          "nparams": 108,
+          "AIC": -2.6965312780149766,
+          "BIC": -1.1796033201415397,
+          "HQ": -2.0860815235168415
+        },
+        {
+          "lag": 2,
+          "nobs_common": 251,
+          "nparams": 144,
+          "AIC": -2.7427244345642015,
+          "BIC": -0.7201538240662857,
+          "HQ": -1.9287914285666874
+        },
+        {
+          "lag": 3,
+          "nobs_common": 251,
+          "nparams": 180,
+          "AIC": -2.7486241112896344,
+          "BIC": -0.22041084816723977,
+          "HQ": -1.7312078537927422
+        },
+        {
+          "lag": 4,
+          "nobs_common": 251,
+          "nparams": 216,
+          "AIC": -2.693929610531436,
+          "BIC": 0.339926305215438,
+          "HQ": -1.4730301015351652
+        },
+        {
+          "lag": 5,
+          "nobs_common": 251,
+          "nparams": 252,
+          "AIC": -2.5970896197479796,
+          "BIC": 0.9424089486233722,
+          "HQ": -1.1727068592523304
+        },
+        {
+          "lag": 6,
+          "nobs_common": 251,
+          "nparams": 288,
+          "AIC": -2.6228515425862997,
+          "BIC": 1.4222896784095314,
+          "HQ": -0.994985530591272
+        },
+        {
+          "lag": 7,
+          "nobs_common": 251,
+          "nparams": 324,
+          "AIC": -2.4812598004453483,
+          "BIC": 2.0695240731749616,
+          "HQ": -0.6499105369509417
+        },
+        {
+          "lag": 8,
+          "nobs_common": 251,
+          "nparams": 360,
+          "AIC": -2.368671005967478,
+          "BIC": 2.687755520277311,
+          "HQ": -0.3338384909736938
+        },
+        {
+          "lag": 9,
+          "nobs_common": 251,
+          "nparams": 396,
+          "AIC": -2.3432446073312505,
+          "BIC": 3.2188245715380175,
+          "HQ": -0.10492884083808729
+        },
+        {
+          "lag": 10,
+          "nobs_common": 251,
+          "nparams": 432,
+          "AIC": -2.2714355608201484,
+          "BIC": 3.7962762706735997,
+          "HQ": 0.17036345717239332
+        },
+        {
+          "lag": 11,
+          "nobs_common": 251,
+          "nparams": 468,
+          "AIC": -2.2234019085425776,
+          "BIC": 4.349952575575649,
+          "HQ": 0.4218803609493422
+        },
+        {
+          "lag": 12,
+          "nobs_common": 251,
+          "nparams": 504,
+          "AIC": -2.1751865048018004,
+          "BIC": 4.903810631940903,
+          "HQ": 0.6735790161894979
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 0.9929122800940481,
+        "stable": true,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 13.74216765457416,
+              "df": 6,
+              "pvalue": 0.03265271302672343
+            },
+            "6": {
+              "statistic": 41.772654985838784,
+              "df": 36,
+              "pvalue": 0.23432159222436943
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 9.360428484936369,
+              "df": 6,
+              "pvalue": 0.154299366559159
+            },
+            "6": {
+              "statistic": 48.331614791592955,
+              "df": 36,
+              "pvalue": 0.08213136041742242
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 11.832954898625479,
+              "df": 6,
+              "pvalue": 0.06580082603259606
+            },
+            "6": {
+              "statistic": 39.810134861031116,
+              "df": 36,
+              "pvalue": 0.30429004172447477
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 24.419771039618148,
+              "df": 6,
+              "pvalue": 0.00043708296502087635
+            },
+            "6": {
+              "statistic": 94.54721958211061,
+              "df": 36,
+              "pvalue": 3.741516810372059e-07
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 25.858084450390802,
+              "df": 6,
+              "pvalue": 0.00023661021589257473
+            },
+            "6": {
+              "statistic": 55.50990421226578,
+              "df": 36,
+              "pvalue": 0.01990986610620462
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 5.763719506735002,
+              "df": 6,
+              "pvalue": 0.45017213680599777
+            },
+            "6": {
+              "statistic": 37.79318273707801,
+              "df": 36,
+              "pvalue": 0.38733610479767416
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 227.06827615434744,
+            "pvalue": 4.928903613387887e-50
+          },
+          "vix": {
+            "statistic": 418.9729257518849,
+            "pvalue": 1.0499899435117611e-91
+          },
+          "activity": {
+            "statistic": 4289.982321840999,
+            "pvalue": 0.0
+          },
+          "price": {
+            "statistic": 104.13811679007735,
+            "pvalue": 2.4361008378143255e-23
+          },
+          "policy": {
+            "statistic": 263.6476786798816,
+            "pvalue": 5.6186760266992706e-58
+          },
+          "fx": {
+            "statistic": 11.40968484513741,
+            "pvalue": 0.0033298020454462143
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "statistic": 0.062400818089304186,
+            "df": 1,
+            "pvalue": 0.802740815277545,
+            "not_causality_identification": true
+          },
+          "vix": {
+            "statistic": 1.0346720929178022,
+            "df": 1,
+            "pvalue": 0.3090638478908486,
+            "not_causality_identification": true
+          },
+          "activity": {
+            "statistic": 0.2062467793986249,
+            "df": 1,
+            "pvalue": 0.6497251806962985,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 0.39702273256299264,
+            "df": 1,
+            "pvalue": 0.5286308611622256,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 25290.329283212082,
+            "df": 1,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 0.7437812976041436,
+            "df": 1,
+            "pvalue": 0.3884522795865889,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 21,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3881,
+        "weak_excluded": 652,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        262,
+        261,
+        260,
+        259,
+        258,
+        257,
+        256,
+        255,
+        254,
+        253,
+        252,
+        251,
+        250,
+        249,
+        248,
+        247,
+        246,
+        245,
+        244,
+        243,
+        242,
+        241,
+        240,
+        239,
+        238,
+        237,
+        236,
+        235,
+        234,
+        233,
+        232,
+        231,
+        230,
+        229,
+        228,
+        227,
+        226
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 1.4210854715202004e-14,
+      "HD_inflation_reconstruction_error": 6.938893903907228e-16,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_growth": {
+      "spec": {
+        "name": "TR_growth",
+        "area": "TR",
+        "start": "2011-01",
+        "end": "2026-07",
+        "policy": "tr_aofm",
+        "price": "tr_cpi",
+        "kind": "growth_robustness"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 187,
+      "nobs": 185,
+      "lag": 2,
+      "price_transform": "monthly inflation",
+      "growth_robustness": true,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 175,
+          "nparams": 121,
+          "AIC": 3.631308164075099,
+          "BIC": 5.819531608902214,
+          "HQ": 4.51891391650067
+        },
+        {
+          "lag": 2,
+          "nobs_common": 175,
+          "nparams": 158,
+          "AIC": 2.429422033234925,
+          "BIC": 5.28677165540587,
+          "HQ": 3.5884444206997195
+        },
+        {
+          "lag": 3,
+          "nobs_common": 175,
+          "nparams": 195,
+          "AIC": 2.1964338403699735,
+          "BIC": 5.7229096398847465,
+          "HQ": 3.6268728628739924
+        },
+        {
+          "lag": 4,
+          "nobs_common": 175,
+          "nparams": 232,
+          "AIC": 2.1457955996189755,
+          "BIC": 6.341397576477578,
+          "HQ": 3.8476512571622186
+        },
+        {
+          "lag": 5,
+          "nobs_common": 175,
+          "nparams": 269,
+          "AIC": 2.1368235292944195,
+          "BIC": 7.001551683496849,
+          "HQ": 4.110095821876886
+        },
+        {
+          "lag": 6,
+          "nobs_common": 175,
+          "nparams": 306,
+          "AIC": 2.150072491197351,
+          "BIC": 7.683926822743611,
+          "HQ": 4.3947614188190425
+        },
+        {
+          "lag": 7,
+          "nobs_common": 175,
+          "nparams": 343,
+          "AIC": 2.314944728630479,
+          "BIC": 8.517925237520567,
+          "HQ": 4.831050291291395
+        },
+        {
+          "lag": 8,
+          "nobs_common": 175,
+          "nparams": 380,
+          "AIC": 2.4389402551219366,
+          "BIC": 9.311046941355855,
+          "HQ": 5.226462452822076
+        },
+        {
+          "lag": 9,
+          "nobs_common": 175,
+          "nparams": 417,
+          "AIC": 2.513699619037058,
+          "BIC": 10.054932482614804,
+          "HQ": 5.572638451776422
+        },
+        {
+          "lag": 10,
+          "nobs_common": 175,
+          "nparams": 454,
+          "AIC": 2.4683353257856706,
+          "BIC": 10.678694366707246,
+          "HQ": 5.798690793564258
+        },
+        {
+          "lag": 11,
+          "nobs_common": 175,
+          "nparams": 491,
+          "AIC": 2.593772048552914,
+          "BIC": 11.473257266818319,
+          "HQ": 6.195544151370727
+        },
+        {
+          "lag": 12,
+          "nobs_common": 175,
+          "nparams": 528,
+          "AIC": 2.4499521125640498,
+          "BIC": 11.998563508173282,
+          "HQ": 6.323140850421085
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 0.9828922133498429,
+        "stable": true,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 15.284778865469313,
+              "df": 7,
+              "pvalue": 0.03251737019104571
+            },
+            "6": {
+              "statistic": 38.55411262418416,
+              "df": 42,
+              "pvalue": 0.623031770420986
+            },
+            "12": {
+              "statistic": 75.07418553708061,
+              "df": 84,
+              "pvalue": 0.746249234024576
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 10.669566066315536,
+              "df": 7,
+              "pvalue": 0.1536959152278953
+            },
+            "6": {
+              "statistic": 64.17219283909473,
+              "df": 42,
+              "pvalue": 0.015381446745719392
+            },
+            "12": {
+              "statistic": 94.4943532779998,
+              "df": 84,
+              "pvalue": 0.20350956398710937
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 17.463762008603126,
+              "df": 7,
+              "pvalue": 0.014638478809950178
+            },
+            "6": {
+              "statistic": 67.52688032604405,
+              "df": 42,
+              "pvalue": 0.00749704256607873
+            },
+            "12": {
+              "statistic": 102.31827964074809,
+              "df": 84,
+              "pvalue": 0.08495270480760894
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 38.87275347258905,
+              "df": 7,
+              "pvalue": 2.066800707648808e-06
+            },
+            "6": {
+              "statistic": 81.8776537161331,
+              "df": 42,
+              "pvalue": 0.00022467475158115496
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 13.015136880920943,
+              "df": 7,
+              "pvalue": 0.07174044151999424
+            },
+            "6": {
+              "statistic": 63.59557524992795,
+              "df": 42,
+              "pvalue": 0.017326498559118435
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 28.34771763121328,
+              "df": 7,
+              "pvalue": 0.00019016561695535741
+            },
+            "6": {
+              "statistic": 73.65158099792892,
+              "df": 42,
+              "pvalue": 0.0018170000979311578
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 6.173848374421312,
+              "df": 7,
+              "pvalue": 0.5196031646678141
+            },
+            "6": {
+              "statistic": 41.85750173582071,
+              "df": 42,
+              "pvalue": 0.477162743937105
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 214.7352748701057,
+            "pvalue": 2.3486998874208066e-47
+          },
+          "vix": {
+            "statistic": 349.08057486915976,
+            "pvalue": 1.5780337861999772e-76
+          },
+          "fedfunds": {
+            "statistic": 5192.3295170570855,
+            "pvalue": 0.0
+          },
+          "activity": {
+            "statistic": 486.95873769942426,
+            "pvalue": 1.8123983214390298e-106
+          },
+          "price": {
+            "statistic": 1345.9471546897491,
+            "pvalue": 5.386279583697878e-293
+          },
+          "policy": {
+            "statistic": 189.21491742696512,
+            "pvalue": 8.175281841940322e-42
+          },
+          "fx": {
+            "statistic": 284.45250445546344,
+            "pvalue": 1.7057817974988957e-62
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 0.6645682021643224,
+            "df": 2,
+            "pvalue": 0.7172835128822712,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 2.306591980881997,
+            "df": 2,
+            "pvalue": 0.3155948556260367,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 8098.961502158741,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 6.244038494077346,
+            "df": 2,
+            "pvalue": 0.04406809414986865,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 16,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3146,
+        "weak_excluded": 434,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        185,
+        184,
+        183,
+        182,
+        181,
+        180,
+        179,
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        168,
+        167,
+        166,
+        165,
+        164,
+        163,
+        162,
+        161,
+        160,
+        159,
+        158,
+        157,
+        156,
+        155,
+        154,
+        153,
+        152,
+        151,
+        150,
+        149
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 1.0658141036401503e-13,
+      "HD_inflation_reconstruction_error": 1.2656542480726785e-14,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_levels_comparison": {
+      "spec": {
+        "name": "TR_levels_comparison",
+        "area": "TR",
+        "start": "2011-01",
+        "end": "2026-07",
+        "policy": "tr_aofm",
+        "price": "tr_cpi",
+        "kind": "levels_comparison"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 187,
+      "nobs": 185,
+      "lag": 2,
+      "price_transform": "100 log level",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 175,
+          "nparams": 121,
+          "AIC": 4.063509373435806,
+          "BIC": 6.251732818262921,
+          "HQ": 4.951115125861376
+        },
+        {
+          "lag": 2,
+          "nobs_common": 175,
+          "nparams": 158,
+          "AIC": 1.9711181730233396,
+          "BIC": 4.8284677951942845,
+          "HQ": 3.130140560488134
+        },
+        {
+          "lag": 3,
+          "nobs_common": 175,
+          "nparams": 195,
+          "AIC": 1.8619253757833372,
+          "BIC": 5.38840117529811,
+          "HQ": 3.292364398287356
+        },
+        {
+          "lag": 4,
+          "nobs_common": 175,
+          "nparams": 232,
+          "AIC": 1.8947645575679712,
+          "BIC": 6.090366534426574,
+          "HQ": 3.5966202151112143
+        },
+        {
+          "lag": 5,
+          "nobs_common": 175,
+          "nparams": 269,
+          "AIC": 1.949457836744488,
+          "BIC": 6.8141859909469185,
+          "HQ": 3.922730129326955
+        },
+        {
+          "lag": 6,
+          "nobs_common": 175,
+          "nparams": 306,
+          "AIC": 1.8821271606115393,
+          "BIC": 7.415981492157799,
+          "HQ": 4.12681608823323
+        },
+        {
+          "lag": 7,
+          "nobs_common": 175,
+          "nparams": 343,
+          "AIC": 2.0717928654514095,
+          "BIC": 8.274773374341498,
+          "HQ": 4.587898428112325
+        },
+        {
+          "lag": 8,
+          "nobs_common": 175,
+          "nparams": 380,
+          "AIC": 2.188821369879881,
+          "BIC": 9.060928056113799,
+          "HQ": 4.97634356758002
+        },
+        {
+          "lag": 9,
+          "nobs_common": 175,
+          "nparams": 417,
+          "AIC": 2.1198548187202277,
+          "BIC": 9.661087682297975,
+          "HQ": 5.178793651459592
+        },
+        {
+          "lag": 10,
+          "nobs_common": 175,
+          "nparams": 454,
+          "AIC": 2.1841066023251186,
+          "BIC": 10.394465643246694,
+          "HQ": 5.514462070103707
+        },
+        {
+          "lag": 11,
+          "nobs_common": 175,
+          "nparams": 491,
+          "AIC": 2.1998497338324134,
+          "BIC": 11.079334952097819,
+          "HQ": 5.8016218366502255
+        },
+        {
+          "lag": 12,
+          "nobs_common": 175,
+          "nparams": 528,
+          "AIC": 2.096636961063558,
+          "BIC": 11.645248356672791,
+          "HQ": 5.969825698920594
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0129810913735735,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 20.335382575653718,
+              "df": 7,
+              "pvalue": 0.004889044579938506
+            },
+            "6": {
+              "statistic": 48.01417223841431,
+              "df": 42,
+              "pvalue": 0.24219692920807073
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 6.256241320670246,
+              "df": 7,
+              "pvalue": 0.5101683605342221
+            },
+            "6": {
+              "statistic": 63.73947353327796,
+              "df": 42,
+              "pvalue": 0.016821320836986318
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 13.141427295738872,
+              "df": 7,
+              "pvalue": 0.0687366043586609
+            },
+            "6": {
+              "statistic": 62.511805975178795,
+              "df": 42,
+              "pvalue": 0.02159288880742802
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 15.525638125137444,
+              "df": 7,
+              "pvalue": 0.029821734203787906
+            },
+            "6": {
+              "statistic": 65.32314177534467,
+              "df": 42,
+              "pvalue": 0.012079521059731405
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 5.122123350141349,
+              "df": 7,
+              "pvalue": 0.6450627695488065
+            },
+            "6": {
+              "statistic": 47.151017199330425,
+              "df": 42,
+              "pvalue": 0.27004749431674785
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 32.07638403091613,
+              "df": 7,
+              "pvalue": 3.931272470625502e-05
+            },
+            "6": {
+              "statistic": 77.96388313764069,
+              "df": 42,
+              "pvalue": 0.0006225206556675313
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 13.657126581641087,
+              "df": 7,
+              "pvalue": 0.057626752818049534
+            },
+            "6": {
+              "statistic": 50.84720368977021,
+              "df": 42,
+              "pvalue": 0.16442537822200187
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 244.66743602633346,
+            "pvalue": 7.432609501016794e-54
+          },
+          "vix": {
+            "statistic": 399.8127427821944,
+            "pvalue": 1.5197284983310506e-87
+          },
+          "fedfunds": {
+            "statistic": 5071.952613864298,
+            "pvalue": 0.0
+          },
+          "activity": {
+            "statistic": 401.55609681192703,
+            "pvalue": 6.356257606514726e-88
+          },
+          "price": {
+            "statistic": 953.809291571153,
+            "pvalue": 7.6373719407228156e-208
+          },
+          "policy": {
+            "statistic": 156.65796799364745,
+            "pvalue": 9.597419478033197e-35
+          },
+          "fx": {
+            "statistic": 182.251376449017,
+            "pvalue": 2.658376226553724e-40
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 0.12138294008047677,
+            "df": 2,
+            "pvalue": 0.9411135567157546,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 4.890241648651197,
+            "df": 2,
+            "pvalue": 0.08671565690798087,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 5086.810857781542,
+            "df": 2,
+            "pvalue": 0.0,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 8.478927297650362,
+            "df": 2,
+            "pvalue": 0.014415321444628853,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 451,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3090,
+        "weak_excluded": 384,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        185,
+        184,
+        183,
+        182,
+        181,
+        180,
+        179,
+        178,
+        177,
+        176,
+        175,
+        174,
+        173,
+        172,
+        171,
+        170,
+        169,
+        168,
+        167,
+        166,
+        165,
+        164,
+        163,
+        162,
+        161,
+        160,
+        159,
+        158,
+        157,
+        156,
+        155,
+        154,
+        153,
+        152,
+        151,
+        150,
+        149
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 3.922195901395753e-12,
+      "HD_inflation_reconstruction_error": 3.019806626980426e-13,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_regime_1": {
+      "spec": {
+        "name": "TR_regime_1",
+        "area": "TR",
+        "start": "2011-01",
+        "end": "2018-05",
+        "policy": "tr_aofm",
+        "price": "tr_cpi",
+        "kind": "regime"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 89,
+      "nobs": 88,
+      "lag": 1,
+      "price_transform": "monthly inflation",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 87,
+          "nparams": 121,
+          "AIC": -4.787839731643595,
+          "BIC": -1.3582433827102083,
+          "HQ": -3.4068470387261787
+        },
+        {
+          "lag": 2,
+          "nobs_common": 87,
+          "nparams": 158,
+          "AIC": -4.929875243853282,
+          "BIC": -0.4515593502047288,
+          "HQ": -3.126595529134671
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.0257350015596294,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 10.816625496849847,
+              "df": 7,
+              "pvalue": 0.14682014778526412
+            },
+            "6": {
+              "statistic": 44.241187303788955,
+              "df": 42,
+              "pvalue": 0.37720915896899526
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 9.38210850593817,
+              "df": 7,
+              "pvalue": 0.22637359609858365
+            },
+            "6": {
+              "statistic": 55.614860696405,
+              "df": 42,
+              "pvalue": 0.07767629645645592
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 10.57971502799651,
+              "df": 7,
+              "pvalue": 0.1580312550103166
+            },
+            "6": {
+              "statistic": 67.22847131352476,
+              "df": 42,
+              "pvalue": 0.008005858769740864
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 24.327030272620984,
+              "df": 7,
+              "pvalue": 0.0009979143932561235
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 15.944998292738727,
+              "df": 7,
+              "pvalue": 0.025623642174362873
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 12.361871607849409,
+              "df": 7,
+              "pvalue": 0.0892691202005466
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 17.79540284854561,
+              "df": 7,
+              "pvalue": 0.012928006696772375
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 3.4454036777235486,
+            "pvalue": 0.1785829930314698
+          },
+          "vix": {
+            "statistic": 34.90589932556005,
+            "pvalue": 2.631965962430888e-08
+          },
+          "fedfunds": {
+            "statistic": 2.443911377874009,
+            "pvalue": 0.29465335277106575
+          },
+          "activity": {
+            "statistic": 0.23076440048691493,
+            "pvalue": 0.8910255286453846
+          },
+          "price": {
+            "statistic": 8.32094082732142,
+            "pvalue": 0.015600217638146728
+          },
+          "policy": {
+            "statistic": 53.31660487425644,
+            "pvalue": 2.6451259406794364e-12
+          },
+          "fx": {
+            "statistic": 3.315155032973364,
+            "pvalue": 0.19060014700513905
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 0.04095875269165562,
+            "df": 1,
+            "pvalue": 0.8396175607914899,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 3.759311610261173,
+            "df": 1,
+            "pvalue": 0.052514194353924355,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 280.6542314479405,
+            "df": 1,
+            "pvalue": 5.407896307263656e-63,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 6.814744086107526,
+            "df": 1,
+            "pvalue": 0.009040825892066787,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 455,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3290,
+        "weak_excluded": 412,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        88,
+        87,
+        86,
+        85,
+        84,
+        83,
+        82,
+        81,
+        80,
+        79,
+        78,
+        77,
+        76,
+        75,
+        74,
+        73,
+        72,
+        71,
+        70,
+        69,
+        68,
+        67,
+        66,
+        65,
+        64,
+        63,
+        62,
+        61,
+        60,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        52
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 1.1937117960769683e-12,
+      "HD_inflation_reconstruction_error": 5.218048215738236e-15,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    },
+    "TR_regime_2": {
+      "spec": {
+        "name": "TR_regime_2",
+        "area": "TR",
+        "start": "2018-06",
+        "end": "2023-05",
+        "policy": "tr_aofm",
+        "price": "tr_cpi",
+        "kind": "regime"
+      },
+      "variables": [
+        "brent",
+        "vix",
+        "fedfunds",
+        "activity",
+        "price",
+        "policy",
+        "fx"
+      ],
+      "months": 60,
+      "nobs": 58,
+      "lag": 2,
+      "price_transform": "monthly inflation",
+      "growth_robustness": false,
+      "rates_kept_in_levels": true,
+      "external_block_equations": 3,
+      "lag_selection": [
+        {
+          "lag": 1,
+          "nobs_common": 58,
+          "nparams": 121,
+          "AIC": 6.561554492794656,
+          "BIC": 10.860064911348392,
+          "HQ": 8.23591111729973
+        },
+        {
+          "lag": 2,
+          "nobs_common": 58,
+          "nparams": 158,
+          "AIC": 4.248736764895834,
+          "BIC": 9.861667724660217,
+          "HQ": 6.435086737390064
+        }
+      ],
+      "residual_diagnostics": {
+        "companion_spectral_radius": 1.005704887682306,
+        "stable": false,
+        "root_convention": "companion eigenvalue modulus < 1; not inverse roots",
+        "BG_LM": {
+          "brent": {
+            "1": {
+              "statistic": 11.07748128029054,
+              "df": 7,
+              "pvalue": 0.13527485166299816
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "vix": {
+            "1": {
+              "statistic": 6.262837126161445,
+              "df": 7,
+              "pvalue": 0.5094163899617625
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fedfunds": {
+            "1": {
+              "statistic": 4.120756106067704,
+              "df": 7,
+              "pvalue": 0.7657683897793917
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "activity": {
+            "1": {
+              "statistic": 15.621793487718238,
+              "df": 7,
+              "pvalue": 0.028805483013268334
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "price": {
+            "1": {
+              "statistic": 9.792698316815066,
+              "df": 7,
+              "pvalue": 0.20062859972434152
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "policy": {
+            "1": {
+              "statistic": 17.262502757630852,
+              "df": 7,
+              "pvalue": 0.015779714584769275
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          },
+          "fx": {
+            "1": {
+              "statistic": 19.71988135037062,
+              "df": 7,
+              "pvalue": 0.0062075999431000775
+            },
+            "6": {
+              "status": "insufficient_df_or_rank"
+            },
+            "12": {
+              "status": "insufficient_df_or_rank"
+            }
+          }
+        },
+        "JB_marginal": {
+          "brent": {
+            "statistic": 1.6170392015283415,
+            "pvalue": 0.4455171214763124
+          },
+          "vix": {
+            "statistic": 25.836014870212196,
+            "pvalue": 2.4534694450627176e-06
+          },
+          "fedfunds": {
+            "statistic": 18.237297556645824,
+            "pvalue": 0.00010960267483460795
+          },
+          "activity": {
+            "statistic": 1.6210063099816738,
+            "pvalue": 0.44463428996849785
+          },
+          "price": {
+            "statistic": 18.806621295646732,
+            "pvalue": 8.245064815315311e-05
+          },
+          "policy": {
+            "statistic": 3.059378702660173,
+            "pvalue": 0.2166029442822566
+          },
+          "fx": {
+            "statistic": 11.559389616971547,
+            "pvalue": 0.0030896582018282077
+          }
+        },
+        "granger_policy_to": {
+          "brent": {
+            "status": "excluded_by_design"
+          },
+          "vix": {
+            "status": "excluded_by_design"
+          },
+          "fedfunds": {
+            "status": "excluded_by_design"
+          },
+          "activity": {
+            "statistic": 8.459920269839968,
+            "df": 2,
+            "pvalue": 0.014552970692193428,
+            "not_causality_identification": true
+          },
+          "price": {
+            "statistic": 4.914335802725233,
+            "df": 2,
+            "pvalue": 0.08567725412680952,
+            "not_causality_identification": true
+          },
+          "policy": {
+            "statistic": 491.5533949079173,
+            "df": 2,
+            "pvalue": 1.821950255645163e-107,
+            "not_causality_identification": true
+          },
+          "fx": {
+            "statistic": 6.96439164373955,
+            "df": 2,
+            "pvalue": 0.030739837662547436,
+            "not_causality_identification": true
+          }
+        }
+      },
+      "bootstrap": {
+        "requested": 499,
+        "successful": 499,
+        "attempts": 499,
+        "failed": 0,
+        "unstable_retained": 360,
+        "method": "circular moving-block residual vector resampling, block 6; fixed lag/deterministic terms; refit/re-identify each draw",
+        "bands": "pointwise percentile 68/90; LP re-estimates shock and outcome jointly",
+        "not_simultaneous_bands": true,
+        "conditional_on_transform_and_lag_selection": true,
+        "status": "complete"
+      },
+      "sign_restrictions": {
+        "accepted": 1000,
+        "attempts": 3587,
+        "weak_excluded": 513,
+        "status": "complete",
+        "not_confidence_intervals": true,
+        "fixed_reduced_form": true,
+        "median_not_necessarily_one_admissible_model": true
+      },
+      "LP_nobs_by_horizon": [
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        52,
+        51,
+        50,
+        49,
+        48,
+        47,
+        46,
+        45,
+        44,
+        43,
+        42,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "LP_HAC_bandwidth": "h+1; Bartlett, finite-sample df adjustment",
+      "HD_level_reconstruction_error": 7.389644451905042e-13,
+      "HD_inflation_reconstruction_error": 8.348877145181177e-14,
+      "no_missingness_trim": true,
+      "transition_dummy": null
+    }
+  },
+  "vecm": {
+    "status": "not_estimated",
+    "reason": "I(1) agreement conditions not established for every variable",
+    "failed_variables": [
+      "tr_cpi",
+      "usdtry"
+    ],
+    "no_Johansen_run": true,
+    "no_silent_relaxation": true
+  },
+  "elapsed_seconds": 124.35286800004542,
+  "peak_rss_bytes": 428113920,
+  "paid_calls": 0,
+  "no_publication": true,
+  "bootstrap_draws": 499,
+  "contract": {
+    "input_sha256": "ae88e1c60c7aecaf62b1f4c2e7c9d2ae73531a70951a7b92d0d98f890b975631",
+    "seed": 20261007,
+    "config": {
+      "seed": 20261007,
+      "horizon": 36,
+      "bootstrap_block": 6,
+      "sign_draws": 1000,
+      "sign_max_attempts": 200000,
+      "sign_rate_floor_sd": 0.1,
+      "min_lp_residual_df": 10,
+      "lag_max": 12,
+      "lag_criterion": "BIC",
+      "seasonal_dummies": true,
+      "tr_external_block": 3,
+      "unit_root_alpha": 0.05,
+      "tr_i2_rule": "first-difference ADF and PP fail to reject, KPSS rejects stationarity",
+      "regimes": [
+        [
+          "2011-01",
+          "2018-05"
+        ],
+        [
+          "2018-06",
+          "2023-05"
+        ],
+        [
+          "2023-06",
+          "2026-07"
+        ]
+      ],
+      "models": [
+        {
+          "name": "EA_baseline",
+          "area": "EA",
+          "start": "2004-09",
+          "end": "2026-07",
+          "policy": "ea_2y",
+          "price": "ea_hicp",
+          "kind": "baseline"
+        },
+        {
+          "name": "TR_baseline",
+          "area": "TR",
+          "start": "2011-01",
+          "end": "2026-07",
+          "policy": "tr_aofm",
+          "price": "tr_cpi",
+          "kind": "baseline"
+        },
+        {
+          "name": "TR_announced",
+          "area": "TR",
+          "start": "2006-01",
+          "end": "2026-07",
+          "policy": "tr_announced",
+          "price": "tr_cpi",
+          "kind": "robustness"
+        },
+        {
+          "name": "EA_overnight_long",
+          "area": "EA",
+          "start": "1999-12",
+          "end": "2019-12",
+          "policy": "ea_overnight",
+          "price": "ea_hicp",
+          "kind": "robustness"
+        },
+        {
+          "name": "EA_bundesbank_long",
+          "area": "EA",
+          "start": "1999-12",
+          "end": "2026-07",
+          "policy": "de_2y",
+          "price": "ea_hicp",
+          "kind": "robustness"
+        },
+        {
+          "name": "EA_overnight_common",
+          "area": "EA",
+          "start": "2004-09",
+          "end": "2026-07",
+          "policy": "ea_overnight",
+          "price": "ea_hicp",
+          "kind": "robustness"
+        },
+        {
+          "name": "EA_core",
+          "area": "EA",
+          "start": "2004-09",
+          "end": "2026-07",
+          "policy": "ea_2y",
+          "price": "ea_core",
+          "kind": "robustness"
+        },
+        {
+          "name": "TR_core_b",
+          "area": "TR",
+          "start": "2011-01",
+          "end": "2026-07",
+          "policy": "tr_aofm",
+          "price": "tr_core_b",
+          "kind": "robustness"
+        },
+        {
+          "name": "TR_core_c",
+          "area": "TR",
+          "start": "2011-01",
+          "end": "2026-07",
+          "policy": "tr_aofm",
+          "price": "tr_core_c",
+          "kind": "robustness"
+        },
+        {
+          "name": "EA_growth",
+          "area": "EA",
+          "start": "2004-09",
+          "end": "2026-07",
+          "policy": "ea_2y",
+          "price": "ea_hicp",
+          "kind": "growth_robustness"
+        },
+        {
+          "name": "TR_growth",
+          "area": "TR",
+          "start": "2011-01",
+          "end": "2026-07",
+          "policy": "tr_aofm",
+          "price": "tr_cpi",
+          "kind": "growth_robustness"
+        },
+        {
+          "name": "TR_levels_comparison",
+          "area": "TR",
+          "start": "2011-01",
+          "end": "2026-07",
+          "policy": "tr_aofm",
+          "price": "tr_cpi",
+          "kind": "levels_comparison"
+        }
+      ]
+    },
+    "code": {
+      "src/macro_var_lab/quick.py": "22977aced261ac11b9becd9d27352b88eb5d3e7d90a44bc7b298e9717a6f0823",
+      "src/macro_var_lab/checks.py": "f7dd4f3c98535a568c696f454fe850e4002be93d6ed3fb909d78f83350cb961b",
+      "src/macro_var_lab/policy.py": "9a0781e00ef9570838c5999aa30e471214eb42a8a6111c2ea1ad36ba361eeade",
+      "src/macro_var_lab/series.py": "1afc3c688f57e9654b0ba498658a6fb3addc8d2b73eb65f6a7927cf897c915cb",
+      "src/macro_var_lab/access.py": "a37e7145bcf70b4a464bc89582a05c9e8933f7ee372a6351c984d8ad130f6329",
+      "src/macro_var_lab/__init__.py": "ef84dd5df0064511d765eb30090ae8e9cc91d0d2cb0957a6a95ec40c679d75c5",
+      "src/macro_var_lab/runtime.py": "eb36556962eed80eb1e4fdc342fc1dc8079f4c63609dcbb7d69290d1f6716731",
+      "src/macro_var_lab/data_figures.py": "6f9a38bb152559958eec5d00125445f40e7f7a091650c2558bf31f09938716c5",
+      "src/macro_var_lab/var.py": "e37614f040c55e0a98c2cb3bfd90403cff3311b9c9f5922e36a8beec36b29f31",
+      "src/macro_var_lab/identification.py": "b9674b1cc8d95a31b1e41f8a45ab466144704820229dd8208035d397c0012605",
+      "src/macro_var_lab/viz.py": "cca03befc9ffa62893656fbc739ec77448b0682205ea9c3a0403251d7a0f1654",
+      "src/macro_var_lab/data.py": "e96813004162f6d92fbe09daa0a072d7b53560e88a74caa104f9f5014a9ccbfc",
+      "src/macro_var_lab/g2.py": "2db82f81f118ad79bd5ad89886fd5b3125ed8677d584ecfbb01cc835ad10bea0"
+    }
+  }
+}

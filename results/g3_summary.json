@@ -594,7 +594,9 @@
             "pvalue": 0.17983262073748843,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 3.1377567211166024e-11,
       "signs": {
@@ -1113,7 +1115,9 @@
             "pvalue": 0.6973525320345118,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 1.1368683772161603e-11,
       "signs": {
@@ -1600,7 +1604,9 @@
             "pvalue": 0.017339786088573814,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 3.240074875066057e-12,
       "signs": {
@@ -2084,7 +2090,9 @@
             "pvalue": 0.03744200416940943,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 1.3130829756846651e-11,
       "signs": {
@@ -2492,7 +2500,9 @@
             "pvalue": 0.5173068863863366,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 3.353761712787673e-12,
       "signs": {
@@ -2912,7 +2922,9 @@
             "pvalue": 0.30180470925469666,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 8.58335624798201e-12,
       "signs": {
@@ -3332,7 +3344,9 @@
             "pvalue": 0.2760830049024105,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 3.581135388230905e-12,
       "signs": {
@@ -3896,7 +3910,9 @@
             "pvalue": 0.013107882084474894,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 4.945377440890297e-12,
       "signs": {
@@ -4460,7 +4476,9 @@
             "pvalue": 0.015347164461510592,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 3.069544618483633e-12,
       "signs": {
@@ -4896,7 +4914,9 @@
             "pvalue": 0.8160249752256605,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 3.730349362740526e-14,
       "signs": {
@@ -5364,7 +5384,9 @@
             "pvalue": 0.11110053642901897,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 2.984279490192421e-13,
       "signs": {
@@ -5928,7 +5950,9 @@
             "pvalue": 0.014415321444628853,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 3.922195901395753e-12,
       "signs": {
@@ -6317,7 +6341,9 @@
             "pvalue": 0.046517393337026994,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 4
       },
       "history_reconstruction_error": 9.663381206337363e-13,
       "signs": {
@@ -6712,7 +6738,9 @@
             "pvalue": 0.009270953466900234,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 1.3642420526593924e-12,
       "signs": {
@@ -7209,30 +7237,32 @@
             "status": "excluded_by_design"
           },
           "activity": {
-            "statistic": 24.353297655417908,
+            "statistic": 13.563088082555447,
             "df": 9,
-            "pvalue": 0.003776350203521405,
+            "pvalue": 0.13873786431356452,
             "not_causality_identification": true
           },
           "price": {
-            "statistic": 55.11313422451403,
+            "statistic": 9.19445931101044,
             "df": 9,
-            "pvalue": 1.1589592518312532e-08,
+            "pvalue": 0.41952112180930756,
             "not_causality_identification": true
           },
           "fx": {
-            "statistic": 1309.3527004374605,
+            "statistic": 6.419074994227493,
             "df": 9,
-            "pvalue": 2.9542494163678753e-276,
+            "pvalue": 0.6973525320336881,
             "not_causality_identification": true
           },
           "policy": {
-            "statistic": 14.747919184473403,
+            "statistic": 2758.1095999059216,
             "df": 9,
-            "pvalue": 0.09809702692408168,
+            "pvalue": 0.0,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 6
       },
       "history_reconstruction_error": 2.0463630789890885e-12,
       "signs": {
@@ -7811,7 +7841,9 @@
             "pvalue": 0.08405002839924376,
             "not_causality_identification": true
           }
-        }
+        },
+        "granger_tested_variable": "policy",
+        "granger_policy_column": 5
       },
       "history_reconstruction_error": 1.3073986337985843e-12,
       "signs": {
@@ -8587,5 +8619,10 @@
   "scope_cuts": [
     "No new regime-specific historical decompositions; G2 retained privately",
     "No VECM; approved cumulative LP pass-through fallback"
-  ]
+  ],
+  "v3_diagnostic_correction": {
+    "inherited_analysis_id": "g3_6c1e1871fcb35696",
+    "only_granger_recomputed": true,
+    "HD_annual_means_reaggregated": true
+  }
 }

@@ -200,7 +200,12 @@ def residual_checks(model: Fit, labels: list[str]) -> dict:
             df = lag * k
             checks[str(lag)] = {"statistic": stat, "df": df, "pvalue": float(chi2.sf(stat, df))}
         out["BG_LM"][label] = checks
-    policy = k - 2
+    if "policy" not in labels:
+        out["granger_status"] = "not_tested_no_policy_label"
+        return out
+    policy = labels.index("policy")
+    out["granger_tested_variable"] = labels[policy]
+    out["granger_policy_column"] = policy
     nd = model.deterministic.shape[1]
     for j, label in enumerate(labels):
         if j < model.external:

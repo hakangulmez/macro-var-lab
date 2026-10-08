@@ -1,0 +1,14 @@
+[
+  {
+    "model": "EA_baseline",
+    "level_reconstruction_error": 3.1377567211166024e-11,
+    "inflation_reconstruction_error": 5.53335155473178e-13,
+    "units": "100 times monthly log price change; percentage points of monthly log inflation"
+  },
+  {
+    "model": "TR_baseline",
+    "level_reconstruction_error": 1.1368683772161603e-11,
+    "inflation_reconstruction_error": 4.4231285301066237e-13,
+    "units": "100 times monthly log price change; percentage points of monthly log inflation"
+  }
+]

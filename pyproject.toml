@@ -36,6 +36,7 @@ dev = [
 [tool.hatch.build.targets.wheel]
 packages = ["src/macro_var_lab"]
 [tool.ruff]
+extend-exclude = ["versions"]
 line-length = 100
 [tool.ruff.lint]
 select = ["E", "F", "I"]

@@ -1,0 +1,647 @@
+{
+  "EA_baseline": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 9.756735075506336,
+        "df": 7,
+        "pvalue": 0.20278329620983393,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 13.119324816287993,
+        "df": 7,
+        "pvalue": 0.06925388770826743,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 6.9094739095207505,
+        "df": 7,
+        "pvalue": 0.4383659568340438,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 20.453994645904462,
+        "df": 7,
+        "pvalue": 0.004668180667348146,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 18587.49265839275,
+        "df": 7,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 10.157312454945696,
+        "df": 7,
+        "pvalue": 0.17983262073748843,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "TR_baseline": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 13.56308808254892,
+        "df": 9,
+        "pvalue": 0.13873786431382315,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 9.194459311007211,
+        "df": 9,
+        "pvalue": 0.4195211218095989,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 2758.1095999060517,
+        "df": 9,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 6.419074994219482,
+        "df": 9,
+        "pvalue": 0.6973525320345118,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "TR_announced": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 7.30995331318177,
+        "df": 6,
+        "pvalue": 0.2931314989047164,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 7.7950871479364725,
+        "df": 6,
+        "pvalue": 0.25350347051104116,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 5275.832886412027,
+        "df": 6,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 15.403558977401271,
+        "df": 6,
+        "pvalue": 0.017339786088573814,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "EA_overnight_long": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 3.9236244210426907,
+        "df": 7,
+        "pvalue": 0.7885312049794526,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 12.278098794807175,
+        "df": 7,
+        "pvalue": 0.09177641668712412,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 23.285966282813867,
+        "df": 7,
+        "pvalue": 0.0015196950214448213,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 8.977185212215606,
+        "df": 7,
+        "pvalue": 0.25429821066184033,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 2677.8146815187974,
+        "df": 7,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 14.889516918534369,
+        "df": 7,
+        "pvalue": 0.03744200416940943,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "EA_bundesbank_long": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 6.501766407916638,
+        "df": 3,
+        "pvalue": 0.08959286725197087,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 4.176367789590785,
+        "df": 3,
+        "pvalue": 0.24303859349621396,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 3.10808290792699,
+        "df": 3,
+        "pvalue": 0.3752592554749851,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 10.476513631788224,
+        "df": 3,
+        "pvalue": 0.014921068021372651,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 26876.55182811873,
+        "df": 3,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 2.2751050576006024,
+        "df": 3,
+        "pvalue": 0.5173068863863366,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "EA_overnight_common": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 1.7811882654964002,
+        "df": 4,
+        "pvalue": 0.7759222189575792,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 3.8836512054009447,
+        "df": 4,
+        "pvalue": 0.42198088559855107,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 9.46964208460465,
+        "df": 4,
+        "pvalue": 0.05037478651254129,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 5.760440106456414,
+        "df": 4,
+        "pvalue": 0.2177673067604585,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 54027.35633739923,
+        "df": 4,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 4.861511361859435,
+        "df": 4,
+        "pvalue": 0.30180470925469666,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "EA_core": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 6.672651463808832,
+        "df": 3,
+        "pvalue": 0.08309666453608046,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 2.5398584421772665,
+        "df": 3,
+        "pvalue": 0.46813081611086815,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 4.211015558371281,
+        "df": 3,
+        "pvalue": 0.239561330470938,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 7.620540773174831,
+        "df": 3,
+        "pvalue": 0.054540807723432436,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 20354.379100335114,
+        "df": 3,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 3.867929875784835,
+        "df": 3,
+        "pvalue": 0.2760830049024105,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "TR_core_b": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 0.21793184017404724,
+        "df": 2,
+        "pvalue": 0.8967609785135825,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 8.093525104848734,
+        "df": 2,
+        "pvalue": 0.01747887006517702,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 5168.718029112462,
+        "df": 2,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 8.669083087755203,
+        "df": 2,
+        "pvalue": 0.013107882084474894,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "TR_core_c": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 0.23108342657326167,
+        "df": 2,
+        "pvalue": 0.8908834097869724,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 9.005643750113576,
+        "df": 2,
+        "pvalue": 0.011077692526782422,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 5142.900125444552,
+        "df": 2,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 8.353649095294603,
+        "df": 2,
+        "pvalue": 0.015347164461510592,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "EA_growth": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 9.632879105918123,
+        "df": 4,
+        "pvalue": 0.04708733363480737,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 6.8529690551735385,
+        "df": 4,
+        "pvalue": 0.14386515828101096,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 2.6703705554850754,
+        "df": 4,
+        "pvalue": 0.6144092501373231,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 13.911821766587643,
+        "df": 4,
+        "pvalue": 0.007581867606761234,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 24936.075078196078,
+        "df": 4,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 1.5596516544956778,
+        "df": 4,
+        "pvalue": 0.8160249752256605,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "TR_growth": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 5.413127131966769,
+        "df": 6,
+        "pvalue": 0.4920180234640458,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 6.026701372566453,
+        "df": 6,
+        "pvalue": 0.4202056345789224,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 5681.615627174701,
+        "df": 6,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 10.338536323512137,
+        "df": 6,
+        "pvalue": 0.11110053642901897,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "TR_levels_comparison": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 0.12138294008047677,
+        "df": 2,
+        "pvalue": 0.9411135567157546,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 4.890241648651197,
+        "df": 2,
+        "pvalue": 0.08671565690798087,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 5086.810857781542,
+        "df": 2,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 8.478927297650362,
+        "df": 2,
+        "pvalue": 0.014415321444628853,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "EA_BIC": {
+    "granger_policy_to": {
+      "brent": {
+        "statistic": 0.01183137682428809,
+        "df": 1,
+        "pvalue": 0.9133832276294759,
+        "not_causality_identification": true
+      },
+      "vix": {
+        "statistic": 0.01526744226133031,
+        "df": 1,
+        "pvalue": 0.9016624838412393,
+        "not_causality_identification": true
+      },
+      "activity": {
+        "statistic": 0.3159761694211793,
+        "df": 1,
+        "pvalue": 0.5740359139835388,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 0.1224766390730366,
+        "df": 1,
+        "pvalue": 0.7263637445958961,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 20279.202391432096,
+        "df": 1,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 3.9627592904420785,
+        "df": 1,
+        "pvalue": 0.046517393337026994,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 4
+  },
+  "TR_BIC": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 0.23944626586530035,
+        "df": 2,
+        "pvalue": 0.8871660297741899,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 5.482649903930506,
+        "df": 2,
+        "pvalue": 0.06448485093668044,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 5196.647720236307,
+        "df": 2,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 9.361738099160608,
+        "df": 2,
+        "pvalue": 0.009270953466900234,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  },
+  "TR_FX_first": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 13.563088082555447,
+        "df": 9,
+        "pvalue": 0.13873786431356452,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 9.19445931101044,
+        "df": 9,
+        "pvalue": 0.41952112180930756,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 6.419074994227493,
+        "df": 9,
+        "pvalue": 0.6973525320336881,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 2758.1095999059216,
+        "df": 9,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 6
+  },
+  "TR_easing_dummy": {
+    "granger_policy_to": {
+      "brent": {
+        "status": "excluded_by_design"
+      },
+      "vix": {
+        "status": "excluded_by_design"
+      },
+      "fedfunds": {
+        "status": "excluded_by_design"
+      },
+      "activity": {
+        "statistic": 0.10550774212874403,
+        "df": 2,
+        "pvalue": 0.9486134649738694,
+        "not_causality_identification": true
+      },
+      "price": {
+        "statistic": 1.7880510257630877,
+        "df": 2,
+        "pvalue": 0.40900597555728824,
+        "not_causality_identification": true
+      },
+      "policy": {
+        "statistic": 4726.33916531529,
+        "df": 2,
+        "pvalue": 0.0,
+        "not_causality_identification": true
+      },
+      "fx": {
+        "statistic": 4.952686162484913,
+        "df": 2,
+        "pvalue": 0.08405002839924376,
+        "not_causality_identification": true
+      }
+    },
+    "granger_tested_variable": "policy",
+    "granger_policy_column": 5
+  }
+}

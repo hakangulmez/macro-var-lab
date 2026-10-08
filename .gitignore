@@ -1,5 +1,4 @@
 data/*
-!data/README.md
 .env
 .env.*
 !.env.example
@@ -31,3 +30,10 @@ dist/
 *.feather
 *.db*
 .DS_Store
+
+# Local LaTeX compiler and build scratch.
+.tools/
+report/technical/*.aux
+report/technical/*.log
+report/technical/*.out
+report/technical/main.pdf

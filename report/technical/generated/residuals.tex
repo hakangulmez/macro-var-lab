@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Marginal residual diagnostics at the selected lag}
+\begin{tabularx}{\linewidth}{Xlrrrr}
+\toprule
+Area & Equation & BG(1) p & BG(6) p & BG(12) p & JB p \\
+\midrule
+EA & brent & 0.278 & 0.422 & 0.135 & 0.000 \\
+EA & vix & 0.928 & 0.092 & 0.019 & 0.000 \\
+EA & activity & 0.603 & 0.436 & 0.298 & 0.000 \\
+EA & price & 0.470 & 0.034 & 0.003 & 0.000 \\
+EA & policy & 0.505 & 0.090 & 0.033 & 0.000 \\
+EA & fx & 0.735 & 0.395 & 0.204 & 0.169 \\
+TR & brent & 0.080 & 0.601 & 0.186 & 0.000 \\
+TR & vix & 0.537 & 0.039 & 0.077 & 0.000 \\
+TR & fedfunds & 0.053 & 0.239 & 0.115 & 0.000 \\
+TR & activity & 0.069 & 0.000 & -- & 0.213 \\
+TR & price & 0.450 & 0.000 & -- & 0.000 \\
+TR & policy & 0.208 & 0.002 & -- & 0.000 \\
+TR & fx & 0.653 & 0.017 & -- & 0.000 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize Source: author's calculations from the documented inputs.\allowbreak{} Unavailable tests are dashes.\allowbreak{} These are equation tests, not an omnibus system LR test; normality failures motivate transparent bootstrap qualifications.\allowbreak{}\end{minipage}
+\end{table}

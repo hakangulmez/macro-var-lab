@@ -1,5 +1,6 @@
 UV ?= $(or $(shell command -v uv),$(HOME)/portfolio/.tools/bin/uv)
-.PHONY: setup data checks verify-metadata audit quick all test lint figures report design readme-numbers clean g2 g2-pilot g2-summary audit-g2
+PYTHON ?= $(UV) run python
+.PHONY: policy-note setup data checks verify-metadata audit quick all test lint figures report design readme-numbers clean g2 g2-pilot g2-summary audit-g2
 setup:
 	$(UV) sync --locked
 quick:
@@ -25,15 +26,17 @@ g2:
 g2-figures:
 	$(UV) run python scripts/g2_outputs.py
 figures:
-	$(UV) run python scripts/release_outputs.py
+	$(PYTHON) scripts/v3_outputs.py
 g2-summary:
 	pandoc docs/G2_SUMMARY.md --pdf-engine=typst --metadata-file=docs/g2_render.yaml -o docs/G2_SUMMARY.pdf
 audit-g2:
 	$(UV) run python scripts/audit_g2.py
 readme-numbers:
-	$(UV) run python scripts/release_outputs.py
+	$(PYTHON) scripts/v3_outputs.py
 report:
-	$(UV) run python scripts/release_outputs.py
+	$(PYTHON) scripts/technical_report.py
+policy-note:
+	$(PYTHON) scripts/v3_outputs.py
 design:
 	pandoc docs/DESIGN.md --pdf-engine=typst --metadata-file=docs/g0_render.yaml --include-in-header=docs/g0_header.typ -o docs/DESIGN.pdf
 clean:
@@ -42,6 +45,12 @@ clean:
 all:
 	$(UV) run python scripts/release.py
 	$(UV) run python scripts/release_outputs.py
+
+.PHONY: v3-methods v3-outputs
+v3-methods:
+	$(PYTHON) scripts/v3_methods.py 2005-04
+v3-outputs:
+	$(PYTHON) scripts/v3_outputs.py
 
 .PHONY: audit-release
 audit-release:

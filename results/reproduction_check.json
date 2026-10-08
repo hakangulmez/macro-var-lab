@@ -3,6 +3,7 @@
   "command": "make setup all",
   "fresh_start": "local clone with only .env; no data/cache/env copied",
   "tested_commit": "3cc8a6f",
+  "log": ".v2/2026-10-07/m1-final-clean-clone.log",
   "aggregate_result_files_byte_identical": true,
   "processed_values_identical": true,
   "serialization_note": "Processed panel serialization differs, parsed values and missing masks are identical. Aggregate numerical output CSVs are byte-identical.",
@@ -35,10 +36,12 @@
       "from_commit": "e0c8560dbbdc5115acfd34a7918a53f5499024ef",
       "original_sha256": "1a81d030d9a2920ffeb7e486c1d5a3cc88a0c620d4a3581ab29a71ffaa46557b",
       "reproduced_sha256": "9f9e0ff3f79f0db732edd711284ce5a861a0d7637b49a849b221a4773cfade60",
-      "reason": "V2 authorized ECB acquisition retry repair; estimator code unchanged; full fresh reproduction preserves aggregate results",
-      "public_source_snapshot": "docs/provenance/access_pre_retry.py.txt"
+      "reason": "V2 authorized ECB acquisition retry repair; estimator code unchanged; full fresh reproduction preserves aggregate results"
     }
   },
   "previous_successful_test_commit": "0c1f5fb",
-  "scope": "Historical pre-publication fresh-clone check; no private paths/data/history redistributed."
+  "renderer_retest": {
+    "note": "Final sign-range display repair is presentation-only; copied into successful fresh checkout for independent render replay",
+    "sha256": "a66dd4cb25bfbb870e1beda1afb9d03a0349fd0676dcc51bde2ba3a4a11e2837"
+  }
 }

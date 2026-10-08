@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Series definitions: declared alternatives}
+\begin{tabularx}{\linewidth}{p{0.12\linewidth}p{0.40\linewidth}p{0.17\linewidth}p{0.21\linewidth}}
+\toprule
+Variable & Source / exact ID and selectors & Transformation & Observed coverage \\
+\midrule
+ea\_\allowbreak{}core & eurostat: prc\_\allowbreak{}hicp\_\allowbreak{}minr; I25, TOT\_\allowbreak{}X\_\allowbreak{}NRG\_\allowbreak{}FOOD, EA21 & 100 log(level) & 1999-12 to 2026-09 \\
+ea\_\allowbreak{}eonia & ecb: FM.\allowbreak{}M.\allowbreak{}U2.\allowbreak{}EUR.\allowbreak{}4F.\allowbreak{}MM.\allowbreak{}EONIA.\allowbreak{}HSTA & pp levels & 1999-01 to 2021-12 \\
+ea\_\allowbreak{}estr & ecb: EST.B.EU000A2X2A25.WT & pp levels & 2019-10 to 2026-09 \\
+de\_\allowbreak{}2y & bundesbank: BBSIS.\allowbreak{}D.\allowbreak{}I.\allowbreak{}ZST.\allowbreak{}ZI.\allowbreak{}EUR.\allowbreak{}S1311.\allowbreak{}B.\allowbreak{}A604.\allowbreak{}R02XX.\allowbreak{}R.\allowbreak{}A.\allowbreak{}A.\allowbreak{}\_\allowbreak{}Z.\allowbreak{}\_\allowbreak{}Z.\allowbreak{}A & pp levels & 1999-01 to 2026-09 \\
+tr\_\allowbreak{}core\_\allowbreak{}b & evds: TP.FE25.OKTG03 & 100 log(level) & 2006-01 to 2026-09 \\
+tr\_\allowbreak{}core\_\allowbreak{}c & evds: TP.FE25.OKTG04 & 100 log(level) & 2006-01 to 2026-09 \\
+tr\_\allowbreak{}reer & evds: TP.RK.T1.Y & 100 log(level) & 2006-01 to 2026-09 \\
+tr\_\allowbreak{}cpi\_\allowbreak{}old & evds: TP.GENENDEKS.T1 & 100 log(level) & 2006-01 to 2026-09 \\
+tr\_\allowbreak{}core\_\allowbreak{}b\_\allowbreak{}old & evds: TP.FE.OKTG03 & 100 log(level) & 2006-01 to 2025-12 \\
+tr\_\allowbreak{}core\_\allowbreak{}c\_\allowbreak{}old & evds: TP.FE.OKTG04 & 100 log(level) & 2006-01 to 2025-12 \\
+tr\_\allowbreak{}announced & CBRT public effective-date O/N borrowing and one-week repo lending tables & pp; daily step mean & 2006-01 to 2026-09 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize Source: author's calculations from the documented inputs.\allowbreak{} Coverage is source availability, not a common estimation sample.\allowbreak{} Daily series use observed monthly means before transformation.\allowbreak{} Missing months remain missing.\allowbreak{}\end{minipage}
+\end{table}

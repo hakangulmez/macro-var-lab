@@ -1,0 +1,25 @@
+p,Method,Outcome,Response,Lower,Upper,Type
+3,recursive VAR,activity,0.351,-2.187,1.977,90%
+3,recursive VAR,price,0.517,-0.600,1.309,90%
+3,recursive VAR,fx,3.400,-0.101,6.807,90%
+3,recursive-shock LP,activity,2.969,-0.929,6.866,90%
+3,recursive-shock LP,price,0.635,-0.341,1.612,90%
+3,recursive-shock LP,fx,-0.107,-4.879,4.665,90%
+3,sign-restricted VAR,activity,0.105,-19.927,28.738,range
+3,sign-restricted VAR,price,-2.813,-20.480,6.655,range
+3,sign-restricted VAR,fx,4.821,-41.383,53.246,range
+3,proxy VAR,activity,-0.403,-2.098,1.071,90%
+3,proxy VAR,price,0.172,-2.316,1.895,90%
+3,proxy VAR,fx,4.551,1.889,7.630,90%
+7,recursive VAR,activity,-0.017,-2.481,1.808,90%
+7,recursive VAR,price,0.068,-1.175,0.999,90%
+7,recursive VAR,fx,2.465,-1.072,5.728,90%
+7,recursive-shock LP,activity,2.725,-0.952,6.402,90%
+7,recursive-shock LP,price,-0.070,-1.211,1.071,90%
+7,recursive-shock LP,fx,-0.866,-7.018,5.285,90%
+7,sign-restricted VAR,activity,-2.420,-25.599,13.274,range
+7,sign-restricted VAR,price,-4.083,-21.806,5.834,range
+7,sign-restricted VAR,fx,4.234,-33.383,51.583,range
+7,proxy VAR,activity,-0.587,-2.201,0.901,90%
+7,proxy VAR,price,-0.078,-3.132,2.392,90%
+7,proxy VAR,fx,3.305,0.648,5.505,90%

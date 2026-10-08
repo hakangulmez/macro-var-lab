@@ -86,7 +86,9 @@ def kilian_draws(
     """Bootstrap-after-bootstrap with reused first-stage bias (Kilian step 2b)."""
     rng = np.random.default_rng(seed)
     estimates = [
-        fit(simulate(model, rng, 1), model.deterministic, model.p, model.external).coefs
+        fit(
+            simulate(model, rng, 1), model.deterministic, model.p, model.external, start=model.start
+        ).coefs
         for _ in range(bias_draws)
     ]
     bias = np.mean(estimates, axis=0) - model.coefs
@@ -94,7 +96,13 @@ def kilian_draws(
     responses = []
     branches: dict[str, int] = {}
     for _ in range(draws):
-        draw = fit(simulate(generator, rng, 1), model.deterministic, model.p, model.external)
+        draw = fit(
+            simulate(generator, rng, 1),
+            model.deterministic,
+            model.p,
+            model.external,
+            start=model.start,
+        )
         adjusted, meta = bias_adjust(draw, bias)
         branches[meta["branch"]] = branches.get(meta["branch"], 0) + 1
         responses.append(recursive(adjusted, policy, horizon)[0])

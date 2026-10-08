@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Saved log-CPI and first-difference integration diagnostics}
+\begin{tabularx}{\linewidth}{p{0.26\linewidth}lXrrr}
+\toprule
+Sample & Transform & Test & Statistic & p value & Lag \\
+\midrule
+2006-01:2026-07 & level & ADF c & 3.215 & 1.000 & 3 \\
+2006-01:2026-07 & level & KPSS c & 2.050 & 0.010 & 10 \\
+2006-01:2026-07 & level & PP c & 4.554 & 1.000 & 16 \\
+2006-01:2026-07 & level & ZA ct & -4.033 & 0.481 & 3 \\
+2006-01:2026-07 & first\_\allowbreak{}difference & ADF c & -2.785 & 0.060 & 5 \\
+2006-01:2026-07 & first\_\allowbreak{}difference & KPSS c & 1.496 & 0.010 & 8 \\
+2006-01:2026-07 & first\_\allowbreak{}difference & PP c & -8.996 & 0.000 & 16 \\
+2006-01:2026-07 & first\_\allowbreak{}difference & ZA ct & -9.373 & 0.001 & 2 \\
+2011-01:2026-07 & log\_\allowbreak{}level & ADF c & 2.362 & 0.999 & 3 \\
+2011-01:2026-07 & log\_\allowbreak{}level & KPSS c & 1.776 & 0.010 & 9 \\
+2011-01:2026-07 & log\_\allowbreak{}level & PP c & 3.519 & 1.000 & 15 \\
+2011-01:2026-07 & log\_\allowbreak{}level & ZA ct & -3.548 & 0.788 & 1 \\
+2011-01:2026-07 & first\_\allowbreak{}difference & ADF c & -4.023 & 0.001 & 2 \\
+2011-01:2026-07 & first\_\allowbreak{}difference & KPSS c & 1.216 & 0.010 & 8 \\
+2011-01:2026-07 & first\_\allowbreak{}difference & PP c & -7.700 & 0.000 & 15 \\
+2011-01:2026-07 & first\_\allowbreak{}difference & ZA ct & -10.245 & 0.001 & 0 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize Source: author's calculations from the documented inputs.\allowbreak{} ADF/PP null: unit root; KPSS null: stationarity.\allowbreak{} Reported KPSS endpoint p values are bounds from lookup tables.\allowbreak{} ZA allows one endogenous break.\allowbreak{}\end{minipage}
+\end{table}

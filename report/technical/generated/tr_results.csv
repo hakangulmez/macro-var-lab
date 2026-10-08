@@ -1,0 +1,10 @@
+Method,Outcome,Response,Lower 90%,Upper 90%
+recursive,activity,0.011,-0.505,0.336
+recursive,price,-0.288,-0.851,0.574
+recursive,fx,-0.553,-1.457,0.879
+LP HAC,activity,-1.054,-1.899,-0.210
+LP HAC,price,-0.183,-1.011,0.645
+LP HAC,fx,0.325,-0.715,1.364
+FX first,activity,-0.034,-0.530,0.324
+FX first,price,-0.349,-1.008,0.501
+FX first,fx,-0.640,-1.692,0.828

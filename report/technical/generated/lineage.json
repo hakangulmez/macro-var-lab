@@ -1,0 +1,270 @@
+{
+  "inputs": {
+    "results/g3_summary.json": "80443feb07891266faf8e20d007840764d30c1b352db84993a61fbffa49d8677",
+    "results/g1_data_checks.json": "d9e1c2c9d5e57ebcb572a645171ab9f2b7d88f05294f717cec776bff836493c0",
+    "results/g2_summary.json": "9de39a1936794b57cad4fef9a57306493a6bc4b3279f75222bbe7f5f45142754",
+    "results/g3_irfs.csv": "cfd2822713074cec8c9751dd02b200b56dc94da1715f9efba2c472c83d12e50f",
+    "results/v3_methods_comparison.csv": "751002161e395e12acb5a172fc81cebea98b81db809271f3ffbd38e27267221b",
+    "results/v3_methods_manifest.json": "99dcac83b35ce43292a4b9734473427e842e6e5e1c7d0a0e7bd1e4015967f0bd",
+    "results/g3_fevd.csv": "4b971e81dce5f7a9ba75830b1556544031f4a78bb1366678f0608762d0d31e70",
+    "results/g3_history_annual.csv": "fdbda2b63814032367021aed6154f73023573244d404b60effe61db79b075832",
+    "results/g2_irfs.csv": "c20067a3e0c71535c1b6c84c780cbcf3405517876c107d32544b0d0363d9caeb",
+    "results/g2_unit_roots.csv": "5191d78b703ef69d4cc2eaae3c4c475ce1a3e9baaa07c329bdda90a627564a16",
+    "results/price_bridge_detail.json": "9ea196b965113fdb02f220c3aabcce8d7d51c998c858b3cc94b601c0db3fbe06",
+    "figures/headline.png": "ec73f21744eb97d0acbe6be2c23502d035298de17bb4010925d5a8e388028df5",
+    "figures/tr_identification.png": "75696826ddd70d4ee9a7debdf15453b52dd7c268bda900c9c5947c73e834af5f"
+  },
+  "prose_macros": {
+    "Horizon": {
+      "value": 36,
+      "rendered": "36"
+    },
+    "OuterDraws": {
+      "value": 499,
+      "rendered": "499"
+    },
+    "BiasDraws": {
+      "value": 200,
+      "rendered": "200"
+    },
+    "BlockLength": {
+      "value": 6,
+      "rendered": "6"
+    },
+    "SignDraws": {
+      "value": 1000,
+      "rendered": "1000"
+    },
+    "RateFloor": {
+      "value": 0.1,
+      "rendered": "0.1"
+    },
+    "LagCap": {
+      "value": 12,
+      "rendered": "12"
+    },
+    "Seed": {
+      "value": 20261007,
+      "rendered": "20261007"
+    },
+    "EALag": {
+      "value": 7,
+      "rendered": "7"
+    },
+    "EAStart": {
+      "value": "2004-09",
+      "rendered": "2004-09"
+    },
+    "EAEnd": {
+      "value": "2026-07",
+      "rendered": "2026-07"
+    },
+    "EARadius": {
+      "value": 1.0038795581484707,
+      "rendered": "1.00388"
+    },
+    "TRLag": {
+      "value": 9,
+      "rendered": "9"
+    },
+    "TRStart": {
+      "value": "2011-01",
+      "rendered": "2011-01"
+    },
+    "TREnd": {
+      "value": "2026-07",
+      "rendered": "2026-07"
+    },
+    "TRRadius": {
+      "value": 1.0153625014454943,
+      "rendered": "1.01536"
+    },
+    "ProxyF": {
+      "value": 19.544578179821638,
+      "rendered": "19.545"
+    },
+    "ProxyN": {
+      "value": 251,
+      "rendered": "251"
+    },
+    "ProxyDraws": {
+      "value": 397,
+      "rendered": "397"
+    },
+    "ProxyStart": {
+      "value": "2004-09",
+      "rendered": "2004-09"
+    },
+    "ProxyEnd": {
+      "value": "2025-10",
+      "rendered": "2025-10"
+    },
+    "ProxyLag": {
+      "value": 3,
+      "rendered": "3"
+    },
+    "TRLevelsRadius": {
+      "value": 1.0129810913735735,
+      "rendered": "1.01298"
+    },
+    "MissingEarlyHICP": {
+      "value": 11,
+      "rendered": "11"
+    },
+    "ProxyFXPoint": {
+      "value": 4.744282168550736,
+      "rendered": "4.744"
+    },
+    "ProxyFXLow": {
+      "value": 2.3504625287061947,
+      "rendered": "2.350"
+    },
+    "ProxyFXHigh": {
+      "value": 8.006309334172434,
+      "rendered": "8.006"
+    },
+    "ProxyPricePoint": {
+      "value": 0.1134859407710218,
+      "rendered": "0.113"
+    },
+    "ProxyPriceLow": {
+      "value": -2.3197954546522213,
+      "rendered": "-2.320"
+    },
+    "ProxyPriceHigh": {
+      "value": 2.083975462170442,
+      "rendered": "2.084"
+    },
+    "ProxyIPPoint": {
+      "value": -0.4001827657140833,
+      "rendered": "-0.400"
+    },
+    "ProxyIPLow": {
+      "value": -2.0352962820092255,
+      "rendered": "-2.035"
+    },
+    "ProxyIPHigh": {
+      "value": 0.9562854546498464,
+      "rendered": "0.956"
+    },
+    "TRPricePoint": {
+      "value": -0.287511554220199,
+      "rendered": "-0.288"
+    },
+    "TRPriceLow": {
+      "value": -0.8513613287077588,
+      "rendered": "-0.851"
+    },
+    "TRPriceHigh": {
+      "value": 0.5742205128203169,
+      "rendered": "0.574"
+    },
+    "PThreeF": {
+      "value": 19.597946524941058,
+      "rendered": "19.598"
+    },
+    "PThreeDraws": {
+      "value": 407,
+      "rendered": "407"
+    },
+    "PThreeFXPoint": {
+      "value": 4.550501364986976,
+      "rendered": "4.551"
+    },
+    "PThreeFXLow": {
+      "value": 1.888714808243114,
+      "rendered": "1.889"
+    },
+    "PThreeFXHigh": {
+      "value": 7.630406527891138,
+      "rendered": "7.630"
+    },
+    "PThreePricePoint": {
+      "value": 0.1719628092257181,
+      "rendered": "0.172"
+    },
+    "PThreePriceLow": {
+      "value": -2.3160482795440487,
+      "rendered": "-2.316"
+    },
+    "PThreePriceHigh": {
+      "value": 1.895030927812958,
+      "rendered": "1.895"
+    },
+    "PThreeIPPoint": {
+      "value": -0.403392119760776,
+      "rendered": "-0.403"
+    },
+    "PThreeIPLow": {
+      "value": -2.0984905092870743,
+      "rendered": "-2.098"
+    },
+    "PThreeIPHigh": {
+      "value": 1.0714250792993785,
+      "rendered": "1.071"
+    },
+    "PSevenF": {
+      "value": 18.826250971726683,
+      "rendered": "18.826"
+    },
+    "PSevenDraws": {
+      "value": 379,
+      "rendered": "379"
+    },
+    "PSevenFXPoint": {
+      "value": 3.304607018986765,
+      "rendered": "3.305"
+    },
+    "PSevenFXLow": {
+      "value": 0.6481027686855734,
+      "rendered": "0.648"
+    },
+    "PSevenFXHigh": {
+      "value": 5.505284003023874,
+      "rendered": "5.505"
+    },
+    "PSevenPricePoint": {
+      "value": -0.077524521608612,
+      "rendered": "-0.078"
+    },
+    "PSevenPriceLow": {
+      "value": -3.1322793515350105,
+      "rendered": "-3.132"
+    },
+    "PSevenPriceHigh": {
+      "value": 2.392216942332582,
+      "rendered": "2.392"
+    },
+    "PSevenIPPoint": {
+      "value": -0.5868967184484817,
+      "rendered": "-0.587"
+    },
+    "PSevenIPLow": {
+      "value": -2.201243220255775,
+      "rendered": "-2.201"
+    },
+    "PSevenIPHigh": {
+      "value": 0.9008654786218876,
+      "rendered": "0.901"
+    },
+    "ComparisonN": {
+      "value": 247,
+      "rendered": "247"
+    },
+    "ComparisonStart": {
+      "value": "2005-04",
+      "rendered": "2005-04"
+    },
+    "ComparisonEnd": {
+      "value": "2025-10",
+      "rendered": "2025-10"
+    },
+    "VecmStatus": {
+      "value": "not estimated",
+      "rendered": "not estimated"
+    }
+  },
+  "estimation": false,
+  "paid_calls": 0,
+  "source": "empirical result aggregates; presentation only"
+}

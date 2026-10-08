@@ -1,5 +1,5 @@
 [
-  "The exchange-rate channel is clear: a year after tightening, the euro is 4.744% stronger in the preferred proxy estimate, and its uncertainty interval stays above zero.",
-  "The price response is not pinned down: estimates change sign across identification methods, while the proxy estimate of 0.113% has an uncertainty interval that includes zero.",
-  "T\u00fcrkiye's price estimates are negative across the comparison methods but imprecise; the recursive estimate a year after tightening is -0.288%."
+  "On the common sample, proxy euro appreciation at month twelve is 4.551 log percent at p=3 (1.889, 7.630) and 3.305 at p=7 (0.648, 5.505); both conditional 90% bands exclude zero.",
+  "The price response remains imprecise: proxy month-twelve estimates are 0.172 at p=3 and -0.078 at p=7, with both bands including zero. Sign restrictions impose early disinflation; their ranges are not confidence intervals.",
+  "T\u00fcrkiye results are inherited: recursive month-twelve price response is -0.288 log percent. Recursive, FX-first and recursive-shock LP price point estimates remain negative but imprecise."
 ]

@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Series definitions: baseline inputs}
+\begin{tabularx}{\linewidth}{p{0.12\linewidth}p{0.40\linewidth}p{0.17\linewidth}p{0.21\linewidth}}
+\toprule
+Variable & Source / exact ID and selectors & Transformation & Observed coverage \\
+\midrule
+ea\_\allowbreak{}ip & eurostat: sts\_\allowbreak{}inpr\_\allowbreak{}m; PRD, B-D, SCA, I21, EA21 & 100 log(level) & 1999-01 to 2026-07 \\
+ea\_\allowbreak{}hicp & eurostat: prc\_\allowbreak{}hicp\_\allowbreak{}minr; I25, TOTAL, EA21 & 100 log(level) & 1999-12 to 2026-09 \\
+ea\_\allowbreak{}2y & ecb: YC.\allowbreak{}B.\allowbreak{}U2.\allowbreak{}EUR.\allowbreak{}4F.\allowbreak{}G\_\allowbreak{}N\_\allowbreak{}A.\allowbreak{}SV\_\allowbreak{}C\_\allowbreak{}YM.\allowbreak{}SR\_\allowbreak{}2Y & pp levels & 2004-09 to 2026-09 \\
+eurusd & fred: DEXUSEU & 100 log(level) & 1999-01 to 2026-09 \\
+brent & fred: DCOILBRENTEU & 100 log(level) & 1999-01 to 2026-09 \\
+vix & fred: VIXCLS & log(level) & 1999-01 to 2026-09 \\
+tr\_\allowbreak{}ip & evds: TP.TSANAYMT2021.BCD & 100 log(level) & 2006-01 to 2026-07 \\
+tr\_\allowbreak{}cpi & evds: TP.TUKFIY2025.GENEL & 100 log(level) & 2006-01 to 2026-09 \\
+tr\_\allowbreak{}aofm & evds: TP.APIFON4 & pp levels & 2011-01 to 2026-09 \\
+usdtry & evds: TP.DK.USD.A.YTL & 100 log(level) & 2006-01 to 2026-09 \\
+fedfunds & fred: FEDFUNDS & pp levels & 1999-01 to 2026-09 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}\begin{minipage}{\linewidth}\footnotesize Source: author's calculations from the documented inputs.\allowbreak{} Coverage is source availability, not a common estimation sample.\allowbreak{} Daily series use observed monthly means before transformation.\allowbreak{} Missing months remain missing.\allowbreak{}\end{minipage}
+\end{table}
