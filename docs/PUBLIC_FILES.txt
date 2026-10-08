@@ -12,6 +12,7 @@ docs/DESIGN.md
 docs/DESIGN.pdf
 docs/G2_METHODS.md
 docs/METHODS.md
+docs/PUBLICATION_VALIDATION.json
 docs/PUBLIC_FILES.txt
 docs/PUBLIC_V3_PROVENANCE.json
 docs/PUBLISH_CHECKLIST.md

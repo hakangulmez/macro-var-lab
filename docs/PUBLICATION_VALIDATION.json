@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-08",
+  "accepted_version": "V3",
+  "source_commit": "574c6753b35b284be94afcea781992a8f62f37de",
+  "tested_candidate_commit": "5d732aa6e416912c7c0401c71209d1805df7586e",
+  "fresh_clone_python_tests": 34,
+  "lint_format_type": "passed",
+  "quick": "synthetic/offline passed",
+  "report_build": "aggregate-only, no credentials/raw data; PDF text equal to accepted files",
+  "policy_pages": 2,
+  "technical_pages": 13,
+  "estimator_sources_match_approved": true,
+  "data_redistributed": false,
+  "private_history_merged": false,
+  "MIT": true,
+  "scope": "Code, approved aggregate outputs and report sources/PDFs; legacy empirical runtime build tested separately and never promoted over V3",
+  "known_secret_file_matches": 0,
+  "known_secret_history_matches": 0,
+  "legacy_full_build": "passed; official acquisition succeeded with only local .env",
+  "legacy_estimation_seconds": 389.1990688330261,
+  "legacy_data_checks": 446,
+  "legacy_release_audit_checks": 57,
+  "prior_scan": {
+    "repo": "macro-var-lab",
+    "file_count": 178,
+    "credential_matches": 0,
+    "history_blobs": 214,
+    "ignore_probes": 17,
+    "raw_private_thesis_paths": 0,
+    "MIT": true,
+    "heuristic_flags": 202
+  },
+  "scans_repeated_before_push": true,
+  "published_report_sha256": {
+    "policy_note.pdf": "794974997eb5a3c38a688dfa86c9a0a6559418f02313f40fd3b9c6b272163073",
+    "technical_report.pdf": "1ab10f9df186e5734dfb9d420287bfe11c724ad4333652f3679debdaf2cacd70"
+  }
+}
